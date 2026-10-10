@@ -1,8 +1,8 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /carpinteria-ahualulco/
+  RewriteBase /ejmonjo/
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /carpinteria-ahualulco/index.html [L]
+  RewriteRule . /ejmonjo/index.html [L]
 </IfModule>
