@@ -15,12 +15,15 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Deploy via Rsync
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SERVER_IP: ${{ secrets.SERVER_IP }}
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+        chmod 600 ~/.ssh/deploy_key
         
         # Sincronizar el contenido de public_html local al servidor
         rsync -avz --exclude='.git' --exclude='.github' --exclude='cgi-bin' --exclude='.DS_Store' --delete \
-          -e "ssh -p 9338 -o StrictHostKeyChecking=no" \
-          public_html/ sistella@${{ secrets.SERVER_IP }}:/home/sistella/domains/lab.sistella.com.mx/public_html/ejmonjo/
+          -e "ssh -i ~/.ssh/deploy_key -p 9338 -o StrictHostKeyChecking=no" \
+          public_html/ sistella@$SERVER_IP:/home/sistella/domains/lab.sistella.com.mx/public_html/ejmonjo/
