@@ -1,0 +1,26 @@
+name: Deploy ejmonjo
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Deploy via Rsync
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        
+        # Sincronizar el contenido de public_html local al servidor
+        rsync -avz --exclude='.git' --exclude='.github' --exclude='cgi-bin' --exclude='.DS_Store' --delete \
+          -e "ssh -p 9338 -o StrictHostKeyChecking=no" \
+          public_html/ sistella@${{ secrets.SERVER_IP }}:/home/sistella/domains/lab.sistella.com.mx/public_html/ejmonjo/
