@@ -56,7 +56,7 @@
           Portafolio de Proyectos
         </h1>
         <p class="text-base sm:text-lg text-[#5c5f5e] leading-relaxed">
-          Cada obra es el reflejo de una visión personalizada. Explora nuestras cocinas integrales y puertas de autor fabricadas con los más altos estándares de carpintería artesanal.
+          Cada obra es el reflejo de una visión personalizada. Explora nuestras cocinas, clósets, puertas, muebles, escaleras, baños y recámaras fabricados con los más altos estándares de carpintería artesanal.
         </p>
 
         <!-- Filtros de Categorías -->
@@ -73,14 +73,56 @@
             data-cat="Cocinas" 
             class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
           >
-            Cocinas Integrales
+            Cocinas
+          </button>
+          <button 
+            type="button" 
+            data-cat="Clósets" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Clósets y Vestidores
           </button>
           <button 
             type="button" 
             data-cat="Puertas" 
             class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
           >
-            Puertas Residenciales
+            Puertas
+          </button>
+          <button 
+            type="button" 
+            data-cat="Muebles" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Muebles
+          </button>
+          <button 
+            type="button" 
+            data-cat="Recámaras" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Recámaras
+          </button>
+          <button 
+            type="button" 
+            data-cat="Baños" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Baños
+          </button>
+          <button 
+            type="button" 
+            data-cat="Escaleras" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Escaleras
+          </button>
+          <button 
+            type="button" 
+            data-cat="Materiales" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Materiales y Maderas
           </button>
         </div>
       </div>
@@ -130,6 +172,7 @@
           <div class="flex items-center gap-2 mb-2 flex-wrap">
             <span id="modal-category" class="text-xs font-bold uppercase tracking-wider text-[#8B5E3C] bg-[#f5f0ed] px-2.5 py-1 rounded-md"></span>
             <span id="modal-sku" class="text-xs font-mono text-[#7d5260] bg-gray-100 px-2 py-1 rounded-md"></span>
+            <span id="modal-featured" class="hidden text-[11px] font-bold uppercase tracking-wider text-white bg-[#5d4037] px-2.5 py-1 rounded-md">★ Obra Destacada</span>
           </div>
 
           <h2 id="modal-title" class="text-2xl sm:text-3xl font-serif font-bold text-[#2c160e] mb-3"></h2>
@@ -212,6 +255,7 @@
       const modalImg = document.getElementById('modal-img');
       const modalCategory = document.getElementById('modal-category');
       const modalSku = document.getElementById('modal-sku');
+      const modalFeatured = document.getElementById('modal-featured');
       const modalTitle = document.getElementById('modal-title');
       const modalStory = document.getElementById('modal-story');
       const modalFeatures = document.getElementById('modal-features');
@@ -241,6 +285,11 @@
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
+              ${item.isFeatured ? `
+                <span class="absolute top-3 left-3 bg-[#5d4037]/90 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-md backdrop-blur-xs flex items-center gap-1 z-10">
+                  ★ Destacado
+                </span>
+              ` : ''}
               <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span class="bg-white/90 text-[#2c160e] text-xs font-semibold px-4 py-2 rounded-full shadow-md backdrop-blur-sm">
                   Ver Detalles
@@ -311,6 +360,11 @@
         modalImg.alt = item.title;
         modalCategory.textContent = item.category + ' • ' + (item.woodType || 'Madera');
         modalSku.textContent = 'SKU: ' + item.id;
+        if (item.isFeatured) {
+          modalFeatured.classList.remove('hidden');
+        } else {
+          modalFeatured.classList.add('hidden');
+        }
         modalTitle.textContent = item.title;
         modalStory.textContent = item.detailedStory || item.description;
         modalDimensions.textContent = item.dimensions || 'A la medida';
