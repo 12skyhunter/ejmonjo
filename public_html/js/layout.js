@@ -1,5 +1,5 @@
 /**
- * layout.js - EJ Monjo
+ * layout.js - EJ Monjo Carpintería
  * Componente modular para inyección de Header, Footer y Botón Flotante de WhatsApp.
  * Estilo desacoplado MPA similar a Enzava.
  */
@@ -64,17 +64,13 @@
       <header class="sticky top-0 z-50 bg-[#f9f9f8]/90 backdrop-blur-md border-b border-[#e5dedb] transition-all duration-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-20">
-            <!-- Logo -->
+            <!-- Logo: ej_monjo_logo_v1.webp sin textos redundantes -->
             <a href="${isEjmonjoPath ? '/ejmonjo/' : 'index.html'}" class="flex items-center gap-3 group">
               <img 
-                src="/ejmonjo/assets/logos/logo_carpinteria_ahualulco.webp" 
-                alt="EJ Monjo - Ahualulco" 
-                class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                src="/ejmonjo/assets/logos/ej_monjo_logo_v1.webp" 
+                alt="EJ Monjo Carpintería" 
+                class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
-              <div class="hidden sm:block">
-                <span class="block text-lg font-serif font-bold text-[#2c160e] tracking-tight leading-none">EJ Monjo</span>
-                <span class="block text-[11px] uppercase tracking-wider text-[#7d5260] font-sans mt-0.5">Ahualulco de Mercado</span>
-              </div>
             </a>
 
             <!-- Desktop Nav -->
@@ -165,39 +161,37 @@
     if (!footerContainer) return;
 
     const contact = window.CONTACT_INFO || {
-      brandName: "EJ Monjo",
+      brandName: "EJ Monjo Carpintería",
       phonePrimary: "33 1175 7837",
       phoneSecondary: "386 105 6316",
       address: "Zona Centro, Ahualulco de Mercado, Jalisco.",
       hoursWeekday: "8:00 am a 7:00 PM",
       hoursSaturday: "8:00 am a 2:00 PM",
-      year: 2026,
+      year: new Date().getFullYear(),
       sistellaUrl: "https://sistella.com.mx/sitio-web"
     };
 
+    const currentYear = new Date().getFullYear();
+
     const waFooterUrl = typeof getWhatsAppUrl === 'function' 
-      ? getWhatsAppUrl('Hola EJ Monjo, me gustaría ponerme en contacto.')
+      ? getWhatsAppUrl('Hola EJ Monjo, me gustaría pedir una cotización.')
       : 'https://wa.me/523311757837';
 
     footerContainer.innerHTML = `
       <footer class="bg-[#1f1614] text-[#d4c3be] pt-16 pb-12 border-t border-[#3a2822]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-[#3a2822]/70">
-            <!-- Columna 1: Identidad -->
+            <!-- Columna 1: Identidad con ej_monjo_logo_v1.webp -->
             <div class="space-y-4">
               <div class="flex items-center gap-3">
                 <img 
-                  src="/ejmonjo/assets/logos/logo_carpinteria_ahualulco.webp" 
-                  alt="EJ Monjo" 
-                  class="h-12 w-auto brightness-0 invert opacity-90"
+                  src="/ejmonjo/assets/logos/ej_monjo_logo_v1.webp" 
+                  alt="${contact.brandName}" 
+                  class="h-10 sm:h-12 w-auto brightness-0 invert opacity-95"
                 />
-                <div>
-                  <h3 class="text-white font-serif font-bold text-lg tracking-tight leading-none">${contact.brandName}</h3>
-                  <span class="text-xs text-[#a08d87] tracking-wider uppercase">Ahualulco de Mercado</span>
-                </div>
               </div>
               <p class="text-sm text-[#baa9a3] leading-relaxed">
-                Taller de ebanistería y carpintería fina con más de 20 años de tradición artesanal. Especialistas en maderas nobles, muebles a la medida y proyectos residenciales en Jalisco.
+                Taller de carpintería fina con más de 20 años de tradición artesanal. Especialistas en maderas nobles, muebles a la medida y proyectos residenciales en Jalisco.
               </p>
             </div>
 
@@ -241,25 +235,26 @@
                 <span class="w-5 h-5 bg-white rounded-full flex items-center justify-center p-0.5">
                   <img src="/ejmonjo/assets/logos/whatsapp_icon.svg" alt="WhatsApp" class="w-full h-full object-contain" />
                 </span>
-                <span>Chat por WhatsApp</span>
+                <span>Pedir cotización</span>
               </a>
             </div>
           </div>
 
-          <!-- Bottom bar -->
+          <!-- Bottom bar con logo oficial de Sistella sistella_hor_full.svg y año dinámico -->
           <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#8c7a74] gap-4">
-            <p>© ${contact.year} ${contact.brandName}. Todos los derechos reservados.</p>
-            <p>
-              Sitio web desarrollado por 
+            <p>© ${currentYear} ${contact.brandName}. Todos los derechos reservados.</p>
+            <div class="flex items-center gap-2">
+              <span class="text-[#8c7a74]">Sitio web desarrollado por</span>
               <a 
                 href="${contact.sistellaUrl}" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="text-[#d4c3be] hover:text-white underline underline-offset-4 decoration-[#8B5E3C] font-medium transition-colors"
+                class="inline-flex items-center hover:opacity-80 transition-opacity"
+                title="Desarrollado por Sistella"
               >
-                Sistella
+                <img src="/ejmonjo/assets/logos/sistella_hor_full.svg" alt="Sistella" class="h-5 w-auto object-contain" />
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </footer>

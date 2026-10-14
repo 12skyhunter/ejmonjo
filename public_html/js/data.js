@@ -5,9 +5,11 @@
  */
 
 // Información general de contacto y empresa
+const currentYear = new Date().getFullYear();
+
 const CONTACT_INFO = {
-  brandName: "EJ Monjo",
-  tagline: "Carpintería y Ebanistería en Ahualulco",
+  brandName: "EJ Monjo Carpintería",
+  tagline: "Carpintería Fina en Ahualulco",
   phonePrimary: "33 1175 7837",
   phoneSecondary: "386 105 6316",
   phoneRaw: "523311757837",
@@ -16,8 +18,8 @@ const CONTACT_INFO = {
   hoursWeekday: "8:00 am a 7:00 PM",
   hoursSaturday: "8:00 am a 2:00 PM",
   email: "contacto@carpinteriaahualulco.mx",
-  year: 2026,
-  copyrightText: "Sitio en desarrollo por Sistella - Todos los derechos reservados 2026",
+  year: currentYear,
+  copyrightText: `Sitio en desarrollo por Sistella - Todos los derechos reservados ${currentYear}`,
   sistellaUrl: "https://sistella.com.mx/sitio-web"
 };
 
@@ -334,7 +336,7 @@ const PROCESS_STEPS = [
   {
     number: "2",
     title: "2. Fabricación e Instalación",
-    description: "Nuestros maestros ebanistas trabajan la madera combinando técnicas tradicionales de ensamble con acabados finos.",
+    description: "Nuestros maestros carpinteros trabajan la madera combinando técnicas tradicionales de ensamble con acabados finos.",
     details: [
       "Madera estufada con porcentaje de humedad controlado",
       "Ensambles tradicionales de máxima durabilidad",
