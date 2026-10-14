@@ -1,29 +1,385 @@
-<!doctype html>
-<html lang="es" class="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EJ Monjo - Artesanía en madera de alta precisión</title>
-    <meta name="description" content="Sitio web demo creado por Sistella. Carpintería clásica y contemporánea. Muebles a la medida, cocinas y portafolio en Ahualulco de Mercado, Jalisco." />
-    
-    <!-- OpenGraph / Link Preview Meta Tags -->
-    <meta property="og:title" content="EJ Monjo - Artesanía en madera de alta precisión" />
-    <meta property="og:description" content="Sitio web demo creado por Sistella. Carpintería clásica y contemporánea. Muebles a la medida, cocinas y portafolio en Ahualulco de Mercado, Jalisco." />
-    <meta property="og:image" content="https://lab.sistella.com.mx/ejmonjo/assets/logos/demo_sitio_sistella.png" />
-    <meta property="og:url" content="https://lab.sistella.com.mx/ejmonjo" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://lab.sistella.com.mx/ejmonjo/assets/logos/demo_sitio_sistella.png" />
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EJ Monjo | Carpintería y Ebanistería Fina en Ahualulco, Jalisco</title>
+  <meta name="description" content="Taller de carpintería y ebanistería artesanal con más de 20 años de tradición en Ahualulco de Mercado, Jalisco. Muebles a la medida, cocinas integrales, puertas residenciales y maderas nobles." />
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="EJ Monjo | Carpintería y Ebanistería Fina en Ahualulco, Jalisco" />
+  <meta property="og:description" content="Muebles a la medida, cocinas y puertas con maderas nobles en Jalisco. Tradición, precisión y acabados de lujo." />
+  <meta property="og:image" content="https://lab.sistella.com.mx/ejmonjo/assets/logos/demo_sitio_sistella.png" />
+  <meta property="og:url" content="https://lab.sistella.com.mx/ejmonjo/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Work+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/ejmonjo/assets/index-CO059aYg.js"></script>
-    <link rel="stylesheet" crossorigin href="/ejmonjo/assets/index-CmS_emcK.css">
-  </head>
-  <body class="bg-[#f9f9f8] text-[#1a1c1c] antialiased selection:bg-[#ffdbd0] selection:text-[#2c160e]">
-    <div id="root"></div>
-  </body>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Work+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Work Sans"', 'sans-serif'],
+            serif: ['"DM Sans"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fbf9f8',
+              100: '#f5f0ed',
+              600: '#8B5E3C',
+              700: '#5d4037',
+              800: '#442a22',
+              900: '#2c160e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f9f9f8] text-[#1a1c1c] font-sans antialiased selection:bg-[#d4c3be]/40 selection:text-[#2c160e] flex flex-col min-h-screen">
+
+  <!-- Header Component Container -->
+  <div id="header-container"></div>
+
+  <main class="flex-grow">
+    <!-- Hero Section con Carrusel Automático -->
+    <section class="relative min-h-[85vh] flex items-center justify-center bg-[#1a1c1c] text-white overflow-hidden">
+      <!-- Background Slides -->
+      <div id="hero-slider" class="absolute inset-0 z-0">
+        <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 scale-105" style="background-image: url('/ejmonjo/assets/cocinas_ahualulco_10.webp');"></div>
+        <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 scale-105" style="background-image: url('/ejmonjo/assets/cocinas_ahualulco_26.webp');"></div>
+        <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 scale-105" style="background-image: url('/ejmonjo/assets/cocinas_ahualulco_37.webp');"></div>
+      </div>
+
+      <!-- Overlay con gradiente cálido de alta gama -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#1a1c1c] via-[#1a1c1c]/60 to-[#1a1c1c]/40 z-10"></div>
+
+      <!-- Hero Content -->
+      <div class="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 sm:py-32">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium tracking-wide uppercase text-[#ffdbd0] mb-8">
+          <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+          <span>Taller de Carpintería y Ebanistería Fina</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-tight mb-6">
+          Tradición y Precisión en Maderas Nobles
+        </h1>
+
+        <p class="max-w-2xl mx-auto text-lg sm:text-xl text-[#d4c3be] leading-relaxed mb-10 font-light">
+          Diseñamos y fabricamos cocinas integrales, puertas residenciales y mobiliario a la medida con más de 20 años de maestría artesanal en Ahualulco de Mercado, Jalisco.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a 
+            href="/ejmonjo/portafolio" 
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#8B5E3C] hover:bg-[#724a2c] text-white font-medium px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-sm tracking-wide"
+          >
+            <span>Ver Portafolio de Obras</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+
+          <a 
+            href="/ejmonjo/contacto" 
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white backdrop-blur-md border border-white/30 font-medium px-8 py-3.5 rounded-xl transition-all duration-200 text-sm tracking-wide"
+          >
+            <span>Solicitar Cotización</span>
+          </a>
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="flex items-center justify-center gap-2 mt-12">
+          <button class="slider-dot w-8 h-1.5 rounded-full bg-[#8B5E3C] transition-all duration-300" aria-label="Slide 1"></button>
+          <button class="slider-dot w-2 h-1.5 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300" aria-label="Slide 2"></button>
+          <button class="slider-dot w-2 h-1.5 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 2: Tradición y Taller Artesanal -->
+    <section class="py-20 lg:py-28 bg-[#f9f9f8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Imagen del Taller -->
+          <div class="relative group">
+            <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-[#eee8e5]">
+              <img 
+                src="/ejmonjo/assets/ej-monjo-ahualulco.webp" 
+                alt="Taller de Carpintería EJ Monjo en Ahualulco" 
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <!-- Badge flotante -->
+            <div class="absolute -bottom-6 -right-6 hidden sm:flex items-center gap-4 bg-white p-5 rounded-2xl shadow-xl border border-[#e5dedb]">
+              <div class="w-12 h-12 rounded-xl bg-[#5d4037] flex items-center justify-center text-white font-serif font-bold text-xl">
+                20+
+              </div>
+              <div>
+                <span class="block text-sm font-bold text-[#2c160e]">Años de Maestría</span>
+                <span class="block text-xs text-[#7d5260]">Ebanistería en Jalisco</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contenido Narrativo -->
+          <div class="space-y-6">
+            <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">
+              <span>El Taller & Nuestra Filosofía</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#2c160e] leading-tight">
+              Maderas seleccionadas con alma, fabricadas para trascender.
+            </h2>
+            <p class="text-base sm:text-lg text-[#5c5f5e] leading-relaxed">
+              En <strong class="text-[#2c160e] font-semibold">EJ Monjo</strong> cada proyecto es una conversación entre la arquitectura del espacio y las vetas naturales de la madera. Ubicados en el corazón de Ahualulco de Mercado, combinamos ensamble artesanal y herrajes de última tecnología para entregar obras impecables y resistentes.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-[#e5dedb]">
+              <div class="p-4 rounded-xl bg-white border border-[#e5dedb]">
+                <h3 class="font-serif font-bold text-[#2c160e] text-base mb-1">Maderas Estufadas</h3>
+                <p class="text-xs text-[#5c5f5e]">Humedad controlada para garantizar que tus muebles y puertas jamás se tuerzan ni fisuren.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white border border-[#e5dedb]">
+                <h3 class="font-serif font-bold text-[#2c160e] text-base mb-1">Cierre Suave & Herrajes</h3>
+                <p class="text-xs text-[#5c5f5e]">Sistemas y rieles de alta durabilidad probados para miles de ciclos de uso rudo.</p>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a 
+                href="/ejmonjo/muebles-a-la-medida" 
+                class="inline-flex items-center gap-2 text-[#5d4037] font-semibold hover:text-[#8B5E3C] transition-colors group"
+              >
+                <span>Conoce nuestros materiales y proceso de fabricación</span>
+                <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 3: Servicios Bento Grid -->
+    <section class="py-20 bg-[#f4eeeb] border-y border-[#e5dedb]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Especialidades</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] mt-2 mb-4">
+            Soluciones en Madera a la Medida
+          </h2>
+          <p class="text-[#5c5f5e] text-base">
+            Cada rincón de tu hogar merece un diseño único. Desarrollamos proyectos residenciales completos con acabados de primera clase.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1: Cocinas -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
+            <div class="aspect-[16/10] overflow-hidden bg-[#eee]">
+              <img 
+                src="/ejmonjo/assets/cocinas_ahualulco_15.webp" 
+                alt="Cocinas Integrales a Medida" 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C] mb-1">Residencial</span>
+              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Cocinas Integrales</h3>
+              <p class="text-sm text-[#5c5f5e] mb-6 flex-grow">
+                Distribución ergonómica, cubiertas duraderas, alacenas superiores e islas centrales diseñadas para la vida cotidiana familiar.
+              </p>
+              <a href="/ejmonjo/portafolio?cat=Cocinas" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5">
+                <span>Ver cocinas en portafolio</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Puertas -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
+            <div class="aspect-[16/10] overflow-hidden bg-[#eee]">
+              <img 
+                src="/ejmonjo/assets/puertas_ahualulco_1.webp" 
+                alt="Puertas Principales y de Interior" 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C] mb-1">Arquitectura</span>
+              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Puertas de Madera</h3>
+              <p class="text-sm text-[#5c5f5e] mb-6 flex-grow">
+                Puertas principales de alto impacto visual con cerraduras contemporáneas, listonados y acabados sellados contra intemperie.
+              </p>
+              <a href="/ejmonjo/portafolio?cat=Puertas" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5">
+                <span>Ver puertas en portafolio</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Muebles y Clósets -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
+            <div class="aspect-[16/10] overflow-hidden bg-[#eee]">
+              <img 
+                src="/ejmonjo/assets/cocinas_ahualulco_18.webp" 
+                alt="Muebles y Clósets a Medida" 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C] mb-1">Interiores</span>
+              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Muebles & Clósets</h3>
+              <p class="text-sm text-[#5c5f5e] mb-6 flex-grow">
+                Vestidores integrales, credenzas, libreros y mobiliario residencial fabricado al milímetro con optimización inteligente del espacio.
+              </p>
+              <a href="/ejmonjo/muebles-a-la-medida" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5">
+                <span>Explorar materiales y tipos</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 4: Maderas Nobles (Preview de data.js) -->
+    <section class="py-20 lg:py-28 bg-[#f9f9f8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Muestrario de Maderas</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] mt-2">
+              Nuestra Selección de Maderas Macizas
+            </h2>
+          </div>
+          <a 
+            href="/ejmonjo/muebles-a-la-medida" 
+            class="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-semibold text-[#5d4037] hover:text-[#8B5E3C]"
+          >
+            <span>Ver guía completa de materiales y tableros</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <div id="woods-preview-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Se inyecta dinámicamente desde data.js SOLID_WOODS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Final CTA -->
+    <section class="py-16 bg-[#2c160e] text-white relative overflow-hidden">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-4">¿Tienes una idea o plano en mente?</h2>
+        <p class="text-[#d4c3be] text-base sm:text-lg max-w-2xl mx-auto mb-8 font-light">
+          Contáctanos hoy mismo para asesorarte sobre la madera adecuada y entregarte una cotización formal sin compromiso.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a 
+            href="/ejmonjo/contacto" 
+            class="w-full sm:w-auto bg-[#8B5E3C] hover:bg-[#724a2c] text-white font-medium px-8 py-3.5 rounded-xl shadow-lg transition-colors text-sm"
+          >
+            Contactar al Taller
+          </a>
+          <a 
+            href="https://wa.me/523311757837?text=Hola%20EJ%20Monjo%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20de%20carpinter%C3%ADa." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-medium px-8 py-3.5 rounded-xl shadow-lg transition-colors text-sm"
+          >
+            <span class="w-5 h-5 bg-white rounded-full flex items-center justify-center p-0.5">
+              <img src="/ejmonjo/assets/logos/whatsapp_icon.svg" alt="WhatsApp" class="w-full h-full object-contain" />
+            </span>
+            <span>Escribir por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component Container -->
+  <div id="footer-container"></div>
+
+  <!-- Scripts desacoplados sin compilación previa -->
+  <script src="/ejmonjo/js/data.js"></script>
+  <script src="/ejmonjo/js/layout.js"></script>
+
+  <!-- Lógica de carrusel e inyección de datos de inicio -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Inyectar preview de 4 maderas nobles desde SOLID_WOODS en data.js
+      const container = document.getElementById('woods-preview-container');
+      if (container && typeof SOLID_WOODS !== 'undefined') {
+        container.innerHTML = SOLID_WOODS.map(wood => `
+          <div class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+            <div class="aspect-square overflow-hidden bg-[#eee]">
+              <img 
+                src="${wood.image}" 
+                alt="${wood.name}" 
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-semibold text-[#8B5E3C] uppercase tracking-wider">${wood.type}</span>
+                <span class="text-[11px] font-mono text-[#7d5260] bg-[#f5f0ed] px-2 py-0.5 rounded">${wood.costNum}</span>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-[#2c160e] mb-2">${wood.name}</h3>
+              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-4 flex-grow">${wood.whatIs}</p>
+              <div class="pt-3 border-t border-[#f0eae6] text-[11px] text-[#7d5260]">
+                <strong>Ideal para:</strong> ${wood.idealFor}
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // 2. Control del Carrusel del Hero (cada 5 segundos)
+      const slides = document.querySelectorAll('.hero-slide');
+      const dots = document.querySelectorAll('.slider-dot');
+      let currentSlide = 0;
+
+      function goToSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.classList.remove('opacity-0');
+            slide.classList.add('opacity-100');
+          } else {
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0');
+          }
+        });
+
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.className = 'slider-dot w-8 h-1.5 rounded-full bg-[#8B5E3C] transition-all duration-300';
+          } else {
+            dot.className = 'slider-dot w-2 h-1.5 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300';
+          }
+        });
+
+        currentSlide = index;
+      }
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => goToSlide(idx));
+      });
+
+      setInterval(() => {
+        const next = (currentSlide + 1) % slides.length;
+        goToSlide(next);
+      }, 5000);
+    });
+  </script>
+</body>
 </html>
-

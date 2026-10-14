@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Obras y Proyectos | EJ Monjo Ahualulco</title>
+  <meta name="description" content="Galería de proyectos residenciales: cocinas integrales, puertas artesanales y carpintería arquitectónica en Ahualulco de Mercado, Jalisco." />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Portafolio de Obras y Proyectos | EJ Monjo" />
+  <meta property="og:description" content="Explora nuestras piezas de carpintería y ebanistería residencial con maderas finas y acabados duraderos." />
+  <meta property="og:image" content="https://lab.sistella.com.mx/ejmonjo/assets/logos/demo_sitio_sistella.png" />
+  <meta property="og:url" content="https://lab.sistella.com.mx/ejmonjo/portafolio" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Work+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Work Sans"', 'sans-serif'],
+            serif: ['"DM Sans"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fbf9f8',
+              100: '#f5f0ed',
+              600: '#8B5E3C',
+              700: '#5d4037',
+              800: '#442a22',
+              900: '#2c160e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f9f9f8] text-[#1a1c1c] font-sans antialiased selection:bg-[#d4c3be]/40 selection:text-[#2c160e] flex flex-col min-h-screen">
+
+  <!-- Header Component Container -->
+  <div id="header-container"></div>
+
+  <main class="flex-grow">
+    <!-- Hero Header -->
+    <section class="py-16 sm:py-20 bg-[#f4eeeb] border-b border-[#e5dedb]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e5dedb] text-xs font-semibold tracking-wider uppercase text-[#8B5E3C] mb-4">
+          <span>Galería de Obras Terminadas</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#2c160e] leading-tight mb-4">
+          Portafolio de Proyectos
+        </h1>
+        <p class="text-base sm:text-lg text-[#5c5f5e] leading-relaxed">
+          Cada obra es el reflejo de una visión personalizada. Explora nuestras cocinas integrales y puertas de autor fabricadas con los más altos estándares de ebanistería.
+        </p>
+
+        <!-- Filtros de Categorías -->
+        <div class="flex items-center justify-center gap-2 mt-8 flex-wrap" id="category-filters">
+          <button 
+            type="button" 
+            data-cat="Todos" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm"
+          >
+            Todos los Proyectos
+          </button>
+          <button 
+            type="button" 
+            data-cat="Cocinas" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Cocinas Integrales
+          </button>
+          <button 
+            type="button" 
+            data-cat="Puertas" 
+            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Puertas Residenciales
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section class="py-16 lg:py-20 bg-[#f9f9f8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Se inyecta dinámicamente desde PORTFOLIO_ITEMS en data.js -->
+        </div>
+
+        <!-- Estado vacío (por si un filtro no tiene items) -->
+        <div id="empty-state" class="hidden text-center py-20">
+          <p class="text-lg text-[#5c5f5e] font-serif">No se encontraron proyectos en esta categoría.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Interactivo de Detalle de Proyecto (Vanilla JS) -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/75 backdrop-blur-sm transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div class="relative bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl border border-[#e5dedb] my-8 max-h-[90vh] flex flex-col">
+      <!-- Botón de Cerrar -->
+      <button 
+        id="modal-close-btn" 
+        type="button" 
+        class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/50 hover:bg-black/75 text-white flex items-center justify-center transition-colors"
+        aria-label="Cerrar modal"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <!-- Contenedor con scroll interno -->
+      <div class="overflow-y-auto p-6 sm:p-8 flex flex-col md:flex-row gap-8">
+        <!-- Imagen del proyecto -->
+        <div class="w-full md:w-1/2">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-[#eee] shadow-md sticky top-0">
+            <img id="modal-img" src="" alt="" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Información detallada -->
+        <div class="w-full md:w-1/2 flex flex-col">
+          <div class="flex items-center gap-2 mb-2 flex-wrap">
+            <span id="modal-category" class="text-xs font-bold uppercase tracking-wider text-[#8B5E3C] bg-[#f5f0ed] px-2.5 py-1 rounded-md"></span>
+            <span id="modal-sku" class="text-xs font-mono text-[#7d5260] bg-gray-100 px-2 py-1 rounded-md"></span>
+          </div>
+
+          <h2 id="modal-title" class="text-2xl sm:text-3xl font-serif font-bold text-[#2c160e] mb-3"></h2>
+          
+          <p id="modal-story" class="text-sm text-[#5c5f5e] leading-relaxed mb-6"></p>
+
+          <!-- Características destacadas -->
+          <div class="mb-6 border-t border-[#f0eae6] pt-4">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-[#2c160e] mb-2.5">Especificaciones del Trabajo</h3>
+            <ul id="modal-features" class="space-y-1.5 text-xs text-[#5c5f5e]"></ul>
+          </div>
+
+          <!-- Dimensiones y Ubicación -->
+          <div class="grid grid-cols-2 gap-3 text-xs bg-[#f9f9f8] p-3.5 rounded-xl border border-[#e5dedb] mb-6">
+            <div>
+              <span class="block text-[11px] text-[#7d5260] uppercase">Dimensiones</span>
+              <strong id="modal-dimensions" class="text-[#2c160e]"></strong>
+            </div>
+            <div>
+              <span class="block text-[11px] text-[#7d5260] uppercase">Ubicación</span>
+              <strong id="modal-location" class="text-[#2c160e]"></strong>
+            </div>
+          </div>
+
+          <!-- Botón de Cotización por WhatsApp con SKU -->
+          <div class="mt-auto pt-4 border-t border-[#f0eae6]">
+            <a 
+              id="modal-wa-btn" 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-medium py-3 px-4 rounded-xl shadow-md transition-colors text-sm"
+            >
+              <span class="w-5 h-5 bg-white rounded-full flex items-center justify-center p-0.5">
+                <img src="/ejmonjo/assets/logos/whatsapp_icon.svg" alt="WhatsApp" class="w-full h-full object-contain" />
+              </span>
+              <span>Cotizar una Pieza Similar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de navegación del modal (Prev / Next) -->
+      <div class="bg-[#f5f0ed] px-6 py-3 border-t border-[#e5dedb] flex items-center justify-between text-xs text-[#5d4037]">
+        <button id="modal-prev-btn" type="button" class="flex items-center gap-1.5 font-semibold hover:text-[#8B5E3C]">
+          <span>&larr;</span> <span>Proyecto Anterior</span>
+        </button>
+        <button id="modal-next-btn" type="button" class="flex items-center gap-1.5 font-semibold hover:text-[#8B5E3C]">
+          <span>Siguiente Proyecto</span> <span>&rarr;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Component Container -->
+  <div id="footer-container"></div>
+
+  <!-- Scripts desacoplados sin compilación previa -->
+  <script src="/ejmonjo/js/data.js"></script>
+  <script src="/ejmonjo/js/layout.js"></script>
+
+  <!-- Lógica Interactiva del Portafolio y Modal -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof PORTFOLIO_ITEMS === 'undefined') return;
+
+      let currentCategory = 'Todos';
+      let currentItemIndex = 0;
+      let filteredItems = [...PORTFOLIO_ITEMS];
+
+      const grid = document.getElementById('portfolio-grid');
+      const emptyState = document.getElementById('empty-state');
+      const filterBtns = document.querySelectorAll('.cat-filter-btn');
+
+      // Modal elements
+      const modal = document.getElementById('project-modal');
+      const modalCloseBtn = document.getElementById('modal-close-btn');
+      const modalPrevBtn = document.getElementById('modal-prev-btn');
+      const modalNextBtn = document.getElementById('modal-next-btn');
+      const modalImg = document.getElementById('modal-img');
+      const modalCategory = document.getElementById('modal-category');
+      const modalSku = document.getElementById('modal-sku');
+      const modalTitle = document.getElementById('modal-title');
+      const modalStory = document.getElementById('modal-story');
+      const modalFeatures = document.getElementById('modal-features');
+      const modalDimensions = document.getElementById('modal-dimensions');
+      const modalLocation = document.getElementById('modal-location');
+      const modalWaBtn = document.getElementById('modal-wa-btn');
+
+      // 1. Renderizar tarjetas del portafolio
+      function renderGrid() {
+        filteredItems = currentCategory === 'Todos' 
+          ? PORTFOLIO_ITEMS 
+          : PORTFOLIO_ITEMS.filter(item => item.category === currentCategory);
+
+        if (filteredItems.length === 0) {
+          grid.innerHTML = '';
+          emptyState.classList.remove('hidden');
+          return;
+        }
+
+        emptyState.classList.add('hidden');
+        grid.innerHTML = filteredItems.map((item, index) => `
+          <article class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group">
+            <div class="aspect-[4/3] overflow-hidden bg-[#eee] relative cursor-pointer" onclick="openModalById('${item.id}')">
+              <img 
+                src="${item.image}" 
+                alt="${item.title}" 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="bg-white/90 text-[#2c160e] text-xs font-semibold px-4 py-2 rounded-full shadow-md backdrop-blur-sm">
+                  Ver Detalles
+                </span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C]">${item.category}</span>
+                <span class="text-xs font-mono text-[#7d5260] bg-[#f5f0ed] px-2 py-0.5 rounded">${item.id}</span>
+              </div>
+              <h3 class="font-serif font-bold text-xl text-[#2c160e] mb-2 leading-snug cursor-pointer hover:text-[#8B5E3C]" onclick="openModalById('${item.id}')">
+                ${item.title}
+              </h3>
+              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-6 flex-grow">
+                ${item.description}
+              </p>
+              
+              <div class="pt-4 border-t border-[#f0eae6] flex items-center justify-between">
+                <button 
+                  type="button" 
+                  onclick="openModalById('${item.id}')"
+                  class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1"
+                >
+                  <span>Explorar ficha</span>
+                  <span>&rarr;</span>
+                </button>
+                <a 
+                  href="${getWhatsAppUrl('Hola EJ Monjo, me interesa cotizar una pieza inspirada en ' + item.title, item.id)}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-xs text-[#25D366] hover:text-[#1ea952] font-semibold flex items-center gap-1"
+                  title="Cotizar directamente"
+                >
+                  <span class="w-4 h-4 bg-white rounded-full flex items-center justify-center p-0.5 shadow-sm">
+                    <img src="/ejmonjo/assets/logos/whatsapp_icon.svg" alt="WA" class="w-full h-full object-contain" />
+                  </span>
+                  <span>Cotizar</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        `).join('');
+      }
+
+      // 2. Control de categorías
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          currentCategory = btn.getAttribute('data-cat');
+          filterBtns.forEach(b => {
+            if (b.getAttribute('data-cat') === currentCategory) {
+              b.className = 'cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm';
+            } else {
+              b.className = 'cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]';
+            }
+          });
+          renderGrid();
+        });
+      });
+
+      // 3. Funciones del Modal
+      function openModalByIndex(index) {
+        if (index < 0 || index >= filteredItems.length) return;
+        currentItemIndex = index;
+        const item = filteredItems[currentItemIndex];
+
+        modalImg.src = item.image;
+        modalImg.alt = item.title;
+        modalCategory.textContent = item.category + ' • ' + (item.woodType || 'Madera');
+        modalSku.textContent = 'SKU: ' + item.id;
+        modalTitle.textContent = item.title;
+        modalStory.textContent = item.detailedStory || item.description;
+        modalDimensions.textContent = item.dimensions || 'A la medida';
+        modalLocation.textContent = item.location || 'Ahualulco de Mercado, Jal.';
+
+        // Features
+        modalFeatures.innerHTML = (item.features || []).map(f => `
+          <li class="flex items-center gap-2">
+            <span class="text-[#8B5E3C]">&bull;</span>
+            <span>${f}</span>
+          </li>
+        `).join('');
+
+        // WA link
+        modalWaBtn.href = getWhatsAppUrl('Hola EJ Monjo, me interesa cotizar una pieza inspirada en ' + item.title, item.id);
+
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      }
+
+      window.openModalById = function(id) {
+        const idx = filteredItems.findIndex(i => i.id === id);
+        if (idx !== -1) {
+          openModalByIndex(idx);
+        } else {
+          // Si no está en el filtro actual, cambiar a Todos y abrir
+          currentCategory = 'Todos';
+          renderGrid();
+          const allIdx = filteredItems.findIndex(i => i.id === id);
+          if (allIdx !== -1) openModalByIndex(allIdx);
+        }
+      };
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      modalCloseBtn.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+
+      modalPrevBtn.addEventListener('click', () => {
+        const prevIdx = (currentItemIndex - 1 + filteredItems.length) % filteredItems.length;
+        openModalByIndex(prevIdx);
+      });
+
+      modalNextBtn.addEventListener('click', () => {
+        const nextIdx = (currentItemIndex + 1) % filteredItems.length;
+        openModalByIndex(nextIdx);
+      });
+
+      // 4. Chequeo de parámetros URL (?cat=Cocinas o ?id=POR-003)
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('cat');
+      const idParam = urlParams.get('id');
+
+      if (catParam) {
+        const matchingBtn = Array.from(filterBtns).find(b => b.getAttribute('data-cat').toLowerCase() === catParam.toLowerCase());
+        if (matchingBtn) matchingBtn.click();
+      } else {
+        renderGrid();
+      }
+
+      if (idParam) {
+        window.openModalById(idParam);
+      }
+    });
+  </script>
+</body>
+</html>

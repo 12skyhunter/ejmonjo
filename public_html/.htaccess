@@ -1,8 +1,17 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /ejmonjo/
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /ejmonjo/index.html [L]
+
+  # Si el archivo o directorio existe físicamente, servirlo directamente
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Mapeo limpio de URLs sin extensión (ej: /ejmonjo/contacto -> contacto.html)
+  RewriteCond %{DOCUMENT_ROOT}/ejmonjo/$1.html -f [OR]
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L,QSA]
+
+  # Fallback 404
+  ErrorDocument 404 /ejmonjo/404.html
 </IfModule>
