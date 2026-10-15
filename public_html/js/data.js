@@ -183,27 +183,32 @@ const ENGINEERED_BOARDS = [
   }
 ];
 
-// Pasos del proceso artesanal
+// Pasos del proceso artesanal (Cómo Hacemos Realidad Tu Proyecto)
 const PROCESS_STEPS = [
   {
     number: "1",
-    title: "1. Consulta Inicial y Medición",
-    description: "Entendemos tus necesidades, dimensiones exactas del espacio y seleccionamos juntos la madera adecuada.",
-    details: [
-      "Entrevista sobre estilo, uso y funcionalidad",
-      "Muestrario físico de maderas y acabados",
-      "Dimensionamiento y cotización formal"
-    ]
+    title: "1. Cuéntanos tu idea",
+    description: "Escríbenos por WhatsApp o déjanos un mensaje. Comparte qué espacio deseas transformar (cocina, clóset, recámara o mueble a medida) y cualquier foto o referencia de lo que imaginas o puedes ver nuestros proyectos para inspirarte."
   },
   {
     number: "2",
-    title: "2. Fabricación e Instalación",
-    description: "Nuestros maestros ebanistas trabajan la madera combinando técnicas tradicionales de ensamble con acabados finos.",
-    details: [
-      "Madera estufada con porcentaje de humedad controlado",
-      "Ensambles tradicionales de máxima durabilidad",
-      "Instalación limpia y ajuste final en sitio"
-    ]
+    title: "2. Visita técnica y medidas exactas",
+    description: "Agendamos una cita en tu domicilio para medir el espacio al milímetro y evaluar las características del lugar para garantizar un ajuste perfecto."
+  },
+  {
+    number: "3",
+    title: "3. Selección de materiales y diseño",
+    description: "Te mostramos muestras reales para que elijas al tacto: maderas finas, melaminas de alta resistencia y herrajes modernos con sistema de cierre suave. Todo adaptado a tu estilo y presupuesto."
+  },
+  {
+    number: "4",
+    title: "4. Cotización clara y tiempos de entrega",
+    description: "Recibe una propuesta formal y detallada con el costo total y el calendario de trabajo y la fecha de entrega."
+  },
+  {
+    number: "5",
+    title: "5. Fabricación e instalación limpia",
+    description: "Fabricamos cada pieza en nuestro taller con procesos rigurosos de ensamble, pulido y acabado. Finalmente, acudimos a tu hogar para una instalación profesional, limpia y lista para disfrutarse."
   }
 ];
 
