@@ -363,16 +363,16 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados sin compilación previa con cache buster -->
-  <script src="/ejmonjo/js/data.js?v=2.4"></script>
+  <script src="/ejmonjo/js/data.js?v=2.5"></script>
   <script>
     if (typeof PORTFOLIO_ITEMS === 'undefined') {
-      document.write('<script src="js/data.js?v=2.4"><\/script>');
+      document.write('<script src="js/data.js?v=2.5"><\/script>');
     }
   </script>
-  <script src="/ejmonjo/js/layout.js?v=2.4"></script>
+  <script src="/ejmonjo/js/layout.js?v=2.5"></script>
   <script>
     if (typeof WHATSAPP_ICON_SVG === 'undefined') {
-      document.write('<script src="js/layout.js?v=2.4"><\/script>');
+      document.write('<script src="js/layout.js?v=2.5"><\/script>');
     }
   </script>
 
@@ -428,6 +428,24 @@
           return src.replace('/ejmonjo/', './');
         }
         return src;
+      }
+
+      // Generar mensaje breve de cotización para proyectos del portafolio
+      function getWhatsAppPortfolioUrl(item) {
+        if (!item) return '#';
+        const catPhrases = {
+          'closet': 'el Closet',
+          'cocinas': 'la Cocina',
+          'puertas': 'la Puerta',
+          'muebles': 'el Mueble',
+          'recamaras': 'la Recámara',
+          'escaleras': 'la Escalera',
+          'banos': 'el Baño'
+        };
+        const catPhrase = catPhrases[item.categoryGroup] || ('el ' + item.category);
+        const text = `Hola, EJ Monjo Carpintería, me gustaría cotizar una pieza inspirada en ${catPhrase} - ${item.id}\nhttps://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}`;
+        const phone = (typeof CONTACT_INFO !== 'undefined' && CONTACT_INFO.phoneRaw) ? CONTACT_INFO.phoneRaw : '523311757837';
+        return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
       }
 
       // 1. Filtrado Combinado de los 4 Filtros Clave
@@ -521,7 +539,7 @@
                   <span>&rarr;</span>
                 </button>
                 <a 
-                  href="${getWhatsAppUrl('Hola EJ Monjo, me interesa cotizar una pieza inspirada en ' + item.title, item.id)}"
+                  href="${getWhatsAppPortfolioUrl(item)}"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-xs text-[#25D366] hover:text-[#1ea952] font-semibold flex items-center gap-1.5 transition-colors"
@@ -650,7 +668,7 @@
         `).join('');
 
         // WA link
-        modalWaBtn.href = getWhatsAppUrl('Hola EJ Monjo, me interesa cotizar una pieza inspirada en ' + item.title, item.id);
+        modalWaBtn.href = getWhatsAppPortfolioUrl(item);
 
         modal.classList.remove('hidden');
         document.body.classList.add('overflow-hidden');

@@ -216,8 +216,25 @@ function getWhatsAppUrl(message = "", sku = "") {
   if (!text) {
     text = "Hola EJ Monjo, me gustaría pedir información y cotizar una pieza de carpintería.";
   } else if (sku) {
-    text = `${message} (SKU: ${sku})\\n\\nLink: https://lab.sistella.com.mx/ejmonjo/portafolio?id=${sku}`;
+    text = `${message} - ${sku}\\nhttps://lab.sistella.com.mx/ejmonjo/portafolio?id=${sku}`;
   }
+  return `https://wa.me/${CONTACT_INFO.phoneRaw}?text=${encodeURIComponent(text)}`;
+}
+
+// Generador de mensajes breves para piezas del portafolio
+function getWhatsAppPortfolioUrl(item) {
+  if (!item) return getWhatsAppUrl();
+  const catPhrases = {
+    'closet': 'el Closet',
+    'cocinas': 'la Cocina',
+    'puertas': 'la Puerta',
+    'muebles': 'el Mueble',
+    'recamaras': 'la Recámara',
+    'escaleras': 'la Escalera',
+    'banos': 'el Baño'
+  };
+  const catPhrase = catPhrases[item.categoryGroup] || ('el ' + item.category);
+  const text = `Hola, EJ Monjo Carpintería, me gustaría cotizar una pieza inspirada en ${catPhrase} - ${item.id}\\nhttps://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}`;
   return `https://wa.me/${CONTACT_INFO.phoneRaw}?text=${encodeURIComponent(text)}`;
 }
 
