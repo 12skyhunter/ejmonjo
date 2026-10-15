@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EJ Monjo Carpintería | Muebles a la Medida y Maderas Nobles en Ahualulco</title>
-  <meta name="description" content="Guía completa de maderas macizas y tableros de ingeniería en Ahualulco de Mercado: Nogal, Parota, Rosa Morada, Melamina y más. Fabricación artesanal personalizada." />
+  <title>EJ Monjo Carpintería | Muebles a la Medida y Proceso Artesanal en Ahualulco</title>
+  <meta name="description" content="Diseño y fabricación de muebles a la medida en Ahualulco de Mercado: clósets, cocinas, muebles de autor y carpintería residencial de precisión. Entregas en todo México." />
 
   <!-- OpenGraph -->
-  <meta property="og:title" content="Muebles a la Medida y Maderas Nobles | EJ Monjo Carpintería" />
-  <meta property="og:description" content="Maderas macizas y tableros para muebles residenciales hechos a mano con alta precisión." />
+  <meta property="og:title" content="Muebles a la Medida y Proceso Artesanal | EJ Monjo Carpintería" />
+  <meta property="og:description" content="Diseño personalizado, visita técnica, selección de materiales y fabricación artesanal con entregas en todo México." />
   <meta property="og:image" content="https://lab.sistella.com.mx/ejmonjo/assets/logos/demo_sitio_sistella.png" />
   <meta property="og:url" content="https://lab.sistella.com.mx/ejmonjo/muebles-a-la-medida" />
   <meta property="og:type" content="website" />
@@ -49,15 +49,67 @@
   <div id="header-container"></div>
 
   <main class="flex-grow">
-    <!-- Hero Header -->
-    <section class="py-16 sm:py-20 bg-[#f4eeeb] border-b border-[#e5dedb]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-        <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#2c160e] leading-tight mb-4">
-          Muebles a la Medida & Muestrario de Materiales
-        </h1>
-        <p class="text-base sm:text-lg text-[#5c5f5e] leading-relaxed">
-          Cada espacio requiere el material preciso. Conoce nuestra selección de maderas macizas de exportación y tableros de ingeniería de alta resistencia para diseñar la pieza ideal para tu hogar.
-        </p>
+    <!-- Hero Header con Carrusel de Proyectos a la Medida -->
+    <section class="pt-12 pb-16 sm:pt-16 sm:pb-20 bg-[#f4eeeb] border-b border-[#e5dedb]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Título y Descripción -->
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Taller de Precisión</span>
+          <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#2c160e] leading-tight mt-2 mb-4">
+            Muebles a la Medida
+          </h1>
+          <p class="text-base sm:text-lg text-[#5c5f5e] leading-relaxed">
+            Diseñamos y fabricamos piezas exclusivas que se adaptan a la arquitectura de tu hogar. Cada proyecto refleja un equilibrio exacto entre funcionalidad, maderas finas y acabados de alta durabilidad.
+          </p>
+        </div>
+
+        <!-- Carrusel Interactivo del Header -->
+        <div class="max-w-5xl mx-auto">
+          <div class="relative bg-[#2c160e] rounded-3xl overflow-hidden shadow-xl border border-[#e5dedb] group">
+            
+            <!-- Slides Container -->
+            <div id="hero-carousel" class="relative w-full aspect-[4/3] sm:aspect-[16/9] md:aspect-[21/9] overflow-hidden">
+              <!-- Los slides se inyectan dinámicamente con JavaScript -->
+            </div>
+
+            <!-- Botón Anterior -->
+            <button 
+              id="carousel-prev-btn"
+              type="button"
+              aria-label="Proyecto anterior"
+              class="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-80 group-hover:opacity-100 hover:scale-105 z-20 cursor-pointer"
+            >
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            <!-- Botón Siguiente -->
+            <button 
+              id="carousel-next-btn"
+              type="button"
+              aria-label="Proyecto siguiente"
+              class="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-80 group-hover:opacity-100 hover:scale-105 z-20 cursor-pointer"
+            >
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            <!-- Indicadores de Slide (Dots) -->
+            <div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-20 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full">
+              <!-- Dots inyectados con JS -->
+            </div>
+          </div>
+
+          <!-- Micro nota informativa debajo del carrusel -->
+          <div class="flex items-center justify-between text-xs text-[#7d5260] mt-3 px-2">
+            <span>Galería destacada de piezas residenciales</span>
+            <a href="/ejmonjo/portafolio" class="hover:text-[#2c160e] font-semibold underline underline-offset-2">
+              Explorar el portafolio completo &rarr;
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -73,14 +125,14 @@
           </p>
         </div>
 
-        <!-- Cuadrícula de los 5 Pasos del Proceso -->
+        <!-- Cuadrícula de los 5 Pasos del Proceso (sin números redundantes) + Cobertura Nacional -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <!-- Paso 1 -->
           <div class="bg-white p-7 sm:p-8 rounded-3xl border border-[#e5dedb] shadow-sm flex flex-col hover:border-[#8B5E3C]/50 hover:shadow-md transition-all duration-300">
             <div class="w-12 h-12 rounded-2xl bg-[#5d4037] text-white flex items-center justify-center font-serif font-bold text-xl mb-5 shadow-sm">
-              1
+              01
             </div>
-            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">1. Cuéntanos tu idea</h3>
+            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">Cuéntanos tu idea</h3>
             <p class="text-[#5c5f5e] text-sm leading-relaxed">
               Escríbenos por WhatsApp o déjanos un mensaje. Comparte qué espacio deseas transformar (cocina, clóset, recámara o mueble a medida) y cualquier foto o referencia de lo que imaginas o puedes ver nuestros proyectos para inspirarte.
             </p>
@@ -89,9 +141,9 @@
           <!-- Paso 2 -->
           <div class="bg-white p-7 sm:p-8 rounded-3xl border border-[#e5dedb] shadow-sm flex flex-col hover:border-[#8B5E3C]/50 hover:shadow-md transition-all duration-300">
             <div class="w-12 h-12 rounded-2xl bg-[#5d4037] text-white flex items-center justify-center font-serif font-bold text-xl mb-5 shadow-sm">
-              2
+              02
             </div>
-            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">2. Visita técnica y medidas exactas</h3>
+            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">Visita técnica y medidas exactas</h3>
             <p class="text-[#5c5f5e] text-sm leading-relaxed">
               Agendamos una cita en tu domicilio para medir el espacio al milímetro y evaluar las características del lugar para garantizar un ajuste perfecto.
             </p>
@@ -100,9 +152,9 @@
           <!-- Paso 3 -->
           <div class="bg-white p-7 sm:p-8 rounded-3xl border border-[#e5dedb] shadow-sm flex flex-col hover:border-[#8B5E3C]/50 hover:shadow-md transition-all duration-300">
             <div class="w-12 h-12 rounded-2xl bg-[#5d4037] text-white flex items-center justify-center font-serif font-bold text-xl mb-5 shadow-sm">
-              3
+              03
             </div>
-            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">3. Selección de materiales y diseño</h3>
+            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">Selección de materiales y diseño</h3>
             <p class="text-[#5c5f5e] text-sm leading-relaxed">
               Te mostramos muestras reales para que elijas al tacto: maderas finas, melaminas de alta resistencia y herrajes modernos con sistema de cierre suave. Todo adaptado a tu estilo y presupuesto.
             </p>
@@ -111,9 +163,9 @@
           <!-- Paso 4 -->
           <div class="bg-white p-7 sm:p-8 rounded-3xl border border-[#e5dedb] shadow-sm flex flex-col hover:border-[#8B5E3C]/50 hover:shadow-md transition-all duration-300">
             <div class="w-12 h-12 rounded-2xl bg-[#8B5E3C] text-white flex items-center justify-center font-serif font-bold text-xl mb-5 shadow-sm">
-              4
+              04
             </div>
-            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">4. Cotización clara y tiempos de entrega</h3>
+            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">Cotización clara y tiempos de entrega</h3>
             <p class="text-[#5c5f5e] text-sm leading-relaxed">
               Recibe una propuesta formal y detallada con el costo total y el calendario de trabajo y la fecha de entrega.
             </p>
@@ -122,9 +174,9 @@
           <!-- Paso 5 -->
           <div class="bg-white p-7 sm:p-8 rounded-3xl border border-[#e5dedb] shadow-sm flex flex-col hover:border-[#8B5E3C]/50 hover:shadow-md transition-all duration-300">
             <div class="w-12 h-12 rounded-2xl bg-[#8B5E3C] text-white flex items-center justify-center font-serif font-bold text-xl mb-5 shadow-sm">
-              5
+              05
             </div>
-            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">5. Fabricación e instalación limpia</h3>
+            <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-3">Fabricación e instalación limpia</h3>
             <p class="text-[#5c5f5e] text-sm leading-relaxed">
               Fabricamos cada pieza en nuestro taller con procesos rigurosos de ensamble, pulido y acabado. Finalmente, acudimos a tu hogar para una instalación profesional, limpia y lista para disfrutarse.
             </p>
@@ -159,7 +211,7 @@
             </div>
             <div>
               <h4 class="font-serif font-bold text-base text-[#2c160e]">¿Tienes un diseño o boceto preliminar?</h4>
-              <p class="text-xs sm:text-sm text-[#5c5f5e]">Envíanos las fotos o planos por WhatsApp y te orientamos sobre costos y maderas recomendadas.</p>
+              <p class="text-xs sm:text-sm text-[#5c5f5e]">Envíanos las fotos o planos por WhatsApp y te orientamos sobre viabilidad técnica y maderas recomendadas.</p>
             </div>
           </div>
           <a 
@@ -177,46 +229,55 @@
       </div>
     </section>
 
-    <!-- Sección 2: Maderas Macizas (4) -->
-    <section class="py-16 lg:py-24 bg-[#f4eeeb] border-y border-[#e5dedb]">
+    <!-- Sección 2: Muestrario Informativo de Materiales y Acabados (Sección Secundaria e Informativa) -->
+    <section class="py-16 lg:py-20 bg-[#f4eeeb] border-t border-[#e5dedb]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="mb-12">
+        <div class="max-w-3xl mb-10">
           <div class="flex items-center gap-3 mb-2">
             <span class="w-8 h-0.5 bg-[#8B5E3C]"></span>
-            <span class="text-xs uppercase tracking-widest font-bold text-[#8B5E3C]">Categoría 01</span>
+            <span class="text-xs uppercase tracking-widest font-bold text-[#8B5E3C]">Muestrario de Taller</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-serif font-bold text-[#2c160e]">
-            Maderas Macizas Nobles
+            Diversidad de Materiales y Acabados
           </h2>
-          <p class="text-sm sm:text-base text-[#5c5f5e] mt-2 max-w-2xl">
-            Piezas con carácter, vetas únicas y belleza atemporal. Ideales para muebles principales, comedores, cubiertas y puertas de acceso de alto impacto visual.
+          <p class="text-sm sm:text-base text-[#5c5f5e] mt-2 leading-relaxed">
+            Trabajamos con diferentes materiales y acabados para adaptarnos a diversos proyectos, estilos arquitectónicos y requerimientos de resistencia y presupuesto.
           </p>
         </div>
 
-        <div id="solid-woods-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Se inyecta dinámicamente desde data.js SOLID_WOODS -->
+        <!-- Pestañas de Filtrado de Materiales -->
+        <div class="flex flex-wrap items-center gap-2 mb-8">
+          <button 
+            id="mat-filter-all" 
+            class="px-4 py-2 rounded-xl text-xs font-semibold bg-[#2c160e] text-white transition-all shadow-xs cursor-pointer"
+          >
+            Todos los Materiales (8)
+          </button>
+          <button 
+            id="mat-filter-solid" 
+            class="px-4 py-2 rounded-xl text-xs font-semibold bg-white text-[#5c5f5e] border border-[#e5dedb] hover:border-[#8B5E3C] hover:text-[#2c160e] transition-all shadow-xs cursor-pointer"
+          >
+            Maderas Macizas (Naturales)
+          </button>
+          <button 
+            id="mat-filter-boards" 
+            class="px-4 py-2 rounded-xl text-xs font-semibold bg-white text-[#5c5f5e] border border-[#e5dedb] hover:border-[#8B5E3C] hover:text-[#2c160e] transition-all shadow-xs cursor-pointer"
+          >
+            Tableros y Acabados
+          </button>
         </div>
-      </div>
-    </section>
 
-    <!-- Sección 3: Tableros de Ingeniería (4) -->
-    <section class="py-16 lg:py-24 bg-[#f9f9f8]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="mb-12">
-          <div class="flex items-center gap-3 mb-2">
-            <span class="w-8 h-0.5 bg-[#8B5E3C]"></span>
-            <span class="text-xs uppercase tracking-widest font-bold text-[#8B5E3C]">Categoría 02</span>
-          </div>
-          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-[#2c160e]">
-            Tableros de Ingeniería
-          </h2>
-          <p class="text-sm sm:text-base text-[#5c5f5e] mt-2 max-w-2xl">
-            Estabilidad dimensional perfecta para interiores de clósets, frentes de cocina, repisas de gran claro y mobiliario modular sin deformaciones.
+        <!-- Contenedor Unificado de Materiales -->
+        <div id="materials-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Inyectado dinámicamente con JavaScript -->
+        </div>
+
+        <!-- Nota informativa al pie del muestrario -->
+        <div class="mt-8 p-5 rounded-2xl bg-white/70 border border-[#e5dedb] text-xs text-[#5c5f5e] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <p>
+            <strong class="text-[#2c160e]">Muestras físicas en tu domicilio:</strong> Durante la visita técnica llevamos muestras reales para que evalúes textura, tonalidad y resistencia al tacto.
           </p>
-        </div>
-
-        <div id="engineered-boards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Se inyecta dinámicamente desde data.js ENGINEERED_BOARDS -->
+          <span class="text-[#8B5E3C] font-semibold shrink-0">Asesoría personalizada</span>
         </div>
       </div>
     </section>
@@ -226,99 +287,354 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados con cache buster -->
-  <script src="/ejmonjo/js/data.js?v=2.2"></script>
+  <script src="/ejmonjo/js/data.js?v=2.3"></script>
   <script>
     if (typeof SOLID_WOODS === 'undefined') {
-      document.write('<script src="js/data.js?v=2.2"><\/script>');
+      document.write('<script src="js/data.js?v=2.3"><\/script>');
     }
   </script>
-  <script src="/ejmonjo/js/layout.js?v=2.2"></script>
+  <script src="/ejmonjo/js/layout.js?v=2.3"></script>
   <script>
     if (typeof WHATSAPP_ICON_SVG === 'undefined') {
-      document.write('<script src="js/layout.js?v=2.2"><\/script>');
+      document.write('<script src="js/layout.js?v=2.3"><\/script>');
     }
   </script>
 
-  <!-- Inyección de Datos -->
+  <!-- Lógica Interactiva del Carrusel y Muestrario de Materiales -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Renderizar Maderas Macizas
-      const solidContainer = document.getElementById('solid-woods-grid');
-      if (solidContainer && typeof SOLID_WOODS !== 'undefined') {
-        solidContainer.innerHTML = SOLID_WOODS.map(item => `
-          <div class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
-            <div class="aspect-[4/3] overflow-hidden bg-[#eee]">
-              <img 
-                src="${item.image}" 
-                alt="${item.name}" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C]">${item.type}</span>
-                <span class="text-xs font-mono font-medium text-[#7d5260] bg-[#f5f0ed] px-2 py-0.5 rounded">${item.costNum}</span>
-              </div>
-              <h3 class="font-serif font-bold text-xl text-[#2c160e] mb-2">${item.name}</h3>
-              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-4 flex-grow">${item.whatIs}</p>
-              
-              <div class="space-y-2 text-xs border-t border-[#f0eae6] pt-4 mb-4">
-                <p><strong class="text-[#2c160e]">Ventajas:</strong> <span class="text-[#5c5f5e]">${item.advantages}</span></p>
-                <p><strong class="text-[#2c160e]">Ideal para:</strong> <span class="text-[#5c5f5e]">${item.idealFor}</span></p>
+      // 0. Resolver ruta de imagen compatible tanto en local como en /ejmonjo/
+      function resolveImg(src) {
+        if (!src) return '';
+        const isEjmonjo = window.location.pathname.toLowerCase().includes('/ejmonjo/');
+        if (!isEjmonjo && src.startsWith('/ejmonjo/')) {
+          return src.replace('/ejmonjo/', './');
+        }
+        return src;
+      }
+
+      /* ==========================================================================
+         1. CARRUSEL DEL HEADER
+         Imágenes solicitadas: CLO-014, CLO-007, COC-021, COC-015, MUE-004, MUE-006, ESC-002
+         ========================================================================== */
+      const carouselItems = [
+        {
+          id: 'CLO-014',
+          title: 'Amplio vestidor a medida',
+          category: 'Clósets',
+          image: '/ejmonjo/assets/closet/closet-14_d.webp',
+          desc: 'Revestido en madera de nogal con compartimentos y zapateras integradas.'
+        },
+        {
+          id: 'CLO-007',
+          title: 'Sistema de almacenamiento integral',
+          category: 'Clósets',
+          image: '/ejmonjo/assets/closet/closet-07_d.webp',
+          desc: 'Almacenamiento de piso a techo que combina repisas abiertas y cajoneras.'
+        },
+        {
+          id: 'COC-021',
+          title: 'Cocina integral contemporánea',
+          category: 'Cocinas',
+          image: '/ejmonjo/assets/cocinas/cocina-21_d.webp',
+          desc: 'Gabinetes en tono elegante con isla central y cubierta de piedra natural.'
+        },
+        {
+          id: 'COC-015',
+          title: 'Cocina de diseño moderno',
+          category: 'Cocinas',
+          image: '/ejmonjo/assets/cocinas/cocina-15_d.webp',
+          desc: 'Gabinetes blancos con cubierta de cuarzo y acentos en madera cálida.'
+        },
+        {
+          id: 'MUE-004',
+          title: 'Mueble de pared integral',
+          category: 'Muebles de Autor',
+          image: '/ejmonjo/assets/muebles/mueble-04_d.webp',
+          desc: 'Diseño acanalado en nogal con repisas abiertas y chimenea integrada.'
+        },
+        {
+          id: 'MUE-006',
+          title: 'Mueble modular residencial',
+          category: 'Muebles',
+          image: '/ejmonjo/assets/muebles/mueble-06_d.webp',
+          desc: 'Centro de entretenimiento, clóset y zona de trabajo a la medida.'
+        },
+        {
+          id: 'ESC-002',
+          title: 'Escalera interior de diseño moderno',
+          category: 'Escaleras',
+          image: '/ejmonjo/assets/escaleras/escalera-02.webp',
+          desc: 'Escalones revestidos en madera fina con barandal artístico de herrería.'
+        }
+      ];
+
+      const carouselContainer = document.getElementById('hero-carousel');
+      const dotsContainer = document.getElementById('carousel-dots');
+      const prevBtn = document.getElementById('carousel-prev-btn');
+      const nextBtn = document.getElementById('carousel-next-btn');
+
+      let currentSlide = 0;
+      let autoplayTimer = null;
+
+      function renderCarousel() {
+        if (!carouselContainer || !dotsContainer) return;
+
+        // Renderizar slides
+        carouselContainer.innerHTML = carouselItems.map((item, index) => `
+          <div 
+            class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${index === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}"
+            data-index="${index}"
+          >
+            <img 
+              src="${resolveImg(item.image)}" 
+              alt="${item.title}" 
+              class="w-full h-full object-cover object-center"
+              loading="${index === 0 ? 'eager' : 'lazy'}"
+              onerror="this.onerror=null; if(this.src.includes('/ejmonjo/')) this.src=this.src.replace('/ejmonjo/','/');"
+            />
+            <!-- Gradiente para legibilidad -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10"></div>
+            
+            <!-- Información superpuesta del proyecto -->
+            <div class="absolute bottom-6 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8 z-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div class="max-w-xl text-white">
+                <div class="flex items-center gap-2 mb-1.5">
+                  <span class="px-2.5 py-0.5 rounded-md bg-[#8B5E3C] text-white text-[11px] font-bold uppercase tracking-wider">
+                    ${item.category}
+                  </span>
+                  <span class="text-xs text-white/80 font-mono">
+                    SKU: ${item.id}
+                  </span>
+                </div>
+                <h3 class="font-serif font-bold text-lg sm:text-2xl text-white leading-snug">
+                  ${item.title}
+                </h3>
+                <p class="text-xs sm:text-sm text-white/80 mt-1 line-clamp-1 sm:line-clamp-2">
+                  ${item.desc}
+                </p>
               </div>
 
               <a 
-                href="${getWhatsAppUrl('Hola EJ Monjo, me interesa cotizar un mueble fabricado en ' + item.name)}" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="w-full text-center text-xs font-semibold py-2.5 px-3 rounded-xl bg-[#f5f0ed] hover:bg-[#8B5E3C] text-[#5d4037] hover:text-white transition-colors"
+                href="/ejmonjo/portafolio?id=${item.id}"
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/20 hover:bg-white text-white hover:text-[#2c160e] backdrop-blur-md text-xs font-semibold transition-all self-start sm:self-auto shrink-0 shadow-sm"
               >
-                Cotizar en ${item.name.replace(/^[0-9.]+\s*/, '')}
+                <span>Ver en portafolio</span>
+                <span>&rarr;</span>
               </a>
+            </div>
+          </div>
+        `).join('');
+
+        // Renderizar dots indicadores
+        dotsContainer.innerHTML = carouselItems.map((_, index) => `
+          <button 
+            type="button" 
+            aria-label="Ir a proyecto ${index + 1}"
+            class="carousel-dot transition-all duration-300 rounded-full cursor-pointer ${index === 0 ? 'w-6 h-2 bg-white' : 'w-2 h-2 bg-white/40 hover:bg-white/70'}"
+            data-slide="${index}"
+          ></button>
+        `).join('');
+
+        // Añadir eventos a los dots
+        dotsContainer.querySelectorAll('.carousel-dot').forEach(dot => {
+          dot.addEventListener('click', () => {
+            const idx = parseInt(dot.getAttribute('data-slide'), 10);
+            goToSlide(idx);
+            resetAutoplay();
+          });
+        });
+      }
+
+      function goToSlide(index) {
+        const slides = carouselContainer.querySelectorAll('.carousel-slide');
+        const dots = dotsContainer.querySelectorAll('.carousel-dot');
+        if (!slides.length) return;
+
+        currentSlide = (index + slides.length) % slides.length;
+
+        slides.forEach((slide, idx) => {
+          if (idx === currentSlide) {
+            slide.classList.remove('opacity-0', 'pointer-events-none', 'z-0');
+            slide.classList.add('opacity-100', 'z-10');
+          } else {
+            slide.classList.remove('opacity-100', 'z-10');
+            slide.classList.add('opacity-0', 'pointer-events-none', 'z-0');
+          }
+        });
+
+        dots.forEach((dot, idx) => {
+          if (idx === currentSlide) {
+            dot.className = 'carousel-dot transition-all duration-300 rounded-full cursor-pointer w-6 h-2 bg-white';
+          } else {
+            dot.className = 'carousel-dot transition-all duration-300 rounded-full cursor-pointer w-2 h-2 bg-white/40 hover:bg-white/70';
+          }
+        });
+      }
+
+      function nextSlide() {
+        goToSlide(currentSlide + 1);
+      }
+
+      function prevSlide() {
+        goToSlide(currentSlide - 1);
+      }
+
+      function startAutoplay() {
+        stopAutoplay();
+        autoplayTimer = setInterval(nextSlide, 5000);
+      }
+
+      function stopAutoplay() {
+        if (autoplayTimer) {
+          clearInterval(autoplayTimer);
+          autoplayTimer = null;
+        }
+      }
+
+      function resetAutoplay() {
+        stopAutoplay();
+        startAutoplay();
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          prevSlide();
+          resetAutoplay();
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          nextSlide();
+          resetAutoplay();
+        });
+      }
+
+      // Pausar en hover
+      const carouselWrapper = document.getElementById('hero-carousel')?.parentElement;
+      if (carouselWrapper) {
+        carouselWrapper.addEventListener('mouseenter', stopAutoplay);
+        carouselWrapper.addEventListener('mouseleave', startAutoplay);
+      }
+
+      renderCarousel();
+      startAutoplay();
+
+
+      /* ==========================================================================
+         2. MUESTRARIO INFORMATIVO DE MATERIALES
+         - Sin protagonismo excesivo, puramente informativo.
+         - Gráfico claro de costo relativo con barras e indicador numérico.
+         - Sin botones de "Cotizar en nogal" o "Cotizar en parota".
+         ========================================================================== */
+      const materialsContainer = document.getElementById('materials-grid');
+      const filterAllBtn = document.getElementById('mat-filter-all');
+      const filterSolidBtn = document.getElementById('mat-filter-solid');
+      const filterBoardsBtn = document.getElementById('mat-filter-boards');
+
+      const allMaterials = [
+        ...(typeof SOLID_WOODS !== 'undefined' ? SOLID_WOODS : []),
+        ...(typeof ENGINEERED_BOARDS !== 'undefined' ? ENGINEERED_BOARDS : [])
+      ];
+
+      // Generar gráfico de costo relativo (5 barras visuales)
+      function renderCostMeter(score, stars, numLabel) {
+        const s = parseFloat(score) || 3;
+        return `
+          <div class="mt-3 pt-3 border-t border-[#f0eae6] flex items-center justify-between text-xs">
+            <span class="text-[#5c5f5e] font-medium text-[11px] uppercase tracking-wider">Costo relativo:</span>
+            <div class="flex items-center gap-1.5" title="Costo relativo: ${numLabel}">
+              <div class="flex items-center gap-0.5">
+                <span class="w-3 h-1.5 rounded-xs ${s >= 1 ? 'bg-[#8B5E3C]' : 'bg-[#e5dedb]'}"></span>
+                <span class="w-3 h-1.5 rounded-xs ${s >= 2 ? 'bg-[#8B5E3C]' : (s >= 1.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
+                <span class="w-3 h-1.5 rounded-xs ${s >= 3 ? 'bg-[#8B5E3C]' : (s >= 2.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
+                <span class="w-3 h-1.5 rounded-xs ${s >= 4 ? 'bg-[#8B5E3C]' : (s >= 3.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
+                <span class="w-3 h-1.5 rounded-xs ${s >= 5 ? 'bg-[#8B5E3C]' : (s >= 4.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
+              </div>
+              <span class="font-bold text-[#2c160e] text-[11px] font-mono">(${numLabel})</span>
+            </div>
+          </div>
+        `;
+      }
+
+      function renderMaterials(list) {
+        if (!materialsContainer) return;
+        materialsContainer.innerHTML = list.map(item => `
+          <div class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-xs hover:shadow-md transition-all duration-300 flex flex-col group">
+            <div class="aspect-[16/10] overflow-hidden bg-[#eee] relative">
+              <img 
+                src="${resolveImg(item.image)}" 
+                alt="${item.name}" 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                onerror="this.onerror=null; if(this.src.includes('/ejmonjo/')) this.src=this.src.replace('/ejmonjo/','/');"
+              />
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-white/90 backdrop-blur-xs text-[10px] font-bold uppercase tracking-wider text-[#8B5E3C] shadow-xs">
+                ${item.type}
+              </span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <h3 class="font-serif font-bold text-lg text-[#2c160e] mb-2">
+                ${item.number ? item.number + '. ' : ''}${item.name}
+              </h3>
+              
+              <div class="space-y-2 text-xs text-[#5c5f5e] flex-grow">
+                <p>
+                  <strong class="text-[#2c160e] font-semibold">¿Qué es?:</strong> 
+                  <span>${item.whatIs}</span>
+                </p>
+                <p>
+                  <strong class="text-[#2c160e] font-semibold">Ventajas:</strong> 
+                  <span>${item.advantages}</span>
+                </p>
+                <p>
+                  <strong class="text-[#2c160e] font-semibold">Ideal para:</strong> 
+                  <span>${item.idealFor}</span>
+                </p>
+              </div>
+
+              <!-- Pequeño gráfico de costo relativo -->
+              ${renderCostMeter(item.costScore, item.costStars, item.costNum)}
             </div>
           </div>
         `).join('');
       }
 
-      // 2. Renderizar Tableros de Ingeniería
-      const engContainer = document.getElementById('engineered-boards-grid');
-      if (engContainer && typeof ENGINEERED_BOARDS !== 'undefined') {
-        engContainer.innerHTML = ENGINEERED_BOARDS.map(item => `
-          <div class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
-            <div class="aspect-[4/3] overflow-hidden bg-[#eee]">
-              <img 
-                src="${item.image}" 
-                alt="${item.name}" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C]">${item.type}</span>
-                <span class="text-xs font-mono font-medium text-[#7d5260] bg-[#f5f0ed] px-2 py-0.5 rounded">${item.costNum}</span>
-              </div>
-              <h3 class="font-serif font-bold text-xl text-[#2c160e] mb-2">${item.name}</h3>
-              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-4 flex-grow">${item.whatIs}</p>
-              
-              <div class="space-y-2 text-xs border-t border-[#f0eae6] pt-4 mb-4">
-                <p><strong class="text-[#2c160e]">Ventajas:</strong> <span class="text-[#5c5f5e]">${item.advantages}</span></p>
-                <p><strong class="text-[#2c160e]">Ideal para:</strong> <span class="text-[#5c5f5e]">${item.idealFor}</span></p>
-              </div>
-
-              <a 
-                href="${getWhatsAppUrl('Hola EJ Monjo, me interesa cotizar un mueble fabricado con ' + item.name)}" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="w-full text-center text-xs font-semibold py-2.5 px-3 rounded-xl bg-[#f5f0ed] hover:bg-[#8B5E3C] text-[#5d4037] hover:text-white transition-colors"
-              >
-                Cotizar con ${item.name.replace(/^[0-9.]+\s*/, '')}
-              </a>
-            </div>
-          </div>
-        `).join('');
+      function setActiveFilterTab(activeBtn) {
+        [filterAllBtn, filterSolidBtn, filterBoardsBtn].forEach(btn => {
+          if (!btn) return;
+          if (btn === activeBtn) {
+            btn.className = 'px-4 py-2 rounded-xl text-xs font-semibold bg-[#2c160e] text-white transition-all shadow-xs cursor-pointer';
+          } else {
+            btn.className = 'px-4 py-2 rounded-xl text-xs font-semibold bg-white text-[#5c5f5e] border border-[#e5dedb] hover:border-[#8B5E3C] hover:text-[#2c160e] transition-all shadow-xs cursor-pointer';
+          }
+        });
       }
+
+      if (filterAllBtn) {
+        filterAllBtn.addEventListener('click', () => {
+          setActiveFilterTab(filterAllBtn);
+          renderMaterials(allMaterials);
+        });
+      }
+
+      if (filterSolidBtn) {
+        filterSolidBtn.addEventListener('click', () => {
+          setActiveFilterTab(filterSolidBtn);
+          renderMaterials(typeof SOLID_WOODS !== 'undefined' ? SOLID_WOODS : []);
+        });
+      }
+
+      if (filterBoardsBtn) {
+        filterBoardsBtn.addEventListener('click', () => {
+          setActiveFilterTab(filterBoardsBtn);
+          renderMaterials(typeof ENGINEERED_BOARDS !== 'undefined' ? ENGINEERED_BOARDS : []);
+        });
+      }
+
+      // Render inicial de todos los materiales
+      renderMaterials(allMaterials);
     });
   </script>
 </body>

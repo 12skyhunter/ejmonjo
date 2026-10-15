@@ -87,127 +87,143 @@ const PORTFOLIO_FILTERS_CONFIG = {
   ]
 };
 
-// Maderas Macizas (Muestrario de Muebles a la Medida y Home)
+// Maderas Macizas (Naturales)
 const SOLID_WOODS = [
   {
     id: "nogal",
-    name: "1. Nogal",
+    number: "1",
+    name: "Nogal",
     type: "Madera Maciza",
     image: "/ejmonjo/assets/materiales/ejmonjo-nogal.webp",
     whatIs: "Una de las maderas nobles más apreciadas a nivel mundial por su tono café chocolate profundo y vetas sofisticadas.",
     advantages: "Acabado de lujo natural, alta durabilidad y excelente estabilidad con el paso del tiempo.",
     idealFor: "Muebles de autor, comedores ejecutivos, credenzas y proyectos prémium.",
-    cost: "5 / 5",
-    costNum: "5 / 5"
+    costScore: 5,
+    costStars: "⭐⭐⭐⭐⭐",
+    costNum: "5/5"
   },
   {
     id: "parota",
-    name: "2. Parota",
+    number: "2",
+    name: "Parota",
     type: "Madera Maciza",
     image: "/ejmonjo/assets/materiales/ejmonjo-parota.webp",
     whatIs: "Madera tropical mexicana famosa por su contraste natural: tonos dorados/café al centro y orillas claras (albura).",
     advantages: "Vetas llamativas y orgánicas, excelente resistencia natural a plagas y gran presencia visual en piezas grandes.",
     idealFor: "Mesas de comedor de una sola pieza (live edge), barras de cocina y cubiertas protagónicas.",
-    cost: "4 / 5",
-    costNum: "4 / 5"
+    costScore: 4,
+    costStars: "⭐⭐⭐⭐☆",
+    costNum: "4/5"
   },
   {
     id: "rosa-morada",
-    name: "3. Rosa Morada",
+    number: "3",
+    name: "Rosa Morada",
     type: "Madera Maciza",
     image: "/ejmonjo/assets/materiales/ejmonjo-rosa-morada.webp",
     whatIs: "Madera nativa fina con tonos cálidos que van del beige al miel, con una apariencia muy similar al roble o fresno.",
     advantages: "Gran equilibrio entre dureza, resistencia y elegancia visual; se adapta muy bien tanto a estilos clásicos como contemporáneos.",
     idealFor: "Puertas principales, recámaras completas, sillas y carpintería residencial de uso rudo.",
-    cost: "3.5 / 5",
-    costNum: "3.5 / 5"
+    costScore: 3.5,
+    costStars: "⭐⭐⭐☆☆",
+    costNum: "3.5/5"
   },
   {
     id: "haya",
-    name: "4. Haya",
+    number: "4",
+    name: "Haya",
     type: "Madera Maciza",
     image: "/ejmonjo/assets/materiales/ejmonjo-haya.webp",
     whatIs: "Madera dura europea de tono claro y uniforme, caracterizada por un grano fino y discreto sin vetas invasivas.",
     advantages: "Superficie suave, altamente resistente a golpes e impactos; ideal para acabados limpios y de estilo nórdico/minimalista.",
     idealFor: "Sillería, muebles infantiles, libreros modernos y piezas con curvas o torneados.",
-    cost: "4 / 5",
-    costNum: "4 / 5"
+    costScore: 4,
+    costStars: "⭐⭐⭐⭐☆",
+    costNum: "4/5"
   }
 ];
 
-// Tableros de Ingeniería (Muestrario de Muebles a la Medida y Home)
+// Tableros y Acabados (Materiales complementarios para diversos proyectos)
 const ENGINEERED_BOARDS = [
   {
     id: "melamina",
-    name: "5. Melamina",
-    type: "Tablero de Ingeniería",
+    number: "5",
+    name: "Melamina",
+    type: "Tablero / Acabado",
     image: "/ejmonjo/assets/materiales/ejmonjo-melamina.webp",
     whatIs: "Tablero rígido recubierto por una película decorativa sintética con texturas o colores sólidos.",
     advantages: "Superficie fácil de limpiar, no requiere barniz, altamente resistente a rayaduras ligeras y con la mejor relación costo-beneficio.",
     idealFor: "Interiores de clósets, muebles de oficina, gabinetes de cocina y organizadores.",
-    cost: "1.5 / 5",
-    costNum: "1.5 / 5"
+    costScore: 1.5,
+    costStars: "⭐☆☆☆☆",
+    costNum: "1.5/5"
   },
   {
     id: "mdf-nogal",
-    name: "6. MDF Enchapado en Nogal",
-    type: "Tablero de Ingeniería",
+    number: "6",
+    name: "MDF Enchapado en Nogal",
+    type: "Tablero / Acabado",
     image: "/ejmonjo/assets/materiales/ejmonjo-MDF-ENCHAPADO-NOGAL.webp",
     whatIs: "Tablero de alta densidad cubierto en su superficie por una lámina delgada de madera real de nogal.",
     advantages: "Ofrece la vista, textura y calidez del nogal auténtico, pero sobre una base completamente plana y estable que no se tuerce.",
     idealFor: "Puertas de clóset, paneles decorativos de pared, frentes de cajón y centros de entretenimiento.",
-    cost: "3 / 5",
-    costNum: "3 / 5"
+    costScore: 3,
+    costStars: "⭐⭐⭐☆☆",
+    costNum: "3/5"
   },
   {
     id: "liston",
-    name: "7. Listón de Madera (Tablero Enlistonado)",
-    type: "Tablero de Ingeniería",
+    number: "7",
+    name: "Listón de Madera (Tablero Enlistonado)",
+    type: "Tablero / Acabado",
     image: "/ejmonjo/assets/materiales/ejmonjo-liston.webp",
     whatIs: "Tablero formado por un núcleo de bloques de madera sólida unidos lado a lado y sellados por ambas caras.",
     advantages: "Mucho más ligero y rígido que el MDF; soporta gran peso a lo largo sin pandearse ni doblarse.",
     idealFor: "Entrepaños largos para libreros, repisas de gran carga y puertas altas de clóset.",
-    cost: "3 / 5",
-    costNum: "3 / 5"
+    costScore: 3,
+    costStars: "⭐⭐⭐☆☆",
+    costNum: "3/5"
   },
   {
     id: "triplay",
-    name: "8. Triplay / Multiplay (Caobilla)",
-    type: "Tablero de Ingeniería",
+    number: "8",
+    name: "Triplay / Multiplay (Caobilla)",
+    type: "Tablero / Acabado",
     image: "/ejmonjo/assets/materiales/ejmonjo-triplay-caobilla.webp",
     whatIs: "Tablero fabricado mediante capas delgadas de madera cruzadas a presión, con cara exterior de madera de caobilla.",
     advantages: "Excepcional resistencia mecánica, excelente retención para tornillos y gran tolerancia a la flexión y humedad moderada.",
     idealFor: "Fondos de cajón reforzados, estructuras internas, muebles utilitarios y carpintería bajo cubierta.",
-    cost: "2.5 / 5",
-    costNum: "2.5 / 5"
+    costScore: 2.5,
+    costStars: "⭐⭐☆☆☆",
+    costNum: "2.5/5"
   }
 ];
 
 // Pasos del proceso artesanal (Cómo Hacemos Realidad Tu Proyecto)
 const PROCESS_STEPS = [
   {
-    number: "1",
-    title: "1. Cuéntanos tu idea",
+    number: "01",
+    title: "Cuéntanos tu idea",
     description: "Escríbenos por WhatsApp o déjanos un mensaje. Comparte qué espacio deseas transformar (cocina, clóset, recámara o mueble a medida) y cualquier foto o referencia de lo que imaginas o puedes ver nuestros proyectos para inspirarte."
   },
   {
-    number: "2",
-    title: "2. Visita técnica y medidas exactas",
+    number: "02",
+    title: "Visita técnica y medidas exactas",
     description: "Agendamos una cita en tu domicilio para medir el espacio al milímetro y evaluar las características del lugar para garantizar un ajuste perfecto."
   },
   {
-    number: "3",
-    title: "3. Selección de materiales y diseño",
+    number: "03",
+    title: "Selección de materiales y diseño",
     description: "Te mostramos muestras reales para que elijas al tacto: maderas finas, melaminas de alta resistencia y herrajes modernos con sistema de cierre suave. Todo adaptado a tu estilo y presupuesto."
   },
   {
-    number: "4",
-    title: "4. Cotización clara y tiempos de entrega",
+    number: "04",
+    title: "Cotización clara y tiempos de entrega",
     description: "Recibe una propuesta formal y detallada con el costo total y el calendario de trabajo y la fecha de entrega."
   },
   {
-    number: "5",
-    title: "5. Fabricación e instalación limpia",
+    number: "05",
+    title: "Fabricación e instalación limpia",
     description: "Fabricamos cada pieza en nuestro taller con procesos rigurosos de ensamble, pulido y acabado. Finalmente, acudimos a tu hogar para una instalación profesional, limpia y lista para disfrutarse."
   }
 ];
