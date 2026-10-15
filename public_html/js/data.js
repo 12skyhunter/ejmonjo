@@ -91,7 +91,6 @@ const PORTFOLIO_FILTERS_CONFIG = {
 const SOLID_WOODS = [
   {
     id: "nogal",
-    number: "1",
     name: "Nogal",
     type: "Madera Maciza",
     image: "/ejmonjo/assets/materiales/ejmonjo-nogal.webp",
@@ -104,7 +103,6 @@ const SOLID_WOODS = [
   },
   {
     id: "parota",
-    number: "2",
     name: "Parota",
     type: "Madera Maciza",
     image: "/ejmonjo/assets/materiales/ejmonjo-parota.webp",
@@ -117,7 +115,6 @@ const SOLID_WOODS = [
   },
   {
     id: "rosa-morada",
-    number: "3",
     name: "Rosa Morada",
     type: "Madera Maciza",
     image: "/ejmonjo/assets/materiales/ejmonjo-rosa-morada.webp",
@@ -130,7 +127,6 @@ const SOLID_WOODS = [
   },
   {
     id: "haya",
-    number: "4",
     name: "Haya",
     type: "Madera Maciza",
     image: "/ejmonjo/assets/materiales/ejmonjo-haya.webp",
@@ -147,7 +143,6 @@ const SOLID_WOODS = [
 const ENGINEERED_BOARDS = [
   {
     id: "melamina",
-    number: "5",
     name: "Melamina",
     type: "Tablero / Acabado",
     image: "/ejmonjo/assets/materiales/ejmonjo-melamina.webp",
@@ -160,7 +155,6 @@ const ENGINEERED_BOARDS = [
   },
   {
     id: "mdf-nogal",
-    number: "6",
     name: "MDF Enchapado en Nogal",
     type: "Tablero / Acabado",
     image: "/ejmonjo/assets/materiales/ejmonjo-MDF-ENCHAPADO-NOGAL.webp",
@@ -173,7 +167,6 @@ const ENGINEERED_BOARDS = [
   },
   {
     id: "liston",
-    number: "7",
     name: "Listón de Madera (Tablero Enlistonado)",
     type: "Tablero / Acabado",
     image: "/ejmonjo/assets/materiales/ejmonjo-liston.webp",
@@ -186,7 +179,6 @@ const ENGINEERED_BOARDS = [
   },
   {
     id: "triplay",
-    number: "8",
     name: "Triplay / Multiplay (Caobilla)",
     type: "Tablero / Acabado",
     image: "/ejmonjo/assets/materiales/ejmonjo-triplay-caobilla.webp",

@@ -49,11 +49,11 @@
   <div id="header-container"></div>
 
   <main class="flex-grow">
-    <!-- Hero Header con Carrusel de Proyectos a la Medida -->
-    <section class="pt-12 pb-16 sm:pt-16 sm:pb-20 bg-[#f4eeeb] border-b border-[#e5dedb]">
+    <!-- Hero Header con Carrusel Protagónico y Limpio de Proyectos a la Medida -->
+    <section class="pt-10 pb-16 sm:pt-14 sm:pb-20 bg-[#f4eeeb] border-b border-[#e5dedb]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Título y Descripción -->
-        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
           <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Taller de Precisión</span>
           <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#2c160e] leading-tight mt-2 mb-4">
             Muebles a la Medida
@@ -63,12 +63,12 @@
           </p>
         </div>
 
-        <!-- Carrusel Interactivo del Header -->
-        <div class="max-w-5xl mx-auto">
-          <div class="relative bg-[#2c160e] rounded-3xl overflow-hidden shadow-xl border border-[#e5dedb] group">
+        <!-- Carrusel Interactivo con Mayor Protagonismo Visual -->
+        <div class="max-w-6xl mx-auto">
+          <div class="relative bg-[#2c160e] rounded-3xl overflow-hidden shadow-2xl border border-[#e5dedb] group">
             
-            <!-- Slides Container -->
-            <div id="hero-carousel" class="relative w-full aspect-[4/3] sm:aspect-[16/9] md:aspect-[21/9] overflow-hidden">
+            <!-- Slides Container (Mayor altura y visibilidad para las fotos) -->
+            <div id="hero-carousel" class="relative w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] min-h-[380px] sm:min-h-[480px] lg:min-h-[540px] overflow-hidden">
               <!-- Los slides se inyectan dinámicamente con JavaScript -->
             </div>
 
@@ -77,7 +77,7 @@
               id="carousel-prev-btn"
               type="button"
               aria-label="Proyecto anterior"
-              class="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-80 group-hover:opacity-100 hover:scale-105 z-20 cursor-pointer"
+              class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-black/45 hover:bg-black/75 text-white backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-90 group-hover:opacity-100 hover:scale-105 z-20 cursor-pointer shadow-lg"
             >
               <svg class="w-5 h-5 sm:w-6 sm:h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
@@ -89,7 +89,7 @@
               id="carousel-next-btn"
               type="button"
               aria-label="Proyecto siguiente"
-              class="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-80 group-hover:opacity-100 hover:scale-105 z-20 cursor-pointer"
+              class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-black/45 hover:bg-black/75 text-white backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-90 group-hover:opacity-100 hover:scale-105 z-20 cursor-pointer shadow-lg"
             >
               <svg class="w-5 h-5 sm:w-6 sm:h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
@@ -97,13 +97,13 @@
             </button>
 
             <!-- Indicadores de Slide (Dots) -->
-            <div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-20 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full">
+            <div id="carousel-dots" class="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 z-20 bg-black/35 backdrop-blur-md px-3.5 py-1.5 rounded-full">
               <!-- Dots inyectados con JS -->
             </div>
           </div>
 
           <!-- Micro nota informativa debajo del carrusel -->
-          <div class="flex items-center justify-between text-xs text-[#7d5260] mt-3 px-2">
+          <div class="flex items-center justify-between text-xs text-[#7d5260] mt-3.5 px-2">
             <span>Galería destacada de piezas residenciales</span>
             <a href="/ejmonjo/portafolio" class="hover:text-[#2c160e] font-semibold underline underline-offset-2">
               Explorar el portafolio completo &rarr;
@@ -229,7 +229,7 @@
       </div>
     </section>
 
-    <!-- Sección 2: Muestrario Informativo de Materiales y Acabados (Sección Secundaria e Informativa) -->
+    <!-- Sección 2: Materiales y acabados (Informativa y Sin Filtros) -->
     <section class="py-16 lg:py-20 bg-[#f4eeeb] border-t border-[#e5dedb]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-10">
@@ -238,46 +238,16 @@
             <span class="text-xs uppercase tracking-widest font-bold text-[#8B5E3C]">Muestrario de Taller</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-serif font-bold text-[#2c160e]">
-            Diversidad de Materiales y Acabados
+            Materiales y acabados
           </h2>
           <p class="text-sm sm:text-base text-[#5c5f5e] mt-2 leading-relaxed">
             Trabajamos con diferentes materiales y acabados para adaptarnos a diversos proyectos, estilos arquitectónicos y requerimientos de resistencia y presupuesto.
           </p>
         </div>
 
-        <!-- Pestañas de Filtrado de Materiales -->
-        <div class="flex flex-wrap items-center gap-2 mb-8">
-          <button 
-            id="mat-filter-all" 
-            class="px-4 py-2 rounded-xl text-xs font-semibold bg-[#2c160e] text-white transition-all shadow-xs cursor-pointer"
-          >
-            Todos los Materiales (8)
-          </button>
-          <button 
-            id="mat-filter-solid" 
-            class="px-4 py-2 rounded-xl text-xs font-semibold bg-white text-[#5c5f5e] border border-[#e5dedb] hover:border-[#8B5E3C] hover:text-[#2c160e] transition-all shadow-xs cursor-pointer"
-          >
-            Maderas Macizas (Naturales)
-          </button>
-          <button 
-            id="mat-filter-boards" 
-            class="px-4 py-2 rounded-xl text-xs font-semibold bg-white text-[#5c5f5e] border border-[#e5dedb] hover:border-[#8B5E3C] hover:text-[#2c160e] transition-all shadow-xs cursor-pointer"
-          >
-            Tableros y Acabados
-          </button>
-        </div>
-
-        <!-- Contenedor Unificado de Materiales -->
-        <div id="materials-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Contenedor Unificado de los 8 Materiales (Imágenes Grandes y Sin Filtros) -->
+        <div id="materials-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           <!-- Inyectado dinámicamente con JavaScript -->
-        </div>
-
-        <!-- Nota informativa al pie del muestrario -->
-        <div class="mt-8 p-5 rounded-2xl bg-white/70 border border-[#e5dedb] text-xs text-[#5c5f5e] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p>
-            <strong class="text-[#2c160e]">Muestras físicas en tu domicilio:</strong> Durante la visita técnica llevamos muestras reales para que evalúes textura, tonalidad y resistencia al tacto.
-          </p>
-          <span class="text-[#8B5E3C] font-semibold shrink-0">Asesoría personalizada</span>
         </div>
       </div>
     </section>
@@ -287,16 +257,16 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados con cache buster -->
-  <script src="/ejmonjo/js/data.js?v=2.3"></script>
+  <script src="/ejmonjo/js/data.js?v=2.4"></script>
   <script>
     if (typeof SOLID_WOODS === 'undefined') {
-      document.write('<script src="js/data.js?v=2.3"><\/script>');
+      document.write('<script src="js/data.js?v=2.4"><\/script>');
     }
   </script>
-  <script src="/ejmonjo/js/layout.js?v=2.3"></script>
+  <script src="/ejmonjo/js/layout.js?v=2.4"></script>
   <script>
     if (typeof WHATSAPP_ICON_SVG === 'undefined') {
-      document.write('<script src="js/layout.js?v=2.3"><\/script>');
+      document.write('<script src="js/layout.js?v=2.4"><\/script>');
     }
   </script>
 
@@ -316,56 +286,44 @@
       /* ==========================================================================
          1. CARRUSEL DEL HEADER
          Imágenes solicitadas: CLO-014, CLO-007, COC-021, COC-015, MUE-004, MUE-006, ESC-002
+         Diseño limpio: mayor protagonismo a la foto, sin categoría, sin descripción,
+         mostrando únicamente el SKU y el Nombre del proyecto.
          ========================================================================== */
       const carouselItems = [
         {
           id: 'CLO-014',
           title: 'Amplio vestidor a medida',
-          category: 'Clósets',
-          image: '/ejmonjo/assets/closet/closet-14_d.webp',
-          desc: 'Revestido en madera de nogal con compartimentos y zapateras integradas.'
+          image: '/ejmonjo/assets/closet/closet-14_d.webp'
         },
         {
           id: 'CLO-007',
           title: 'Sistema de almacenamiento integral',
-          category: 'Clósets',
-          image: '/ejmonjo/assets/closet/closet-07_d.webp',
-          desc: 'Almacenamiento de piso a techo que combina repisas abiertas y cajoneras.'
+          image: '/ejmonjo/assets/closet/closet-07_d.webp'
         },
         {
           id: 'COC-021',
           title: 'Cocina integral contemporánea',
-          category: 'Cocinas',
-          image: '/ejmonjo/assets/cocinas/cocina-21_d.webp',
-          desc: 'Gabinetes en tono elegante con isla central y cubierta de piedra natural.'
+          image: '/ejmonjo/assets/cocinas/cocina-21_d.webp'
         },
         {
           id: 'COC-015',
           title: 'Cocina de diseño moderno',
-          category: 'Cocinas',
-          image: '/ejmonjo/assets/cocinas/cocina-15_d.webp',
-          desc: 'Gabinetes blancos con cubierta de cuarzo y acentos en madera cálida.'
+          image: '/ejmonjo/assets/cocinas/cocina-15_d.webp'
         },
         {
           id: 'MUE-004',
           title: 'Mueble de pared integral',
-          category: 'Muebles de Autor',
-          image: '/ejmonjo/assets/muebles/mueble-04_d.webp',
-          desc: 'Diseño acanalado en nogal con repisas abiertas y chimenea integrada.'
+          image: '/ejmonjo/assets/muebles/mueble-04_d.webp'
         },
         {
           id: 'MUE-006',
           title: 'Mueble modular residencial',
-          category: 'Muebles',
-          image: '/ejmonjo/assets/muebles/mueble-06_d.webp',
-          desc: 'Centro de entretenimiento, clóset y zona de trabajo a la medida.'
+          image: '/ejmonjo/assets/muebles/mueble-06_d.webp'
         },
         {
           id: 'ESC-002',
           title: 'Escalera interior de diseño moderno',
-          category: 'Escaleras',
-          image: '/ejmonjo/assets/escaleras/escalera-02.webp',
-          desc: 'Escalones revestidos en madera fina con barandal artístico de herrería.'
+          image: '/ejmonjo/assets/escaleras/escalera-02.webp'
         }
       ];
 
@@ -380,7 +338,7 @@
       function renderCarousel() {
         if (!carouselContainer || !dotsContainer) return;
 
-        // Renderizar slides
+        // Renderizar slides limpios y protagónicos
         carouselContainer.innerHTML = carouselItems.map((item, index) => `
           <div 
             class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${index === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}"
@@ -393,31 +351,23 @@
               loading="${index === 0 ? 'eager' : 'lazy'}"
               onerror="this.onerror=null; if(this.src.includes('/ejmonjo/')) this.src=this.src.replace('/ejmonjo/','/');"
             />
-            <!-- Gradiente para legibilidad -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10"></div>
+            <!-- Gradiente sutil para legibilidad del SKU y Nombre -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             
-            <!-- Información superpuesta del proyecto -->
-            <div class="absolute bottom-6 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8 z-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-              <div class="max-w-xl text-white">
-                <div class="flex items-center gap-2 mb-1.5">
-                  <span class="px-2.5 py-0.5 rounded-md bg-[#8B5E3C] text-white text-[11px] font-bold uppercase tracking-wider">
-                    ${item.category}
-                  </span>
-                  <span class="text-xs text-white/80 font-mono">
-                    SKU: ${item.id}
-                  </span>
-                </div>
-                <h3 class="font-serif font-bold text-lg sm:text-2xl text-white leading-snug">
+            <!-- Información limpia: SKU y Nombre (Sin categoría, Sin descripción) -->
+            <div class="absolute bottom-6 sm:bottom-8 left-5 sm:left-10 right-5 sm:right-10 z-10 flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+              <div class="text-white">
+                <span class="inline-block text-xs text-white/90 font-mono tracking-wider bg-black/40 backdrop-blur-xs px-2.5 py-1 rounded-md mb-2">
+                  SKU: ${item.id}
+                </span>
+                <h3 class="font-serif font-bold text-xl sm:text-3xl text-white leading-tight">
                   ${item.title}
                 </h3>
-                <p class="text-xs sm:text-sm text-white/80 mt-1 line-clamp-1 sm:line-clamp-2">
-                  ${item.desc}
-                </p>
               </div>
 
               <a 
                 href="/ejmonjo/portafolio?id=${item.id}"
-                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/20 hover:bg-white text-white hover:text-[#2c160e] backdrop-blur-md text-xs font-semibold transition-all self-start sm:self-auto shrink-0 shadow-sm"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/20 hover:bg-white text-white hover:text-[#2c160e] backdrop-blur-md text-xs font-semibold transition-all self-start sm:self-auto shrink-0 shadow-md"
               >
                 <span>Ver en portafolio</span>
                 <span>&rarr;</span>
@@ -523,15 +473,9 @@
 
 
       /* ==========================================================================
-         2. MUESTRARIO INFORMATIVO DE MATERIALES
-         - Sin protagonismo excesivo, puramente informativo.
-         - Gráfico claro de costo relativo con barras e indicador numérico.
-         - Sin botones de "Cotizar en nogal" o "Cotizar en parota".
+         2. MATERIALES Y ACABADOS (Sin Filtros, Imágenes Grandes, Sin "¿Qué es?")
          ========================================================================== */
       const materialsContainer = document.getElementById('materials-grid');
-      const filterAllBtn = document.getElementById('mat-filter-all');
-      const filterSolidBtn = document.getElementById('mat-filter-solid');
-      const filterBoardsBtn = document.getElementById('mat-filter-boards');
 
       const allMaterials = [
         ...(typeof SOLID_WOODS !== 'undefined' ? SOLID_WOODS : []),
@@ -542,15 +486,15 @@
       function renderCostMeter(score, stars, numLabel) {
         const s = parseFloat(score) || 3;
         return `
-          <div class="mt-3 pt-3 border-t border-[#f0eae6] flex items-center justify-between text-xs">
+          <div class="mt-4 pt-3 border-t border-[#f0eae6] flex items-center justify-between text-xs">
             <span class="text-[#5c5f5e] font-medium text-[11px] uppercase tracking-wider">Costo relativo:</span>
             <div class="flex items-center gap-1.5" title="Costo relativo: ${numLabel}">
               <div class="flex items-center gap-0.5">
-                <span class="w-3 h-1.5 rounded-xs ${s >= 1 ? 'bg-[#8B5E3C]' : 'bg-[#e5dedb]'}"></span>
-                <span class="w-3 h-1.5 rounded-xs ${s >= 2 ? 'bg-[#8B5E3C]' : (s >= 1.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
-                <span class="w-3 h-1.5 rounded-xs ${s >= 3 ? 'bg-[#8B5E3C]' : (s >= 2.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
-                <span class="w-3 h-1.5 rounded-xs ${s >= 4 ? 'bg-[#8B5E3C]' : (s >= 3.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
-                <span class="w-3 h-1.5 rounded-xs ${s >= 5 ? 'bg-[#8B5E3C]' : (s >= 4.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
+                <span class="w-3.5 h-1.5 rounded-xs ${s >= 1 ? 'bg-[#8B5E3C]' : 'bg-[#e5dedb]'}"></span>
+                <span class="w-3.5 h-1.5 rounded-xs ${s >= 2 ? 'bg-[#8B5E3C]' : (s >= 1.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
+                <span class="w-3.5 h-1.5 rounded-xs ${s >= 3 ? 'bg-[#8B5E3C]' : (s >= 2.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
+                <span class="w-3.5 h-1.5 rounded-xs ${s >= 4 ? 'bg-[#8B5E3C]' : (s >= 3.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
+                <span class="w-3.5 h-1.5 rounded-xs ${s >= 5 ? 'bg-[#8B5E3C]' : (s >= 4.5 ? 'bg-[#8B5E3C]/60' : 'bg-[#e5dedb]')}"></span>
               </div>
               <span class="font-bold text-[#2c160e] text-[11px] font-mono">(${numLabel})</span>
             </div>
@@ -562,7 +506,8 @@
         if (!materialsContainer) return;
         materialsContainer.innerHTML = list.map(item => `
           <div class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-xs hover:shadow-md transition-all duration-300 flex flex-col group">
-            <div class="aspect-[16/10] overflow-hidden bg-[#eee] relative">
+            <!-- Imagen Grande para apreciar las vetas y texturas -->
+            <div class="aspect-[4/3] sm:aspect-[4/3] w-full overflow-hidden bg-[#eee]">
               <img 
                 src="${resolveImg(item.image)}" 
                 alt="${item.name}" 
@@ -570,20 +515,26 @@
                 loading="lazy"
                 onerror="this.onerror=null; if(this.src.includes('/ejmonjo/')) this.src=this.src.replace('/ejmonjo/','/');"
               />
-              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-white/90 backdrop-blur-xs text-[10px] font-bold uppercase tracking-wider text-[#8B5E3C] shadow-xs">
+            </div>
+            
+            <div class="p-6 flex flex-col flex-grow">
+              <!-- Etiqueta de tipo (Madera Maciza / Tablero) colocada debajo en el texto -->
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C] mb-1">
                 ${item.type}
               </span>
-            </div>
-            <div class="p-5 flex flex-col flex-grow">
-              <h3 class="font-serif font-bold text-lg text-[#2c160e] mb-2">
-                ${item.number ? item.number + '. ' : ''}${item.name}
+
+              <!-- Nombre del material sin numeración -->
+              <h3 class="font-serif font-bold text-xl text-[#2c160e] mb-3">
+                ${item.name.replace(/^[0-9.]+\s*/, '')}
               </h3>
               
-              <div class="space-y-2 text-xs text-[#5c5f5e] flex-grow">
-                <p>
-                  <strong class="text-[#2c160e] font-semibold">¿Qué es?:</strong> 
-                  <span>${item.whatIs}</span>
-                </p>
+              <!-- Descripción directa (Sin el prefijo '¿Qué es?:') -->
+              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-4">
+                ${item.whatIs}
+              </p>
+
+              <!-- Ventajas e Ideal para -->
+              <div class="space-y-2 text-xs text-[#5c5f5e] flex-grow pt-2 border-t border-[#f7f3f1]">
                 <p>
                   <strong class="text-[#2c160e] font-semibold">Ventajas:</strong> 
                   <span>${item.advantages}</span>
@@ -601,39 +552,7 @@
         `).join('');
       }
 
-      function setActiveFilterTab(activeBtn) {
-        [filterAllBtn, filterSolidBtn, filterBoardsBtn].forEach(btn => {
-          if (!btn) return;
-          if (btn === activeBtn) {
-            btn.className = 'px-4 py-2 rounded-xl text-xs font-semibold bg-[#2c160e] text-white transition-all shadow-xs cursor-pointer';
-          } else {
-            btn.className = 'px-4 py-2 rounded-xl text-xs font-semibold bg-white text-[#5c5f5e] border border-[#e5dedb] hover:border-[#8B5E3C] hover:text-[#2c160e] transition-all shadow-xs cursor-pointer';
-          }
-        });
-      }
-
-      if (filterAllBtn) {
-        filterAllBtn.addEventListener('click', () => {
-          setActiveFilterTab(filterAllBtn);
-          renderMaterials(allMaterials);
-        });
-      }
-
-      if (filterSolidBtn) {
-        filterSolidBtn.addEventListener('click', () => {
-          setActiveFilterTab(filterSolidBtn);
-          renderMaterials(typeof SOLID_WOODS !== 'undefined' ? SOLID_WOODS : []);
-        });
-      }
-
-      if (filterBoardsBtn) {
-        filterBoardsBtn.addEventListener('click', () => {
-          setActiveFilterTab(filterBoardsBtn);
-          renderMaterials(typeof ENGINEERED_BOARDS !== 'undefined' ? ENGINEERED_BOARDS : []);
-        });
-      }
-
-      // Render inicial de todos los materiales
+      // Render inicial directo de todos los materiales sin filtros
       renderMaterials(allMaterials);
     });
   </script>
