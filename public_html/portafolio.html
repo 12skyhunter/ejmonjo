@@ -276,83 +276,118 @@
   </main>
 
   <!-- Modal Interactivo de Detalle de Proyecto (Vanilla JS) -->
-  <div id="project-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/75 backdrop-blur-sm transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-    <div class="relative bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl border border-[#e5dedb] my-8 max-h-[90vh] flex flex-col">
-      <!-- Botón de Cerrar -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/80 backdrop-blur-md transition-opacity duration-300 flex items-center justify-center p-3 sm:p-5 lg:p-8">
+    <div class="relative bg-white rounded-3xl max-w-5xl xl:max-w-6xl w-full overflow-hidden shadow-2xl border border-[#d4c3be]/40 my-auto max-h-[94vh] flex flex-col">
+      <!-- Botón de Cerrar Flotante -->
       <button 
         id="modal-close-btn" 
         type="button" 
-        class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/50 hover:bg-black/75 text-white flex items-center justify-center transition-colors"
+        class="absolute top-4 right-4 z-40 w-11 h-11 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer shadow-lg focus:outline-none"
         aria-label="Cerrar modal"
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
 
-      <!-- Contenedor con scroll interno -->
-      <div class="overflow-y-auto p-6 sm:p-8 flex flex-col md:flex-row gap-8">
-        <!-- Imagen del proyecto -->
-        <div class="w-full md:w-1/2">
-          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-[#eee] shadow-md sticky top-0">
-            <img id="modal-img" src="" alt="" class="w-full h-full object-cover" />
+      <!-- Contenedor con distribución adaptable: Imagen protagonista + Información -->
+      <div class="overflow-y-auto flex flex-col lg:flex-row flex-grow min-h-0">
+        <!-- Columna de Imagen (Prioridad visual absoluta, adaptable a cualquier proporción: vertical, cuadrada u horizontal) -->
+        <div class="w-full lg:w-[58%] xl:w-[60%] bg-[#151312] relative overflow-hidden flex flex-col items-center justify-center min-h-[350px] sm:min-h-[460px] md:min-h-[520px] lg:min-h-[580px] p-4 sm:p-6 lg:p-8 select-none">
+          <!-- Fondo ambiental sutil desenfocado con la misma imagen -->
+          <img 
+            id="modal-img-bg" 
+            src="" 
+            alt="" 
+            aria-hidden="true" 
+            class="absolute inset-0 w-full h-full object-cover blur-3xl opacity-20 scale-125 pointer-events-none transition-all duration-700" 
+          />
+
+          <!-- Badges superiores flotantes sobre la imagen -->
+          <div class="absolute top-4 left-4 z-20 flex items-center gap-2 flex-wrap">
+            <span id="modal-category-badge" class="bg-black/60 backdrop-blur-md text-white text-xs font-semibold px-3 py-1.5 rounded-full border border-white/15 tracking-wide shadow-sm"></span>
+            <span id="modal-featured" class="hidden text-xs font-bold uppercase tracking-wider text-white bg-[#5d4037]/90 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20 shadow-sm">Obra Destacada</span>
           </div>
+
+          <!-- Imagen Principal: max-h adaptable y object-contain para preservar el 100% de la pieza sin recortes -->
+          <div class="relative z-10 w-full h-full flex items-center justify-center py-2">
+            <img 
+              id="modal-img" 
+              src="" 
+              alt="" 
+              class="max-h-[48vh] sm:max-h-[58vh] lg:max-h-[68vh] max-w-full w-auto h-auto object-contain rounded-xl shadow-2xl transition-transform duration-300 hover:scale-[1.01]" 
+            />
+          </div>
+
+          <!-- Enlace sutil para abrir imagen completa en alta definición -->
+          <a 
+            id="modal-img-link" 
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="absolute bottom-3.5 right-3.5 z-20 bg-black/60 hover:bg-black/85 text-white text-[11px] font-medium px-3 py-1.5 rounded-lg backdrop-blur-md border border-white/20 transition-all flex items-center gap-1.5 opacity-80 hover:opacity-100 shadow-md"
+            title="Abrir imagen en tamaño completo"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+            </svg>
+            <span>Ver foto completa</span>
+          </a>
         </div>
 
-        <!-- Información detallada -->
-        <div class="w-full md:w-1/2 flex flex-col">
-          <div class="flex items-center gap-2 mb-2 flex-wrap">
-            <span id="modal-category" class="text-xs font-bold uppercase tracking-wider text-[#8B5E3C] bg-[#f5f0ed] px-2.5 py-1 rounded-md"></span>
-            <span id="modal-sku" class="text-xs font-mono text-[#7d5260] bg-gray-100 px-2 py-1 rounded-md"></span>
-            <span id="modal-featured" class="hidden text-[11px] font-bold uppercase tracking-wider text-white bg-[#5d4037] px-2.5 py-1 rounded-md">Obra Destacada</span>
-          </div>
-
-          <h2 id="modal-title" class="text-2xl sm:text-3xl font-serif font-bold text-[#2c160e] mb-3"></h2>
-          
-          <p id="modal-story" class="text-sm text-[#5c5f5e] leading-relaxed mb-6"></p>
-
-          <!-- Características destacadas -->
-          <div class="mb-6 border-t border-[#f0eae6] pt-4">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-[#2c160e] mb-2.5">Especificaciones del Trabajo</h3>
-            <ul id="modal-features" class="space-y-1.5 text-xs text-[#5c5f5e]"></ul>
-          </div>
-
-          <!-- Dimensiones y Ubicación -->
-          <div class="grid grid-cols-2 gap-3 text-xs bg-[#f9f9f8] p-3.5 rounded-xl border border-[#e5dedb] mb-6">
-            <div>
-              <span class="block text-[11px] text-[#7d5260] uppercase">Dimensiones</span>
-              <strong id="modal-dimensions" class="text-[#2c160e]"></strong>
+        <!-- Columna de Información del Mueble -->
+        <div class="w-full lg:w-[42%] xl:w-[40%] flex flex-col justify-between p-6 sm:p-8 lg:p-9 bg-white overflow-y-auto">
+          <div class="space-y-5">
+            <!-- Fila superior: SKU destacado y Estilo -->
+            <div class="flex items-center justify-between gap-2 border-b border-[#f0eae6] pb-3">
+              <span id="modal-sku" class="text-xs font-mono font-bold tracking-wider text-[#5d4037] bg-[#f5f0ed] px-2.5 py-1 rounded-md border border-[#e5dedb]"></span>
+              <span id="modal-style-pill" class="text-xs font-medium text-[#7d5260] bg-[#f9f9f8] px-2.5 py-1 rounded-md"></span>
             </div>
+
+            <!-- Título: Nombre corto del mueble -->
             <div>
-              <span class="block text-[11px] text-[#7d5260] uppercase">Ubicación</span>
-              <strong id="modal-location" class="text-[#2c160e]"></strong>
+              <h2 id="modal-title" class="text-2xl sm:text-3xl font-serif font-bold text-[#2c160e] leading-snug"></h2>
+            </div>
+            
+            <!-- Descripción completa -->
+            <div class="space-y-1.5">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C] block">Descripción de la Pieza</span>
+              <p id="modal-story" class="text-sm sm:text-base text-[#5c5f5e] leading-relaxed"></p>
+            </div>
+
+            <!-- Características destacadas del mueble (especificaciones reales) -->
+            <div id="modal-features-container" class="border-t border-[#f0eae6] pt-4">
+              <h3 class="text-xs font-bold uppercase tracking-wider text-[#2c160e] mb-2.5">Especificaciones del Trabajo</h3>
+              <ul id="modal-features" class="space-y-2 text-xs sm:text-sm text-[#5c5f5e]"></ul>
             </div>
           </div>
 
-          <!-- Botón de Cotización por WhatsApp con SKU -->
-          <div class="mt-auto pt-4 border-t border-[#f0eae6]">
+          <!-- Botón de Cotización por WhatsApp con SKU y Título -->
+          <div class="mt-8 pt-5 border-t border-[#f0eae6] space-y-2.5">
             <a 
               id="modal-wa-btn" 
               href="#" 
               target="_blank" 
-              rel="noopener noreferrer"
-              class="w-full flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-medium py-3 px-4 rounded-xl shadow-md transition-colors text-sm"
+              rel="noopener noreferrer" 
+              class="w-full flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all text-sm active:scale-[0.99] cursor-pointer"
             >
               <svg class="w-5 h-5 fill-white shrink-0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
               </svg>
               <span>Cotizar una Pieza Similar</span>
             </a>
+            <p class="text-[11px] text-[#7d5260] text-center">Atención directa de taller artesanal</p>
           </div>
         </div>
       </div>
 
-      <!-- Barra de navegación del modal (Prev / Next) -->
+      <!-- Barra de navegación del modal (Prev / Next / Contador) -->
       <div class="bg-[#f5f0ed] px-6 py-3 border-t border-[#e5dedb] flex items-center justify-between text-xs text-[#5d4037]">
-        <button id="modal-prev-btn" type="button" class="flex items-center gap-1.5 font-semibold hover:text-[#8B5E3C]">
+        <button id="modal-prev-btn" type="button" class="flex items-center gap-1.5 font-semibold hover:text-[#8B5E3C] transition-colors py-1 px-2.5 rounded-lg hover:bg-white/70">
           <span>&larr;</span> <span>Proyecto Anterior</span>
         </button>
-        <button id="modal-next-btn" type="button" class="flex items-center gap-1.5 font-semibold hover:text-[#8B5E3C]">
+        <span id="modal-counter" class="text-[11px] text-[#7d5260] font-mono"></span>
+        <button id="modal-next-btn" type="button" class="flex items-center gap-1.5 font-semibold hover:text-[#8B5E3C] transition-colors py-1 px-2.5 rounded-lg hover:bg-white/70">
           <span>Siguiente Proyecto</span> <span>&rarr;</span>
         </button>
       </div>
@@ -410,14 +445,17 @@
       const modalPrevBtn = document.getElementById('modal-prev-btn');
       const modalNextBtn = document.getElementById('modal-next-btn');
       const modalImg = document.getElementById('modal-img');
-      const modalCategory = document.getElementById('modal-category');
+      const modalImgBg = document.getElementById('modal-img-bg');
+      const modalImgLink = document.getElementById('modal-img-link');
+      const modalCategoryBadge = document.getElementById('modal-category-badge');
+      const modalStylePill = document.getElementById('modal-style-pill');
       const modalSku = document.getElementById('modal-sku');
       const modalFeatured = document.getElementById('modal-featured');
       const modalTitle = document.getElementById('modal-title');
       const modalStory = document.getElementById('modal-story');
       const modalFeatures = document.getElementById('modal-features');
-      const modalDimensions = document.getElementById('modal-dimensions');
-      const modalLocation = document.getElementById('modal-location');
+      const modalFeaturesContainer = document.getElementById('modal-features-container');
+      const modalCounter = document.getElementById('modal-counter');
       const modalWaBtn = document.getElementById('modal-wa-btn');
 
       // Resolver ruta de imagen compatible con entorno local y /ejmonjo/
@@ -430,20 +468,11 @@
         return src;
       }
 
-      // Generar mensaje breve de cotización para proyectos del portafolio
+      // Generar mensaje breve de cotización para proyectos del portafolio con SKU y Nombre Corto
       function getWhatsAppPortfolioUrl(item) {
         if (!item) return '#';
-        const catPhrases = {
-          'closet': 'el Closet',
-          'cocinas': 'la Cocina',
-          'puertas': 'la Puerta',
-          'muebles': 'el Mueble',
-          'recamaras': 'la Recámara',
-          'escaleras': 'la Escalera',
-          'banos': 'el Baño'
-        };
-        const catPhrase = catPhrases[item.categoryGroup] || ('el ' + item.category);
-        const text = `Hola, EJ Monjo Carpintería, me gustaría cotizar una pieza inspirada en ${catPhrase} - ${item.id}\nhttps://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}`;
+        const nameOrCat = item.title || item.category;
+        const text = `Hola, EJ Monjo Carpintería, me gustaría cotizar la pieza: ${nameOrCat} (SKU: ${item.id})\nhttps://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}`;
         const phone = (typeof CONTACT_INFO !== 'undefined' && CONTACT_INFO.phoneRaw) ? CONTACT_INFO.phoneRaw : '523311757837';
         return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
       }
@@ -645,29 +674,51 @@
         currentItemIndex = index;
         const item = filteredItems[currentItemIndex];
 
-        modalImg.src = resolveImg(item.image);
+        const resolvedImg = resolveImg(item.image);
+        modalImg.src = resolvedImg;
         modalImg.alt = item.title;
-        modalCategory.textContent = item.category + ' • ' + (item.woodType || 'Madera');
+        if (modalImgBg) modalImgBg.src = resolvedImg;
+        if (modalImgLink) modalImgLink.href = resolvedImg;
+
+        if (modalCategoryBadge) modalCategoryBadge.textContent = item.category;
+        if (modalStylePill) modalStylePill.textContent = item.woodType || item.styleFamily || '';
         modalSku.textContent = 'SKU: ' + item.id;
+        
         if (item.isFeatured) {
           modalFeatured.classList.remove('hidden');
         } else {
           modalFeatured.classList.add('hidden');
         }
+
+        // Título: Nombre corto del mueble (ej. Sofá Estilo clásico)
         modalTitle.textContent = item.title;
+        // Descripción completa de la pieza
         modalStory.textContent = item.detailedStory || item.description;
-        modalDimensions.textContent = item.dimensions || 'A la medida';
-        modalLocation.textContent = item.location || 'Ahualulco de Mercado, Jal.';
 
-        // Features
-        modalFeatures.innerHTML = (item.features || []).map(f => `
-          <li class="flex items-center gap-2">
-            <span class="text-[#8B5E3C]">&bull;</span>
-            <span>${f}</span>
-          </li>
-        `).join('');
+        // Filtrar especificaciones para no incluir fabricación a medida ni Ahualulco
+        const cleanFeatures = (item.features || []).filter(f => {
+          const low = f.toLowerCase();
+          return !low.includes('ahualulco') && !low.includes('fabricación a medida') && !low.includes('fabricacion a medida');
+        });
 
-        // WA link
+        if (cleanFeatures.length > 0) {
+          if (modalFeaturesContainer) modalFeaturesContainer.classList.remove('hidden');
+          modalFeatures.innerHTML = cleanFeatures.map(f => `
+            <li class="flex items-center gap-2">
+              <span class="text-[#8B5E3C] font-bold text-sm">&bull;</span>
+              <span>${f}</span>
+            </li>
+          `).join('');
+        } else if (modalFeaturesContainer) {
+          modalFeaturesContainer.classList.add('hidden');
+        }
+
+        // Contador de posición en el modal
+        if (modalCounter) {
+          modalCounter.textContent = `${currentItemIndex + 1} de ${filteredItems.length}`;
+        }
+
+        // Enlace de cotización a WhatsApp con SKU y Título
         modalWaBtn.href = getWhatsAppPortfolioUrl(item);
 
         modal.classList.remove('hidden');
@@ -697,9 +748,17 @@
         if (e.target === modal) closeModal();
       });
 
+      // Navegación con teclado (Escape, Flecha Izquierda y Derecha)
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        if (modal.classList.contains('hidden')) return;
+        if (e.key === 'Escape') {
           closeModal();
+        } else if (e.key === 'ArrowLeft') {
+          const prevIdx = (currentItemIndex - 1 + filteredItems.length) % filteredItems.length;
+          openModalByIndex(prevIdx);
+        } else if (e.key === 'ArrowRight') {
+          const nextIdx = (currentItemIndex + 1) % filteredItems.length;
+          openModalByIndex(nextIdx);
         }
       });
 

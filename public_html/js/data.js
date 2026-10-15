@@ -211,7 +211,7 @@ const PROCESS_STEPS = [
 const PORTFOLIO_ITEMS = [
   {
     "id": "CLO-001",
-    "title": "Closet modular de madera clara con amplio espacio de almacenamiento, repisas abiertas y...",
+    "title": "Closet modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -228,15 +228,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Melamina con acabado de madera natural",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-002",
-    "title": "Amplio vestidor modular de madera en tono nogal con diseño esquinero, cajoneras integra...",
+    "title": "Amplio vestidor modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -254,15 +253,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Herrajes metálicos",
       "Racks para zapatos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-003",
-    "title": "Closet esquinero empotrado en madera de nogal, con múltiples secciones para colgar, caj...",
+    "title": "Closet esquinero empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -279,15 +277,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-004",
-    "title": "Closet abierto de diseño modular en madera de roble natural, con amplias repisas superi...",
+    "title": "Closet abierto de diseño modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -304,15 +301,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera contrachapada con chapa de roble",
       "Estantería modular",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-005",
-    "title": "Closet de madera con acabado cálido y herrajes oscuros contrastantes, que integra un pr...",
+    "title": "Closet Rústico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Rústico / Colonial",
@@ -330,15 +326,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Herrajes de hierro forjado negro",
       "Espejo",
-      "Estilo: Rústico / Colonial",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Rústico / Colonial"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-006",
-    "title": "Closet walk-in a medida en madera de nogal con acabados cálidos y optimización total de...",
+    "title": "Closet walk-in a medida",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -356,15 +351,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Pisos de mármol blanco",
       "Herrajes integrados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-007",
-    "title": "Amplio sistema de almacenamiento de piso a techo en color gris, que combina repisas abi...",
+    "title": "Amplio sistema",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -381,15 +375,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Melamina gris mate",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-008",
-    "title": "Closet de piso a techo en acabado de madera estilo nogal con puertas abatibles y tirado...",
+    "title": "Closet de piso a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -406,15 +399,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-009",
-    "title": "Closet de piso a techo en acabado madera tipo nogal con múltiples compartimentos, puert...",
+    "title": "Closet de piso a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -431,15 +423,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada con veta",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-010",
-    "title": "Closet modular de madera en tono nogal con múltiples compartimentos, cajones centrales ...",
+    "title": "Closet modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Transicional / Mid-Century",
@@ -456,15 +447,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera contrachapada con chapa de madera",
       "Herrajes metálicos",
-      "Estilo: Transicional / Mid-Century",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Transicional / Mid-Century"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-011",
-    "title": "Clóset modular de diseño contemporáneo en color negro mate, con múltiples compartimento...",
+    "title": "Clóset modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -482,15 +472,14 @@ const PORTFOLIO_ITEMS = [
       "Madera aglomerada",
       "Acabado melamínico negro mate",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-012",
-    "title": "Amplio vestidor modular de madera en tono nogal oscuro, con múltiples compartimentos, e...",
+    "title": "Amplio vestidor modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -507,15 +496,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-013",
-    "title": "Closet empotrado de diseño moderno en acabado gris oscuro, con puertas abatibles, repis...",
+    "title": "Closet empotrado de diseño moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -532,15 +520,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada o entamborada",
       "Herrajes metálicos de bisagra",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-014",
-    "title": "Amplio vestidor a medida revestido en madera de nogal, diseñado con múltiples compartim...",
+    "title": "Amplio vestidor a medida",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -558,15 +545,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Espejo",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-015",
-    "title": "Closet empotrado de muro a muro en tono oscuro con múltiples puertas abatibles y cajone...",
+    "title": "Closet empotrado de muro a muro",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -583,15 +569,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera entintada oscura",
       "Herrajes metálicos cilíndricos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-016",
-    "title": "Closet de pared a pared de diseño contemporáneo en tono gris mate, con múltiples compar...",
+    "title": "Closet de pared a pared de diseño",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -608,15 +593,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Melamina acabado mate",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-017",
-    "title": "Closet modular de diseño moderno con acabados en madera clara, integrando puertas batie...",
+    "title": "Closet modular de diseño moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -633,15 +617,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de roble claro",
       "Melamina acabado madera",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-018",
-    "title": "Closet empotrado de diseño moderno en color blanco, con múltiples compartimentos, cajon...",
+    "title": "Closet empotrado de diseño moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -658,15 +641,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Melamina blanca",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-019",
-    "title": "Closet empotrado de madera con múltiples puertas abatibles, cajonera central y entrepis...",
+    "title": "Closet empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -684,15 +666,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Herrajes de metal",
       "Melamina acabado madera",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-020",
-    "title": "Closet empotrado de diseño moderno en madera de nogal, con puertas corredizas superiore...",
+    "title": "Closet empotrado de diseño moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -709,15 +690,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada de nogal",
       "Herrajes metálicos deslizantes",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-021",
-    "title": "Closet de pared a pared en madera de nogal con diseño empotrado, múltiples puertas y ca...",
+    "title": "Closet de pared a pared",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -734,15 +714,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes de metal cromado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-022",
-    "title": "Closet esquinero de diseño moderno con acabado en madera de nogal, que incluye módulos ...",
+    "title": "Closet esquinero de diseño moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -759,15 +738,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-023",
-    "title": "Closet de piso a techo en madera de nogal con múltiples compartimentos, cajones interno...",
+    "title": "Closet de piso a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -784,15 +762,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-024",
-    "title": "Vestidor modular de madera en tono nogal con diseño integrado, que incluye zonas de col...",
+    "title": "Vestidor modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -810,15 +787,14 @@ const PORTFOLIO_ITEMS = [
       "Madera teñida acabado nogal",
       "Espejo de cuerpo entero",
       "Herrajes metálicos cromados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-025",
-    "title": "Amplio vestidor clásico de madera oscura con múltiples compartimentos, cajoneras y puer...",
+    "title": "Amplio vestidor clásico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -836,15 +812,14 @@ const PORTFOLIO_ITEMS = [
       "Madera noble de caoba o nogal",
       "Espejos en puertas",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-026",
-    "title": "Amplio closet de madera oscura con puertas abatibles y cajonera central integrada, dise...",
+    "title": "Amplio closet",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -861,15 +836,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-027",
-    "title": "Closet abierto de madera con múltiples compartimentos, repisas, cajoneras inferiores y ...",
+    "title": "Closet abierto",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -887,15 +861,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Melamina tono madera",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-028",
-    "title": "Closet de madera de piso a techo con puertas abatibles y múltiples cajoneras centrales,...",
+    "title": "Closet Clásico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -912,15 +885,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera teñida",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-029",
-    "title": "Closet abierto a medida en tono nogal oscuro, con amplias zonas de colgado, cajoneras i...",
+    "title": "Closet abierto a medida",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -937,15 +909,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera teñida",
       "Chapa de madera",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-030",
-    "title": "Clóset de madera de nogal con diseño de puertas abatibles, molduras ornamentales y cajo...",
+    "title": "Closet Clásico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -962,15 +933,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes de metal satinado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-031",
-    "title": "Closet de gran capacidad en acabado oscuro con múltiples compartimentos, puertas abatib...",
+    "title": "Closet de gran capacidad",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -987,15 +957,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera oscura",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-032",
-    "title": "Closet de madera con acabado en nogal, diseño interior mixto con espacio para colgar y ...",
+    "title": "Closet Moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1013,15 +982,14 @@ const PORTFOLIO_ITEMS = [
       "Madera enchapada en tono nogal",
       "Herrajes metálicos",
       "Tubos cromados para colgar ropa",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-033",
-    "title": "Amplio clóset modular de madera con múltiples puertas verticales y compartimentos infer...",
+    "title": "Amplio clóset modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1038,15 +1006,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada o chapa de madera",
       "Herrajes metálicos negros",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-034",
-    "title": "Closet de madera con diseño integrado de puertas batientes y cajones inferiores, optimi...",
+    "title": "Closet Moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1063,15 +1030,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-035",
-    "title": "Clásico armario de madera oscura con puertas paneladas y cajonera central integrada, of...",
+    "title": "Clásico armario",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1088,15 +1054,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-036",
-    "title": "Closet modular de madera con repisas abiertas, cajoneras múltiples y un espacio central...",
+    "title": "Closet modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Transicional / Mid-Century",
@@ -1113,15 +1078,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Transicional / Mid-Century",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Transicional / Mid-Century"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-037",
-    "title": "Closet de gran formato con acabado oscuro, que incluye amplios compartimentos superiore...",
+    "title": "Closet de gran formato",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1138,15 +1102,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera oscura",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-038",
-    "title": "Clásico armario de pared a pared en madera de nogal, con múltiples puertas paneladas y ...",
+    "title": "Clásico armario de pared a pared",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1163,15 +1126,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos circulares",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-039",
-    "title": "Closet modular de diseño moderno en acabado gris topo con textura de madera y tiradores...",
+    "title": "Closet modular de diseño moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1188,15 +1150,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada con veta",
       "Herrajes metálicos de acero cepillado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-040",
-    "title": "Closet modular a medida en madera de nogal, diseñado para maximizar el almacenamiento c...",
+    "title": "Closet modular a medida",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1213,15 +1174,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Estantes modulares",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-041",
-    "title": "Closet modular empotrado de piso a techo en tono oscuro, con múltiples puertas batiente...",
+    "title": "Closet modular empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1238,15 +1198,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera enchapada",
       "Herrajes metálicos tubulares",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-042",
-    "title": "Closet de pared a pared con acabado en negro mate y puertas abatibles, diseñado para ma...",
+    "title": "Closet de pared a pared",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1263,15 +1222,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera melamínica",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-043",
-    "title": "Closet empotrado de madera con puertas superiores de almacenamiento, cajonera integrada...",
+    "title": "Closet empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1289,15 +1247,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada de nogal",
       "Herrajes metálicos visibles",
       "Tubo de colgar cromado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-044",
-    "title": "Clóset de madera de piso a techo con amplio espacio de almacenamiento, puertas abatible...",
+    "title": "Closet Clásico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1314,15 +1271,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal o chapa de madera",
       "Herrajes metálicos plateados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-045",
-    "title": "Clásico sistema de clóset modular de pared a pared en madera oscura con múltiples puert...",
+    "title": "Clásico sistema",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1339,15 +1295,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera oscura",
       "Herrajes metálicos plateados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-046",
-    "title": "Mueble organizador tipo closet de madera con repisas fijas y cajones deslizables de alt...",
+    "title": "Mueble organizador tipo closet",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1364,15 +1319,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal o caoba",
       "Herrajes metálicos de corredera",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-047",
-    "title": "Mueble columna de cocina en color blanco brillante con repisa integrada para horno tost...",
+    "title": "Mueble columna de cocina",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1390,15 +1344,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina blanca acabado brillante",
       "Acero inoxidable",
       "Cubierta de cuarzo o granito negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-048",
-    "title": "Closet modular de diseño clásico en madera de nogal oscuro con múltiples secciones de a...",
+    "title": "Closet modular de diseño clásico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1416,15 +1369,14 @@ const PORTFOLIO_ITEMS = [
       "Madera tallada",
       "Espejo biselado",
       "Herrajes metálicos clásicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-049",
-    "title": "Closet walk-in a la medida fabricado en madera de nogal, optimizado con múltiples cajon...",
+    "title": "Closet walk-in a la medida",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1441,15 +1393,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-050",
-    "title": "Amplio closet modular empotrado en tono nogal oscuro con diseño abierto, estantería int...",
+    "title": "Amplio closet modular empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1467,15 +1418,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada",
       "Melamina tono oscuro",
       "Perfiles de aluminio negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-051",
-    "title": "Closet empotrado de madera en tono nogal oscuro, con estantería curva lateral, cajonera...",
+    "title": "Closet empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Transicional / Mid-Century",
@@ -1492,15 +1442,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Chapa de madera",
-      "Estilo: Transicional / Mid-Century",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Transicional / Mid-Century"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-052",
-    "title": "Clóset empotrado de piso a techo con puertas corredizas y paneles laterales integrados,...",
+    "title": "Clóset empotrado de piso a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1517,15 +1466,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera teñida",
       "Herrajes para puertas corredizas",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-053",
-    "title": "Vestidor moderno con armarios abiertos de madera en tono nogal y un espejo de cuerpo en...",
+    "title": "Vestidor moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1543,15 +1491,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Espejo con marco de madera",
       "Piso de porcelanato blanco",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-054",
-    "title": "Closet de madera con acabado en nogal, que combina puertas abatibles y cajoneras centra...",
+    "title": "Closet Clásico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1568,15 +1515,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos plateados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-055",
-    "title": "Closet de madera noble con elaboradas molduras y un acabado clásico, optimizando el esp...",
+    "title": "Closet Clásico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1594,15 +1540,14 @@ const PORTFOLIO_ITEMS = [
       "Madera noble",
       "Acabado barnizado",
       "Molduras talladas",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-056",
-    "title": "Amplio vestidor modular de madera oscura con compartimentos abiertos, cajoneras integra...",
+    "title": "Amplio vestidor modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1620,15 +1565,14 @@ const PORTFOLIO_ITEMS = [
       "Madera oscura",
       "Espejo biselado",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-057",
-    "title": "Closet abierto empotrado en madera de tonos cálidos, diseñado con múltiples secciones d...",
+    "title": "Closet abierto empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1645,15 +1589,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal o chapa de madera",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-058",
-    "title": "Clóset empotrado de pared completa en madera oscura con puertas batientes y múltiples c...",
+    "title": "Clóset empotrado de pared completa",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1671,15 +1614,14 @@ const PORTFOLIO_ITEMS = [
       "Madera oscura con acabado mate",
       "Herrajes de metal",
       "Bisagras metálicas",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-059",
-    "title": "Closet de madera de alta calidad con múltiples puertas de panel moldeado y cajoneras ce...",
+    "title": "Closet Clásico",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -1696,15 +1638,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-060",
-    "title": "Closet modular de madera con diseño integrado que combina espacios para colgar, cajoner...",
+    "title": "Closet modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Transicional / Mid-Century",
@@ -1722,15 +1663,14 @@ const PORTFOLIO_ITEMS = [
       "Chapa de madera",
       "Madera natural",
       "Tubo colgador metálico",
-      "Estilo: Transicional / Mid-Century",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Transicional / Mid-Century"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-061",
-    "title": "Closet de piso a techo con puertas corredizas y acabado de madera en tono nogal, diseña...",
+    "title": "Closet de piso a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1747,15 +1687,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera estriada con tinte nogal",
       "Herrajes para puertas corredizas",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-062",
-    "title": "Closet empotrado a medida en tono nogal con múltiples compartimentos, cajoneras integra...",
+    "title": "Closet empotrado a medida",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1773,15 +1712,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada",
       "Tubos colgadores metálicos",
       "Herrajes de cajones",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-063",
-    "title": "Closet de piso a techo en chapa de madera con puertas corredizas centrales y módulos de...",
+    "title": "Closet de piso a techo en chapa",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1799,15 +1737,14 @@ const PORTFOLIO_ITEMS = [
       "Chapa de madera con veta horizontal",
       "Herrajes corredizos ocultos",
       "Melamina tono nogal",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-064",
-    "title": "Closet modular de diseño contemporáneo fabricado en chapa de madera con múltiples cajon...",
+    "title": "Closet modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1825,15 +1762,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Chapa de nogal",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-065",
-    "title": "Clóset abierto empotrado en tono nogal con amplios espacios de guardado, zapateras y ba...",
+    "title": "Clóset abierto empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1851,15 +1787,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada de nogal",
       "Pisos de mármol blanco",
       "Riel metálico",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-066",
-    "title": "Closet de diseño abierto en tono madera nogal, equipado con múltiples espacios de colga...",
+    "title": "Closet de diseño abierto",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1877,15 +1812,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina tono madera",
       "Tubos metálicos para colgar",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-067",
-    "title": "Vestidor modular esquinero de madera en tono nogal oscuro, equipado con barras para col...",
+    "title": "Vestidor modular esquinero",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1903,15 +1837,14 @@ const PORTFOLIO_ITEMS = [
       "Madera teñida",
       "Herrajes metálicos cromados",
       "Melamina acabado madera",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-068",
-    "title": "Sistema de clóset modular en madera de tonos cálidos, con amplios espacios para colgar,...",
+    "title": "Sistema de clóset modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1928,15 +1861,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera contrachapada",
       "Melamina tono madera",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-069",
-    "title": "Clóset de madera de nogal de gran capacidad con puertas altas y compartimentos inferior...",
+    "title": "Closet Moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1953,15 +1885,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos negros",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-070",
-    "title": "Clóset en L de diseño moderno con acabado en madera oscura, integrado con múltiples caj...",
+    "title": "Clóset en L de diseño moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -1978,15 +1909,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-071",
-    "title": "Closet de madera con diseño funcional que incluye puertas abatibles y cajonera integrad...",
+    "title": "Closet Moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2003,15 +1933,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-072",
-    "title": "Clóset moderno de suelo a techo en color blanco mate con puertas batientes y espejos ce...",
+    "title": "Clóset moderno de suelo a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2029,15 +1958,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina blanca mate",
       "Espejos centrales",
       "Tiradores metálicos alargados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-073",
-    "title": "Closet modular de madera con acabado en nogal oscuro, que integra amplios espacios de a...",
+    "title": "Closet modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Transicional / Mid-Century",
@@ -2054,15 +1982,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Chapa de madera",
-      "Estilo: Transicional / Mid-Century",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Transicional / Mid-Century"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-074",
-    "title": "Closet empotrado de madera oscura con puertas paneladas y cajonera central, diseñado a ...",
+    "title": "Closet empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -2079,15 +2006,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera teñida",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-075",
-    "title": "Closet de piso a techo con puertas corredizas y maletero superior integrado, con un aca...",
+    "title": "Closet de piso a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2104,15 +2030,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes corredizos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-076",
-    "title": "Pequeño vestidor o alacena con repisas flotantes de madera y puerta de madera con marco...",
+    "title": "Pequeño vestidor o alacena",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2129,15 +2054,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-077",
-    "title": "Closet de esquina modular en madera con acabado natural, diseñado con una combinación d...",
+    "title": "Closet de esquina modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2154,15 +2078,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera contrachapada con chapa de madera",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-078",
-    "title": "Amplio vestidor modular de madera en tono nogal oscuro, con múltiples compartimentos ab...",
+    "title": "Amplio vestidor modular",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2179,15 +2102,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-079",
-    "title": "Closet de pared a pared con diseño minimalista en acabado gris brillante, que combina a...",
+    "title": "Closet de pared a pared",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2205,15 +2127,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina acabado brillante",
       "Herrajes ocultos",
       "Estantes flotantes",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-080",
-    "title": "Closet de pared a pared en madera de nogal con puertas corredizas y gabinetes superiore...",
+    "title": "Closet de pared a pared",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2231,15 +2152,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Herrajes metálicos",
       "Melamina",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-081",
-    "title": "Clóset empotrado de madera en tono nogal con puertas abatibles y cajonera central, equi...",
+    "title": "Clóset empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Clásico / Tradicional",
@@ -2256,15 +2176,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos plateados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-082",
-    "title": "Closet de madera de tono nogal con diseño integral, que incluye un nicho central para t...",
+    "title": "Closet Moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2281,15 +2200,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera enchapada",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-083",
-    "title": "Closet modular esquinero de gran capacidad en acabado de madera oscura, equipado con mú...",
+    "title": "Closet modular esquinero",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2306,15 +2224,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Tubos colgadores de metal",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-084",
-    "title": "Closet de madera con acabado en tono nogal, que incluye múltiples cajones y barras orga...",
+    "title": "Closet Moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2331,15 +2248,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-085",
-    "title": "Clóset moderno de piso a techo en acabado de madera oscura con múltiples puertas superi...",
+    "title": "Clóset moderno de piso a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2356,15 +2272,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera oscura con chapa",
       "Herrajes metálicos plateados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-086",
-    "title": "Pared revestida en paneles de madera con puertas integradas de diseño minimalista, idea...",
+    "title": "Closet Moderno",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2381,15 +2296,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Paneles de madera revestida",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-087",
-    "title": "Closet de piso a techo en chapa de madera con diseño integrado que combina puertas bati...",
+    "title": "Closet de piso a techo en chapa",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2407,15 +2321,14 @@ const PORTFOLIO_ITEMS = [
       "Chapa de madera natural",
       "Herrajes ocultos",
       "Guías para puertas corredizas",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-088",
-    "title": "Closet empotrado de madera con acabado texturizado tipo nogal, diseñado con puertas bat...",
+    "title": "Closet empotrado",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2432,15 +2345,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada texturizada",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-089",
-    "title": "Clóset moderno de gran formato con puertas corredizas y acabado en madera de nogal, dis...",
+    "title": "Clóset moderno de gran formato",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2457,15 +2369,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural",
       "Chapa de nogal",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "CLO-090",
-    "title": "Clóset moderno de piso a techo en madera de nogal con puertas acanaladas y combinación ...",
+    "title": "Clóset moderno de piso a techo",
     "category": "Closet",
     "categoryGroup": "closet",
     "styleFamily": "Moderno / Minimalista",
@@ -2483,15 +2394,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Herrajes metálicos",
       "Diseño acanalado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-001",
-    "title": "Cocina integral contemporánea de estética monocromática, con frentes lisos en negro mat...",
+    "title": "Cocina integral contemporánea",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2509,15 +2419,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina o laca negro mate",
       "Cubierta de cuarzo blanco en cascada",
       "Salpicadera de cuarzo o porcelanato blanco",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-002",
-    "title": "Cocina integral de diseño moderno con gabinetes blancos de alto brillo, isla central co...",
+    "title": "Cocina integral de diseño moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2535,15 +2444,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina blanca de alto brillo",
       "Cubierta de cuarzo con vetas",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-003",
-    "title": "Cocina en proceso de acabado con gabinetes blancos de estilo clásico y una imponente cu...",
+    "title": "Cocina en proceso de acabado",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -2561,15 +2469,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada en blanco",
       "Cubierta de granito o cuarzo negro con vetas",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-004",
-    "title": "Cocina moderna con gabinetes oscuros en contraste con una elegante isla central de cuar...",
+    "title": "Cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2587,15 +2494,14 @@ const PORTFOLIO_ITEMS = [
       "Madera teñida oscura",
       "Cubierta de cuarzo blanco con vetas",
       "Herrajes metálicos dorados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-005",
-    "title": "Amplia cocina de diseño clásico contemporáneo en tonos blancos con isla central, cubier...",
+    "title": "Amplia cocina",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -2613,15 +2519,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada de blanco",
       "Cubierta de granito oscuro",
       "Piso de madera de ingeniería",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-006",
-    "title": "Cocina integral de diseño contemporáneo en madera de nogal con isla central y cubiertas...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2639,15 +2544,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal texturizada",
       "Cubierta de cuarzo blanco con vetas oscuras",
       "Herrajes de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-007",
-    "title": "Despensa alta y esquinera con sistema de extracción deslizante, optimizando el espacio ...",
+    "title": "Despensa alta y esquinera",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2665,15 +2569,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada de blanco",
       "Herrajes metálicos de extracción",
       "Acabado satinado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-008",
-    "title": "Cocina integral de diseño modular en color blanco con molduras tipo shaker, complementa...",
+    "title": "Cocina integral de diseño modular",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -2691,15 +2594,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada de blanco",
       "Herrajes metálicos plateados",
       "Cubierta de granito negro",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-009",
-    "title": "Cocina moderna de diseño lineal con isla central, gabinetes superiores blancos y almace...",
+    "title": "Cocina moderna de diseño lineal",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2717,15 +2619,14 @@ const PORTFOLIO_ITEMS = [
       "Gabinetes superiores en acabado brillante",
       "Gabinetes inferiores en tono oscuro",
       "Cubierta y salpicadero de granito o cuarzo jaspeado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-010",
-    "title": "Amplia cocina de diseño clásico con gabinetes blancos de panel rehundido, isla central ...",
+    "title": "Amplia cocina de diseño clásico",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -2743,15 +2644,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada en blanco",
       "Cubierta de granito oscuro",
       "Encimera de cuarzo o mármol claro",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-011",
-    "title": "Cocina integral de estilo clásico moderno con gabinetes blancos, encimeras de piedra si...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Transicional / Mid-Century",
@@ -2769,15 +2669,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada en blanco",
       "Cubierta de cuarzo o mármol sintético",
       "Herrajes de metal",
-      "Estilo: Transicional / Mid-Century",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Transicional / Mid-Century"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-012",
-    "title": "Cocina moderna con gabinetes de madera en tono nogal, barra con cubierta negra y elegan...",
+    "title": "Cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2795,15 +2694,14 @@ const PORTFOLIO_ITEMS = [
       "Madera tipo nogal",
       "Cubierta de granito o cuarzo negro",
       "Lámparas colgantes metálicas",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-013",
-    "title": "Cocina integral de diseño contemporáneo con acabados en alto brillo y encimeras de cuar...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2821,15 +2719,14 @@ const PORTFOLIO_ITEMS = [
       "Laminado de alto brillo",
       "Cubierta de cuarzo con veteado tipo mármol",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-014",
-    "title": "Cocina integral de diseño moderno en L con gabinetes blancos y detalles en madera tipo ...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2847,15 +2744,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina blanca",
       "Madera laminada tonos nogal",
       "Cubierta de granito",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-015",
-    "title": "Cocina integral de diseño moderno con gabinetes blancos de alto brillo y encimeras de c...",
+    "title": "Cocina integral de diseño moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2873,15 +2769,14 @@ const PORTFOLIO_ITEMS = [
       "Gabinetes de alto brillo",
       "Cubierta de cuarzo blanco con vetas negras",
       "Tarja negra",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-016",
-    "title": "Cocina integral de diseño moderno con gabinetes en negro mate combinados con alacenas s...",
+    "title": "Cocina integral de diseño moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2899,15 +2794,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina negra mate",
       "Cubierta de granito o cuarzo negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-017",
-    "title": "Cocina integral moderna con gabinetes en tono nogal y una elegante cubierta de piedra n...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2925,15 +2819,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada color nogal",
       "Cubierta de granito o mármol negro",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-018",
-    "title": "Cocina integral moderna con gabinetes en acabado madera nogal, isla central con barra d...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2951,15 +2844,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina acabado madera",
       "Cubierta de granito negro",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-019",
-    "title": "Cocina integral de diseño contemporáneo en color blanco con acabado brillante, compleme...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -2977,15 +2869,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina blanca acabado brillante",
       "Electrodomésticos de acero inoxidable",
       "Revestimiento de pared tipo piedra oscura",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-020",
-    "title": "Cocina integral moderna con isla central en madera de nogal y cubierta de cuarzo vetead...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3003,15 +2894,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Laminado blanco brillante",
       "Cubierta de cuarzo veteado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-021",
-    "title": "Cocina integral de diseño contemporáneo que combina gabinetes superiores blancos con ca...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3029,15 +2919,14 @@ const PORTFOLIO_ITEMS = [
       "Gabinetes de acabado brillante",
       "Cubierta y salpicadero de granito o cuarzo claro con motas",
       "Electrodomésticos de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-022",
-    "title": "Cocina moderna con barra en L y encimera de granito claro, combinando muebles bajos de ...",
+    "title": "Cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3055,15 +2944,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Melamina gris mate",
       "Granito blanco veteado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-023",
-    "title": "Cocina de estilo clásico con gabinetes de madera oscura y molduras detalladas que aport...",
+    "title": "Cocina de estilo clásico",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3081,15 +2969,14 @@ const PORTFOLIO_ITEMS = [
       "Madera con acabado en tinte oscuro",
       "Molduras decorativas de corona",
       "Cubierta de granito o piedra natural",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-024",
-    "title": "Cocina integral de diseño moderno en color negro mate con isla central y electrodomésti...",
+    "title": "Cocina integral de diseño moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3107,15 +2994,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina negra mate",
       "Acero inoxidable",
       "Electrodomésticos integrados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-025",
-    "title": "Mueble de tocador en madera con cajones deslizantes de alta capacidad y elegante cubier...",
+    "title": "Mueble de tocador",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3133,15 +3019,14 @@ const PORTFOLIO_ITEMS = [
       "Madera teñida",
       "Encimera de piedra natural",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-026",
-    "title": "Módulo integral de cocina en madera de nogal con acabado natural, diseñado para integra...",
+    "title": "Módulo integral de cocina",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3159,15 +3044,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural con veta marcada",
       "Acero inoxidable",
       "Cubierta de granito negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-027",
-    "title": "Amplia cocina integral de estilo clásico con carpintería en madera de nogal, destacando...",
+    "title": "Amplia cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3185,15 +3069,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Cubierta de granito",
       "Metal cromado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-028",
-    "title": "Mueble de cocina modular en madera natural de nogal, con gabinetes superiores de apertu...",
+    "title": "Mueble de cocina modular",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3211,15 +3094,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural con chapa de nogal",
       "Herrajes hidráulicos para puertas elevables",
       "Acero inoxidable en campana extractora",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-029",
-    "title": "Cocina integral de estilo moderno con isla central, gabinetes superiores blancos de alt...",
+    "title": "Cocina integral de estilo moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3237,15 +3119,14 @@ const PORTFOLIO_ITEMS = [
       "Gabinetes con acabado brillante",
       "Cubierta de granito",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-030",
-    "title": "Cocina integral de estilo rústico contemporáneo con carpintería en tono verde oliva y e...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Rústico / Colonial",
@@ -3263,15 +3144,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada en tono verde",
       "Cubierta de cuarzo blanco",
       "Madera natural teñida",
-      "Estilo: Rústico / Colonial",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Rústico / Colonial"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-031",
-    "title": "Cocina integral de diseño moderno que combina gabinetes superiores en tono gris grafito...",
+    "title": "Cocina integral de diseño moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3289,15 +3169,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina gris mate",
       "Cubierta de granito claro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-032",
-    "title": "Cocina integral de estilo moderno con gabinetes de madera tipo nogal, encimera de grani...",
+    "title": "Cocina integral de estilo moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3315,15 +3194,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada de nogal",
       "Cubierta de granito negro",
       "Herrajes metálicos cilíndricos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-033",
-    "title": "Cocina integral de madera oscura con acabados tradicionales, cubierta de granito y dist...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3341,15 +3219,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal o caoba",
       "Cubierta de granito",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-034",
-    "title": "Cocina integral de diseño contemporáneo que combina gabinetes en gris oscuro, detalles ...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3367,15 +3244,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina gris",
       "Cubierta de granito con chispas blancas y grises",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-035",
-    "title": "Cocina de diseño contemporáneo en color blanco brillante con encimera oscura y gabinete...",
+    "title": "Cocina de diseño contemporáneo",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3393,15 +3269,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina acabado brillante",
       "Cubierta de granito negro",
       "Herrajes integrados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-036",
-    "title": "Mueble de alacena o gavetas empotradas en la pared con puertas abatibles de madera en t...",
+    "title": "Mueble de alacena o gavetas",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3419,15 +3294,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Chapa de madera",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-037",
-    "title": "Cocina integral de diseño contemporáneo y minimalista con acabado negro mate liso, equi...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3444,15 +3318,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Melamina negra mate",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-038",
-    "title": "Módulo de cocina en proceso de instalación con acabado en negro mate y cajones de gran ...",
+    "title": "Módulo de cocina en proceso",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3469,15 +3342,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laqueada negra",
       "Herrajes metálicos de extracción total",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-039",
-    "title": "Cocina moderna con gabinetes de madera cálida, cubierta de cuarzo blanco, fregadero tip...",
+    "title": "Cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3495,15 +3367,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada tonos rojizos",
       "Cubierta de cuarzo blanco",
       "Azulejo hidráulico decorativo",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-040",
-    "title": "Cocina con diseño de carpintería flotante en madera y detalles en negro, complementada ...",
+    "title": "Cocina Moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3521,15 +3392,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Vidrio en luminarias",
       "Metal negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-041",
-    "title": "Cocina integral de diseño moderno con gabinetes blancos lisos y amplias superficies de ...",
+    "title": "Cocina integral de diseño moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3547,15 +3417,14 @@ const PORTFOLIO_ITEMS = [
       "Laminado blanco mate",
       "Cubierta de cuarzo blanco",
       "Perfilería metálica",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-042",
-    "title": "Cocina moderna de líneas limpias y diseño compacto, equipada con gabinetes en tono gris...",
+    "title": "Cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3573,15 +3442,14 @@ const PORTFOLIO_ITEMS = [
       "Cubierta de granito o cuarzo",
       "Melamina gris mate",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-043",
-    "title": "Cocina integral de diseño moderno con gabinetes blancos de alto brillo y contraste en e...",
+    "title": "Cocina integral de diseño moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3599,15 +3467,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina blanca acabado alto brillo",
       "Cubierta de granito negro",
       "Campana extractora de acero negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-044",
-    "title": "Amplia cocina integral de estilo clásico en madera de tonos cálidos, con isla central i...",
+    "title": "Amplia cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3625,15 +3492,14 @@ const PORTFOLIO_ITEMS = [
       "Madera maciza",
       "Chapa de madera",
       "Cubierta de granito o cuarzo veteado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-045",
-    "title": "Cocina moderna con gabinetes superiores e inferiores en tono nogal y una elegante cubie...",
+    "title": "Cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3651,15 +3517,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada color nogal",
       "Cubierta de granito o mármol negro veteado",
       "Electrodomésticos de acero inoxidable y negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-046",
-    "title": "Mueble de cocina de madera con puertas paneladas y acabado en tonos cálidos, que incluy...",
+    "title": "Mueble de cocina",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3676,15 +3541,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera teñida",
       "Herrajes metálicos dorados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-047",
-    "title": "Cocina integral moderna con gabinetes superiores e inferiores de acabado blanco brillan...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3702,15 +3566,14 @@ const PORTFOLIO_ITEMS = [
       "Gabinetes de acabado brillante",
       "Encimera de madera",
       "Electrodomésticos de acero inoxidable empotrados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-048",
-    "title": "Cocina moderna con gabinetes blancos y backsplash de mosaico gris, equipada con electro...",
+    "title": "Cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3728,15 +3591,14 @@ const PORTFOLIO_ITEMS = [
       "Madera lacada en blanco",
       "Cubierta de cuarzo blanco",
       "Electrodomésticos de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-049",
-    "title": "Cocina integral de diseño moderno en color blanco con barra desayunadora, gabinetes sup...",
+    "title": "Cocina integral de diseño moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3754,15 +3616,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laqueada blanca",
       "Cubierta de cuarzo blanco",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-050",
-    "title": "Mueble aéreo de cocina en color blanco con sección para vino, copero y repisas laterale...",
+    "title": "Mueble aéreo de cocina",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3780,15 +3641,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada de blanco",
       "Cubierta de cuarzo negro con vetas blancas",
       "Vidrio en puertas superiores",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-051",
-    "title": "Amplia cocina integral de estilo clásico en madera de nogal, equipada con una isla cent...",
+    "title": "Amplia cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3806,15 +3666,14 @@ const PORTFOLIO_ITEMS = [
       "Madera maciza tono nogal con molduras",
       "Cubiertas de granito natural",
       "Electrodomésticos de acero inoxidable",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-052",
-    "title": "Isola de cocina modular con cubierta de granito negro y gabinetes inferiores de madera,...",
+    "title": "Isola de cocina modular",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3832,15 +3691,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada",
       "Cubierta de granito negro",
       "Triplay",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-053",
-    "title": "Mueble de cocina modular en tono blanco marfil con elegantes tiradores dorados, que inc...",
+    "title": "Mueble de cocina modular",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3858,15 +3716,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laqueada",
       "Cubierta de mármol o cuarzo",
       "Herrajes metálicos dorados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-054",
-    "title": "Módulo de cocina inferior con sistema de extracción extraíble y contenedor de basura in...",
+    "title": "Módulo de cocina inferior",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3884,15 +3741,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina blanca",
       "Acero inoxidable",
       "Plástico",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-055",
-    "title": "Cocina integral de diseño luminoso en tonos crema con tiradores metálicos dorados, comb...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3910,15 +3766,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada en acabado mate",
       "Herrajes metálicos dorados",
       "Cubierta de cuarzo o granito claro",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-056",
-    "title": "Cocina integral de madera en tono nogal con gabinetes superiores y campana extractora d...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Rústico / Colonial",
@@ -3936,15 +3791,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Acero inoxidable",
       "Cerámica",
-      "Estilo: Rústico / Colonial",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Rústico / Colonial"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-057",
-    "title": "Cocina integral de diseño moderno en forma de U con gabinetes blancos de acabado brilla...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -3962,15 +3816,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina blanca acabado brillante",
       "Cubierta de cuarzo negro",
       "Electrodomésticos de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-058",
-    "title": "Mobiliario modular de cocina en tono blanco con diseño de molduras clásicas, que incluy...",
+    "title": "Mobiliario modular de cocina",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -3987,15 +3840,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera pintada",
       "Cubierta laminada",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-059",
-    "title": "Amplia cocina integral de diseño clásico con gabinetes de madera tallada, isla central ...",
+    "title": "Amplia cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -4013,15 +3865,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal con molduras",
       "Cubierta y salpicadero de granito veteado",
       "Electrodomésticos de acero inoxidable",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-060",
-    "title": "Cocina de diseño clásico y funcional con gabinetes superiores e inferiores en tono crem...",
+    "title": "Cocina de diseño clásico y funcional",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -4039,15 +3890,14 @@ const PORTFOLIO_ITEMS = [
       "Madera lacada en color crema",
       "Cubierta de mármol o cuarzo veteado",
       "Herrajes y tiradores de latón dorado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-061",
-    "title": "Cocina integral moderna de diseño en L con gabinetes blancos de alto brillo y encimera ...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4065,15 +3915,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina blanca brillante",
       "Cubierta de cuarzo con veta",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-062",
-    "title": "Cocina integral de estilo moderno con gabinetes superiores e inferiores en tono madera ...",
+    "title": "Cocina integral de estilo moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4091,15 +3940,14 @@ const PORTFOLIO_ITEMS = [
       "Madera oscura melamínica",
       "Cubierta de granito claro",
       "Fregadero integrado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-063",
-    "title": "Cocina integral de estilo clásico contemporáneo en tono blanco hueso, con tiradores dor...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -4117,15 +3965,14 @@ const PORTFOLIO_ITEMS = [
       "Madera pintada de blanco",
       "Cubierta de mármol o granito claro",
       "Herrajes metálicos dorados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-064",
-    "title": "Instalación de cocina modular en madera de roble con tonos cálidos, diseño clásico de p...",
+    "title": "Instalación de cocina modular",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -4143,15 +3990,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de roble teñida",
       "Gabinetes con marco y panel rehundido",
       "Herrajes de latón",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-065",
-    "title": "Mueble de cocina integral en madera con acabado nogal y electrodomésticos integrados de...",
+    "title": "Mueble de cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4169,15 +4015,14 @@ const PORTFOLIO_ITEMS = [
       "Madera enchapada tipo nogal",
       "Acero inoxidable",
       "Herrajes metálicos lineales",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-066",
-    "title": "Cocina moderna con gabinetes superiores blancos y base de madera en tono nogal, complem...",
+    "title": "Cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4195,15 +4040,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina blanca",
       "Cubierta de granito negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-067",
-    "title": "Cocina integral moderna con gabinetes en tono nogal y encimeras de granito negro, equip...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4221,15 +4065,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina acabado madera",
       "Cubierta de granito negro",
       "Herrajes metálicos de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-068",
-    "title": "Mueble de cocina inferior en L con gabinetes de madera texturizada y una elegante cubie...",
+    "title": "Mueble de cocina inferior en L",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4247,15 +4090,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada texturizada",
       "Cubierta de granito negro",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-069",
-    "title": "Cocina integral moderna con gabinetes en tono nogal oscuro y encimeras de piedra clara,...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4273,15 +4115,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal oscuro",
       "Granito o cuarzo claro",
       "Fregadero de acero o resina negra",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-070",
-    "title": "Amplia cocina moderna con carpintería en acabado nogal, isla central con barra en piedr...",
+    "title": "Amplia cocina moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4299,15 +4140,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada de nogal",
       "Cubierta de granito o cuarzo negro",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-071",
-    "title": "Cocina integral de estilo moderno con gabinetes de madera cálida, empotrados para horno...",
+    "title": "Cocina integral de estilo moderno",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4325,15 +4165,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal o chapa de madera",
       "Cubierta de granito o cuarzo",
       "Electrodomésticos de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-072",
-    "title": "Cocina integral moderna con combinación de gabinetes en madera natural de nogal y frent...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4351,15 +4190,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina blanca mate",
       "Cubierta de granito negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-073",
-    "title": "Cocina integral de madera en tono nogal con diseño clásico, molduras superiores pronunc...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -4377,15 +4215,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Cubierta de granito",
       "Herrajes de acero inoxidable",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-074",
-    "title": "Cocina integral en madera oscura con gabinetes superiores e inferiores, cubierta de gra...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -4403,15 +4240,14 @@ const PORTFOLIO_ITEMS = [
       "Madera oscura acabado nogal",
       "Cubierta de granito claro",
       "Herrajes metálicos tubulares",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-075",
-    "title": "Mueble de cocina de diseño clásico contemporáneo en acabado blanco con gavetas extraíbl...",
+    "title": "Mueble de cocina de diseño clásico",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -4429,15 +4265,14 @@ const PORTFOLIO_ITEMS = [
       "Madera lacada en blanco",
       "Cubierta de granito oscuro",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-076",
-    "title": "Cocina integral de diseño luminoso con gabinetes blancos tipo shaker, cubierta de cuarz...",
+    "title": "Cocina integral de diseño luminoso",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Transicional / Mid-Century",
@@ -4455,15 +4290,14 @@ const PORTFOLIO_ITEMS = [
       "Madera lacada en blanco",
       "Cubierta de cuarzo blanco",
       "Azulejo tipo mosaico decorativo",
-      "Estilo: Transicional / Mid-Century",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Transicional / Mid-Century"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-077",
-    "title": "Mobiliario de cocina en acabado blanco con puertas paneladas y molduras sutiles, integr...",
+    "title": "Mobiliario de cocina",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Clásico / Tradicional",
@@ -4481,15 +4315,14 @@ const PORTFOLIO_ITEMS = [
       "Madera lacada",
       "Pintura acabado mate",
       "Herrajes ocultos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-078",
-    "title": "Mueble flotante de diseño minimalista con acabado gris mate y cubierta blanca, equipado...",
+    "title": "Mueble flotante",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4507,15 +4340,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina gris mate",
       "Cubierta de cuarzo blanco",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-079",
-    "title": "Cocina integral moderna con carpintería en chapa de nogal, isla central de granito negr...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4533,15 +4365,14 @@ const PORTFOLIO_ITEMS = [
       "Madera con chapa de nogal",
       "Cubierta de granito negro",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-080",
-    "title": "Cocina integral moderna con gabinetes superiores e inferiores de acabado blanco brillan...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4559,15 +4390,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina acabado brillante",
       "Superficie de trabajo en madera contrachapada provisional",
       "Electrodomésticos empotrados de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-081",
-    "title": "Cocina integral en proceso de instalación que combina gabinetes superiores e inferiores...",
+    "title": "Cocina integral",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4585,15 +4415,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina blanca",
       "Superficie de concreto o piedra en preparación",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-082",
-    "title": "Cocina moderna de diseño lineal con gabinetes de piso en acabado madera tipo nogal y al...",
+    "title": "Cocina moderna de diseño lineal",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4611,15 +4440,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada de nogal",
       "Melamina blanca",
       "Herrajes ocultos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "COC-083",
-    "title": "Cocina integral moderna en acabado negro mate con isla central y electrodomésticos empo...",
+    "title": "Cocina integral moderna",
     "category": "Cocinas",
     "categoryGroup": "cocinas",
     "styleFamily": "Moderno / Minimalista",
@@ -4637,15 +4465,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina negra mate",
       "Acero inoxidable",
       "Electrodomésticos integrados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-001",
-    "title": "Puerta interior de madera con acabado oscuro en tonos nogal y diseño de paneles horizon...",
+    "title": "Puerta interior",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4662,15 +4489,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada o chapa de madera",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-002",
-    "title": "Puerta principal de madera en tono nogal con diseño horizontal, manillón de acero inoxi...",
+    "title": "Puerta principal",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4688,15 +4514,14 @@ const PORTFOLIO_ITEMS = [
       "Madera",
       "Vidrio templado",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-003",
-    "title": "Puerta de entrada principal de madera con acabado en nogal, diseño contemporáneo con in...",
+    "title": "Puerta de entrada principal",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4714,15 +4539,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Herrajes de acero inoxidable",
       "Vidrio templado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-004",
-    "title": "Puerta de entrada de diseño moderno en madera con vetas horizontales, tirador tubular v...",
+    "title": "Puerta de entrada de diseño moderno",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4740,15 +4564,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada",
       "Vidrio esmerilado",
       "Herrajes de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-005",
-    "title": "Puerta de doble hoja de madera finamente tallada con paneles geométricos ornamentales y...",
+    "title": "Puerta de doble hoja",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Clásico / Tradicional",
@@ -4765,15 +4588,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera tallada",
       "Madera natural",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-006",
-    "title": "Puertas de interior de diseño moderno con acabado de madera texturizada y tiradores met...",
+    "title": "Puertas de interior de diseño",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4790,15 +4612,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-007",
-    "title": "Par de puertas interiores de diseño contemporáneo en acabado de madera oscura con vetas...",
+    "title": "Par de puertas interiores de diseño",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4816,15 +4637,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de ingeniería",
       "Chapa de madera oscura",
       "Herrajes de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-008",
-    "title": "Puerta de interior con diseño de tablones horizontales y acabado en tonos grises, compl...",
+    "title": "Puerta de interior",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4841,15 +4661,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada o chapa de madera",
       "Herrajes de acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-009",
-    "title": "Puerta principal de madera con chapa horizontal de nogal y tirador tubular de acero ino...",
+    "title": "Puerta principal",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4866,15 +4685,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-010",
-    "title": "Puertas interiores batientes de diseño moderno en tono oscuro con detalles horizontales...",
+    "title": "Puertas interiores batientes",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4892,15 +4710,14 @@ const PORTFOLIO_ITEMS = [
       "Madera oscura con veta sutil",
       "Herrajes metálicos cromados",
       "Piso cerámico imitación madera",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-011",
-    "title": "Puertas interiores de diseño moderno en madera oscura con elegantes líneas horizontales...",
+    "title": "Puertas interiores de diseño moderno",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4918,15 +4735,14 @@ const PORTFOLIO_ITEMS = [
       "Madera teñida",
       "Herrajes metálicos negros",
       "Piso de mármol",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-012",
-    "title": "Puerta de madera oscura con molduras clásicas y detalles tallados en relieve, ideal par...",
+    "title": "Puerta Clásica",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Clásico / Tradicional",
@@ -4943,15 +4759,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera oscura",
       "Acabado barnizado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-013",
-    "title": "Puerta interior de madera con veta horizontal marcada y un acabado cálido, equipada con...",
+    "title": "Puerta interior",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -4968,15 +4783,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes metálicos cromados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-014",
-    "title": "Puerta principal de madera maciza con detalles verticales y herrajes metálicos oscuros,...",
+    "title": "Puerta principal",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Rústico / Colonial",
@@ -4993,15 +4807,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes de hierro forjado",
-      "Estilo: Rústico / Colonial",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Rústico / Colonial"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-015",
-    "title": "Puerta de madera en tono nogal con diseño de líneas horizontales y un tirador metálico ...",
+    "title": "Puerta Moderna",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5018,15 +4831,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-016",
-    "title": "Puerta de madera oscura con diseño ranurado horizontal y marco a juego, equipada con ti...",
+    "title": "Puerta Moderna",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5043,15 +4855,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes metálicos cromados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-017",
-    "title": "Puerta interior de madera oscura con diseño clásico de paneles moldeados y tallados dec...",
+    "title": "Puerta interior",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Clásico / Tradicional",
@@ -5068,15 +4879,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Acabado barnizado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-018",
-    "title": "Puerta de madera maciza con un relieve tallado central de un caballo, enmarcada en una ...",
+    "title": "Puerta Rústica",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Rústico / Colonial",
@@ -5093,15 +4903,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera tallada",
       "Herrajes metálicos",
-      "Estilo: Rústico / Colonial",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Rústico / Colonial"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-019",
-    "title": "Puerta de madera con diseño lineal y acabado en tono nogal, equipada con manilla metáli...",
+    "title": "Puerta Moderna",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5118,15 +4927,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-020",
-    "title": "Puerta de diseño moderno en madera con veta horizontal y marco a juego, que aporta cali...",
+    "title": "Puerta de diseño moderno",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5143,15 +4951,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural con veta horizontal",
       "Herrajes metálicos plateados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-021",
-    "title": "Puerta de madera con vetas horizontales destacada por dos paneles verticales translúcid...",
+    "title": "Puerta Moderna",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5169,15 +4976,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Vidrio esmerilado",
       "Herrajes metálicos cromados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-022",
-    "title": "Puerta principal de diseño moderno en madera con paneles horizontales y una llamativa e...",
+    "title": "Puerta principal de diseño moderno",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5194,15 +5000,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural",
       "Metal negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-023",
-    "title": "Puerta de entrada de madera oscura con tirador vertical largo de acero inoxidable, enma...",
+    "title": "Puerta de entrada",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5220,15 +5025,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Herrajes de acero inoxidable",
       "Piedra slate para revestimiento",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-024",
-    "title": "Puerta pivotante de madera natural con vetas horizontales pronunciadas y tirador vertic...",
+    "title": "Puerta pivotante",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5245,15 +5049,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural con veta marcada",
       "Herrajes metálicos negros",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-025",
-    "title": "Puerta principal de diseño moderno con acabado en madera texturizada, marco perimetral ...",
+    "title": "Puerta principal de diseño moderno",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5270,15 +5073,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada o chapa de madera",
       "Herrajes metálicos negros",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-026",
-    "title": "Clásico armario de pared de madera oscura con molduras detalladas y cajones inferiores ...",
+    "title": "Clásico armario de pared",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Clásico / Tradicional",
@@ -5295,15 +5097,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-027",
-    "title": "Puerta de madera con acabado tipo nogal y veta horizontal, equipada con manilla metálic...",
+    "title": "Puerta Moderna",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5320,15 +5121,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera laminada",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-028",
-    "title": "Puerta interior de madera con acabado en nogal y vetas horizontales, enmarcada con cham...",
+    "title": "Puerta interior",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5345,15 +5145,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos cromados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-029",
-    "title": "Par de puertas interiores de madera con marco integrado, diseñadas con un acabado en to...",
+    "title": "Par de puertas interiores",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5370,15 +5169,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-030",
-    "title": "Puerta de entrada principal en madera natural con detalles verticales acanalados, un in...",
+    "title": "Puerta de entrada principal",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Rústico / Colonial",
@@ -5396,15 +5194,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural teñida",
       "Vidrio templado",
       "Herrajes de hierro forjado",
-      "Estilo: Rústico / Colonial",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Rústico / Colonial"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-031",
-    "title": "Puerta de madera con acabado de veta horizontal y marco integrado, complementada con un...",
+    "title": "Puerta Moderna",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5421,15 +5218,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural con veta horizontal",
       "Herrajes metálicos negros",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-032",
-    "title": "Puerta de madera en tono nogal con diseño de líneas horizontales y manija metálica mode...",
+    "title": "Puerta Moderna",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5446,15 +5242,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos cromados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-033",
-    "title": "Puerta de interior con acabado en madera de nogal de veta horizontal y diseño minimalista",
+    "title": "Puerta de interior",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5471,15 +5266,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera con chapa de nogal",
       "Herrajes metálicos en negro mate",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-034",
-    "title": "Puerta de madera en tono nogal con un diseño moderno de paneles horizontales y cuatro i...",
+    "title": "Puerta Moderna",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Moderno / Minimalista",
@@ -5497,15 +5291,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Vidrio esmerilado",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "PUE-035",
-    "title": "Puerta principal de madera noble con molduras ornamentadas, panel superior de cristal y...",
+    "title": "Puerta principal",
     "category": "Puertas",
     "categoryGroup": "puertas",
     "styleFamily": "Clásico / Tradicional",
@@ -5523,15 +5316,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Herrería decorativa",
       "Vidrio templado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-001",
-    "title": "Centro de entretenimiento integral con panel para TV, estanterías laterales y mueble ba...",
+    "title": "Centro de entretenimiento integral",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Moderno / Minimalista",
@@ -5549,15 +5341,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada con veta horizontal",
       "Melamina o laca negra mate",
       "Panel para TV integrado",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-002",
-    "title": "Mueble de entretenimiento y biblioteca a medida con generosa capacidad de almacenamient...",
+    "title": "Mueble de entretenimiento",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5575,15 +5366,14 @@ const PORTFOLIO_ITEMS = [
       "Madera lacada o acabado en laca mate",
       "Tiradores metálicos tipo anilla",
       "Molduras decorativas de madera",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-003",
-    "title": "Estantería empotrada de madera a medida con múltiples compartimentos y gabinetes inferi...",
+    "title": "Estantería empotrada",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5601,15 +5391,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural con acabado teñido",
       "Marcos de ventanas metálicos negros",
       "Pisos de madera",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-004",
-    "title": "Mueble de pared integral en madera de nogal con diseño acanalado, repisas laterales abi...",
+    "title": "Mueble de pared integral",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Moderno / Minimalista",
@@ -5627,15 +5416,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Acabado acanalado vertical",
       "Cristal templado (chimenea)",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-005",
-    "title": "Librero y mueble de almacenamiento empotrado de pared a pared en madera de nogal, con c...",
+    "title": "Librero y mueble",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Moderno / Minimalista",
@@ -5652,15 +5440,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-006",
-    "title": "Mueble modular integral de piso a techo en acabado madera oscura, diseñado a medida par...",
+    "title": "Mueble modular integral",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Moderno / Minimalista",
@@ -5678,15 +5465,14 @@ const PORTFOLIO_ITEMS = [
       "Melamina con veta de madera",
       "Tableros de MDF",
       "Tiradores integrados (uñeros/gola)",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-007",
-    "title": "Mueble empotrado multifuncional de madera clara con estantería superior, espacio centra...",
+    "title": "Mueble empotrado multifuncional",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5704,15 +5490,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de roble natural",
       "Herrajes ocultos",
       "Molduras decorativas",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-008",
-    "title": "Mueble multifuncional empotrado de piso a techo, diseñado con nicho central para pantal...",
+    "title": "Mueble multifuncional empotrado",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Moderno / Minimalista",
@@ -5729,15 +5514,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Chapa de madera o melamina tono nogal",
       "Uñeros o tiradores integrados tipo gola",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-009",
-    "title": "Mueble de almacenamiento con diseño tradicional y puertas de tablero rebajado, rematado...",
+    "title": "Mueble de almacenamiento",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5755,15 +5539,14 @@ const PORTFOLIO_ITEMS = [
       "Madera con acabado barnizado",
       "Cubierta de cuarzo con veteado",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-010",
-    "title": "Cornisa decorativa de madera oscura con detalles tallados estilo clásico, ideal para en...",
+    "title": "Cornisa decorativa",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5780,15 +5563,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera maciza",
       "Moldeados decorativos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-011",
-    "title": "Espacio interior revestido con paneles de madera estriada y muro de acento en mármol, c...",
+    "title": "Espacio interior",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Moderno / Minimalista",
@@ -5806,15 +5588,14 @@ const PORTFOLIO_ITEMS = [
       "Madera estriada",
       "Mármol blanco veteado",
       "Metal negro",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-012",
-    "title": "Mesa de noche de estilo clásico con tres cajones y elaborados tallados laterales en mad...",
+    "title": "Mesa de noche de estilo clásico",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5831,15 +5612,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera tallada",
       "Herrajes metálicos dorados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-013",
-    "title": "Gran mueble de pared en madera natural con estantería abierta y gabinetes inferiores in...",
+    "title": "Gran mueble de pared",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Transicional / Mid-Century",
@@ -5857,15 +5637,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural sin terminar",
       "Molduras decorativas",
       "Paneles empotrados",
-      "Estilo: Transicional / Mid-Century",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Transicional / Mid-Century"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-014",
-    "title": "Sofá estilo clásico de madera tallada oscura con respaldo dividido y tapizado en tela d...",
+    "title": "Sofá Estilo clásico",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5882,15 +5661,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera tallada",
       "Tela tapizada con patrón brocado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-015",
-    "title": "Paneles de acceso empotrados en muro con marcos de madera y puertas dobles con vetas al...",
+    "title": "Paneles de acceso empotrados en muro",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Moderno / Minimalista",
@@ -5907,15 +5685,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural con veta marcada",
       "Marco de madera perimetral",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-016",
-    "title": "Mueble de baño doble de diseño clásico señorial, destacado por sus elegantes módulos cu...",
+    "title": "Mueble de baño doble de diseño",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5933,15 +5710,14 @@ const PORTFOLIO_ITEMS = [
       "Madera maciza o enchapada entintada",
       "Molduras decorativas en relieve",
       "Acabado en barniz satinado/brillante",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-017",
-    "title": "Repisa de madera con tallados ornamentales en relieve y acabado pulido, ideal para deco...",
+    "title": "Mueble Clásico",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -5957,15 +5733,14 @@ const PORTFOLIO_ITEMS = [
     "isFeatured": false,
     "features": [
       "Madera tallada",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-018",
-    "title": "Mueble de pared integral en madera de nogal con centro multimedia para televisión y múl...",
+    "title": "Mueble de pared integral",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Moderno / Minimalista",
@@ -5983,15 +5758,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Chapa de madera",
       "Pantalla LED de televisión",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-019",
-    "title": "Mueble de carpintería fina con elaborados detalles tallados en madera oscura, ideal par...",
+    "title": "Mueble de carpintería fina",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -6008,15 +5782,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera tallada a mano",
       "Cubierta de piedra clara",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-020",
-    "title": "Elegante campana de cocina ornamental con arco rebajado y detalladas tallas artesanales...",
+    "title": "Elegante campana",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -6034,15 +5807,14 @@ const PORTFOLIO_ITEMS = [
       "Madera maciza tallada",
       "Acabado en barniz satinado",
       "Ménsulas y molduras de madera",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "MUE-021",
-    "title": "Elegante arco y marco de madera tallada a mano con detalles ornamentales y molduras clá...",
+    "title": "Elegante arco y marco",
     "category": "Muebles",
     "categoryGroup": "muebles",
     "styleFamily": "Clásico / Tradicional",
@@ -6058,15 +5830,14 @@ const PORTFOLIO_ITEMS = [
     "isFeatured": false,
     "features": [
       "Madera natural tallada",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-001",
-    "title": "Recámara integral con clóset de pared a techo y área de tocador combinando madera tipo ...",
+    "title": "Recámara integral",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6084,15 +5855,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina blanca mate",
       "Espejo de vanidad",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-002",
-    "title": "Recámara de estilo clásico fabricada en madera oscura, compuesta por una cama de cabece...",
+    "title": "Recámara de estilo clásico",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Clásico / Tradicional",
@@ -6110,15 +5880,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Herrajes metálicos",
       "Tela textil",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-003",
-    "title": "Recámara de diseño contemporáneo que incluye una sólida cabecera y mesas de noche de ma...",
+    "title": "Recámara de diseño contemporáneo",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6135,15 +5904,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural",
       "Textil con patrón floral",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-004",
-    "title": "Cabecera y mesas de noche de diseño moderno elaboradas en madera de nogal, creando un a...",
+    "title": "Cabecera y mesas",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6160,15 +5928,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural con chapa de nogal",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-005",
-    "title": "Recámara con cabecera de madera y burós flotados a juego, complementada con iluminación...",
+    "title": "Recámara Moderna",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6186,15 +5953,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Textil con patrón geométrico",
       "Pared con acabado en pintura gris",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-006",
-    "title": "Amplio escritorio de madera con múltiples cajones y elegante acabado superior, ideal pa...",
+    "title": "Amplio escritorio",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Clásico / Tradicional",
@@ -6212,15 +5978,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Herrajes metálicos oscuros",
       "Cubierta con incrustaciones decorativas",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-007",
-    "title": "Juego de recámara de estilo clásico con acabado en nogal oscuro, destacando detalles ta...",
+    "title": "Juego de recámara de estilo clásico",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Clásico / Tradicional",
@@ -6238,15 +6003,14 @@ const PORTFOLIO_ITEMS = [
       "Madera tallada",
       "Espejo biselado",
       "Herrajes metálicos dorados",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-008",
-    "title": "Recámara contemporánea con cabecera y mesas de noche de madera en tono nogal, complemen...",
+    "title": "Recámara contemporánea",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6264,15 +6028,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural con acabado oscuro",
       "Textil de algodón con patrón floral",
       "Pared con aplanado fino",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-009",
-    "title": "Cabecera de madera de diseño limpio y minimalista acompañada de un buró a juego de dos ...",
+    "title": "Recámara Moderna",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6289,15 +6052,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural con veta visible",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-010",
-    "title": "Juego de tocador y espejo de estilo clásico en color blanco satinado, con detalles tall...",
+    "title": "Juego de tocador y espejo de estilo",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Clásico / Tradicional",
@@ -6315,15 +6077,14 @@ const PORTFOLIO_ITEMS = [
       "Madera tallada",
       "Pintura en acabado laqueado blanco",
       "Herrajes metálicos oscuros",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-011",
-    "title": "Recámara de estilo clásico fabricada en madera en tono nogal, compuesta por una robusta...",
+    "title": "Recámara de estilo clásico",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Clásico / Tradicional",
@@ -6340,15 +6101,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera natural",
       "Herrajes metálicos",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-012",
-    "title": "Habitación infantil equipada con camas de madera con barandillas de seguridad y cabecer...",
+    "title": "Habitación infantil",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6365,15 +6125,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera de nogal",
       "Madera natural en tablones",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-013",
-    "title": "Cabecera de diseño moderno con paneles verticales tapizados en gris, enmarcados por col...",
+    "title": "Cabecera de diseño moderno",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6391,15 +6150,14 @@ const PORTFOLIO_ITEMS = [
       "Madera laminada o chapada",
       "Paneles tapizados en tela",
       "Estructura metálica para iluminación",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-014",
-    "title": "Habitación infantil con estructura de literas escalonadas de diseño personalizado en ma...",
+    "title": "Habitación infantil",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6417,15 +6175,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Madera clara en tablillas",
       "Piso de porcelanato",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-015",
-    "title": "Recámara de estilo clásico elaborada en madera oscura con finos detalles tallados, comp...",
+    "title": "Recámara de estilo clásico",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Clásico / Tradicional",
@@ -6443,15 +6200,14 @@ const PORTFOLIO_ITEMS = [
       "Madera tallada",
       "Chapa de madera con acabado oscuro",
       "Espejo biselado",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-016",
-    "title": "Recámara de diseño contemporáneo que incluye una cama con plataforma de madera de nogal...",
+    "title": "Recámara de diseño contemporáneo",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6469,15 +6225,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Textil de colchón capitonado",
       "Herrajes metálicos",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-017",
-    "title": "Recámara de diseño limpio y funcional en color blanco, compuesta por una cama de sólida...",
+    "title": "Recámara de diseño limpio",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Clásico / Tradicional",
@@ -6494,15 +6249,14 @@ const PORTFOLIO_ITEMS = [
     "features": [
       "Madera pintada",
       "Acabado lacado blanco",
-      "Estilo: Clásico / Tradicional",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Clásico / Tradicional"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "REC-018",
-    "title": "Dormitorio moderno con mueble de tocador integrado en madera de nogal, paneles acanalad...",
+    "title": "Dormitorio moderno",
     "category": "Recámaras",
     "categoryGroup": "recamaras",
     "styleFamily": "Moderno / Minimalista",
@@ -6520,15 +6274,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Melamina o laca blanca mate",
       "Paneles acanalados de madera",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "ESC-001",
-    "title": "Escalera flotante moderna con peldaños de mármol veteado, iluminación integrada y baran...",
+    "title": "Escalera flotante moderna",
     "category": "Escaleras",
     "categoryGroup": "escaleras",
     "styleFamily": "Moderno / Minimalista",
@@ -6546,15 +6299,14 @@ const PORTFOLIO_ITEMS = [
       "Mármol veteado",
       "Vidrio templado",
       "Acero inoxidable",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "ESC-002",
-    "title": "Escalera interior de diseño moderno con escalones revestidos en madera, barandal metáli...",
+    "title": "Escalera interior de diseño moderno",
     "category": "Escaleras",
     "categoryGroup": "escaleras",
     "styleFamily": "Moderno / Minimalista",
@@ -6572,15 +6324,14 @@ const PORTFOLIO_ITEMS = [
       "Madera texturizada en huellas y peraltes",
       "Barandal de herrería con patrón calado",
       "Pasamanos de madera",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "ESC-003",
-    "title": "Elegante escalera con peldaños de madera, barandilla de madera y paneles metálicos deco...",
+    "title": "Elegante escalera",
     "category": "Escaleras",
     "categoryGroup": "escaleras",
     "styleFamily": "Moderno / Minimalista",
@@ -6598,15 +6349,14 @@ const PORTFOLIO_ITEMS = [
       "Madera natural",
       "Metal perforado",
       "Piedra decorativa",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "BAN-001",
-    "title": "Mueble de baño flotante en madera de nogal con lavabo integrado sobre cubierta y revest...",
+    "title": "Mueble de baño flotante",
     "category": "Baños",
     "categoryGroup": "banos",
     "styleFamily": "Moderno / Minimalista",
@@ -6624,15 +6374,14 @@ const PORTFOLIO_ITEMS = [
       "Madera de nogal",
       "Cubierta de cerámica",
       "Azulejo tipo mosaico pétreo",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
   },
   {
     "id": "BAN-002",
-    "title": "Mueble de baño flotante con acabado en madera oscura y cubierta de cuarzo blanco, compl...",
+    "title": "Mueble de baño flotante",
     "category": "Baños",
     "categoryGroup": "banos",
     "styleFamily": "Moderno / Minimalista",
@@ -6650,8 +6399,7 @@ const PORTFOLIO_ITEMS = [
       "Madera oscura de nogal",
       "Cubierta de cuarzo blanco veteado",
       "Lavabos metálicos texturizados",
-      "Estilo: Moderno / Minimalista",
-      "Fabricación a medida en Ahualulco de Mercado, Jal."
+      "Estilo: Moderno / Minimalista"
     ],
     "dimensions": "Dimensiones personalizadas según espacio",
     "location": "Ahualulco de Mercado, Jal."
