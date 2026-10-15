@@ -253,27 +253,43 @@
       </div>
     </section>
 
-    <!-- Sección 4: Maderas Nobles (Preview de data.js) -->
-    <section class="py-20 lg:py-28 bg-[#f9f9f8]">
+    <!-- Sección 4: Muestrario de Materiales & Maderas (Presentación Breve) -->
+    <section class="py-20 lg:py-28 bg-[#f9f9f8] border-b border-[#e5dedb]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-          <div>
-            <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Muestrario de Maderas</span>
-            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] mt-2">
-              Nuestra Selección de Maderas Macizas
-            </h2>
+        <div class="max-w-3xl mb-8">
+          <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Muestrario de Materiales</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] mt-2 mb-3">
+            Maderas Nobles & Tableros de Ingeniería
+          </h2>
+          <p class="text-sm sm:text-base text-[#5c5f5e] leading-relaxed">
+            La longevidad y estética de cada pieza dependen de la materia prima. Conoce las 8 opciones principales con las que trabajamos en taller.
+          </p>
+        </div>
+
+        <!-- Selector de Pestañas de Materiales -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+          <div class="flex items-center gap-1.5 bg-[#eee8e5] p-1.5 rounded-full inline-flex flex-wrap self-start">
+            <button id="mat-tab-solid" type="button" class="mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all bg-[#5d4037] text-white shadow-sm">
+              Maderas Macizas (4)
+            </button>
+            <button id="mat-tab-eng" type="button" class="mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all text-[#5c5f5e] hover:text-[#2c160e]">
+              Tableros de Ingeniería (4)
+            </button>
+            <button id="mat-tab-all" type="button" class="mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all text-[#5c5f5e] hover:text-[#2c160e]">
+              Ver los 8 Materiales
+            </button>
           </div>
           <a 
             href="/ejmonjo/muebles-a-la-medida" 
-            class="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-semibold text-[#5d4037] hover:text-[#8B5E3C]"
+            class="text-xs font-semibold uppercase tracking-wider text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5"
           >
-            <span>Ver guía completa de materiales y tableros</span>
+            <span>Guía detallada de carpintería</span>
             <span>&rarr;</span>
           </a>
         </div>
 
         <div id="woods-preview-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Se inyecta dinámicamente desde data.js SOLID_WOODS -->
+          <!-- Inyectado dinámicamente desde SOLID_WOODS y ENGINEERED_BOARDS en data.js -->
         </div>
       </div>
     </section>
@@ -312,32 +328,39 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados sin compilación previa con cache buster -->
-  <script src="/ejmonjo/js/data.js?v=2.2"></script>
+  <script src="/ejmonjo/js/data.js?v=2.3"></script>
   <script>
     if (typeof SOLID_WOODS === 'undefined') {
-      document.write('<script src="js/data.js?v=2.2"><\/script>');
+      document.write('<script src="js/data.js?v=2.3"><\/script>');
     }
   </script>
-  <script src="/ejmonjo/js/layout.js?v=2.2"></script>
+  <script src="/ejmonjo/js/layout.js?v=2.3"></script>
   <script>
     if (typeof WHATSAPP_ICON_SVG === 'undefined') {
-      document.write('<script src="js/layout.js?v=2.2"><\/script>');
+      document.write('<script src="js/layout.js?v=2.3"><\/script>');
     }
   </script>
 
   <!-- Lógica de carrusel e inyección de datos de inicio -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Inyectar preview de 4 maderas nobles desde SOLID_WOODS en data.js
+      // 1. Inyección de Materiales y Maderas con Pestañas
       const container = document.getElementById('woods-preview-container');
-      if (container && typeof SOLID_WOODS !== 'undefined') {
-        container.innerHTML = SOLID_WOODS.map(wood => `
+      const tabSolid = document.getElementById('mat-tab-solid');
+      const tabEng = document.getElementById('mat-tab-eng');
+      const tabAll = document.getElementById('mat-tab-all');
+      const matTabs = [tabSolid, tabEng, tabAll];
+
+      function renderMaterials(items) {
+        if (!container || !items) return;
+        container.innerHTML = items.map(wood => `
           <div class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
             <div class="aspect-square overflow-hidden bg-[#eee]">
               <img 
                 src="${wood.image}" 
                 alt="${wood.name}" 
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                loading="lazy"
               />
             </div>
             <div class="p-5 flex flex-col flex-grow">
@@ -347,12 +370,39 @@
               </div>
               <h3 class="font-serif font-bold text-lg text-[#2c160e] mb-2">${wood.name}</h3>
               <p class="text-xs text-[#5c5f5e] leading-relaxed mb-4 flex-grow">${wood.whatIs}</p>
-              <div class="pt-3 border-t border-[#f0eae6] text-[11px] text-[#7d5260]">
+              <div class="pt-3 border-t border-[#f0eae6] text-[11px] text-[#7d5260] mb-4">
                 <strong>Ideal para:</strong> ${wood.idealFor}
               </div>
+              <a 
+                href="${getWhatsAppUrl('Hola EJ Monjo, me interesa cotizar una pieza en ' + wood.name)}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-auto w-full text-center text-xs font-semibold py-2 px-3 rounded-xl bg-[#f5f0ed] hover:bg-[#8B5E3C] text-[#5d4037] hover:text-white transition-colors"
+              >
+                Cotizar en esta madera
+              </a>
             </div>
           </div>
         `).join('');
+      }
+
+      function setActiveMatTab(activeBtn, items) {
+        matTabs.forEach(btn => {
+          if (btn === activeBtn) {
+            btn.className = 'mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all bg-[#5d4037] text-white shadow-sm';
+          } else {
+            btn.className = 'mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all text-[#5c5f5e] hover:text-[#2c160e]';
+          }
+        });
+        renderMaterials(items);
+      }
+
+      if (typeof SOLID_WOODS !== 'undefined' && typeof ENGINEERED_BOARDS !== 'undefined') {
+        renderMaterials(SOLID_WOODS);
+
+        tabSolid.addEventListener('click', () => setActiveMatTab(tabSolid, SOLID_WOODS));
+        tabEng.addEventListener('click', () => setActiveMatTab(tabEng, ENGINEERED_BOARDS));
+        tabAll.addEventListener('click', () => setActiveMatTab(tabAll, [...SOLID_WOODS, ...ENGINEERED_BOARDS]));
       }
 
       // 2. Control del Carrusel del Hero (cada 5 segundos)

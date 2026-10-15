@@ -50,94 +50,219 @@
 
   <main class="flex-grow">
     <!-- Hero Header -->
-    <section class="py-16 sm:py-20 bg-[#f4eeeb] border-b border-[#e5dedb]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-        <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#2c160e] leading-tight mb-4">
+    <section class="py-14 sm:py-18 bg-[#f4eeeb] border-b border-[#e5dedb]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+        <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Obras Residenciales & Taller</span>
+        <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#2c160e] leading-tight mt-2 mb-4">
           Portafolio de Proyectos
         </h1>
-        <p class="text-base sm:text-lg text-[#5c5f5e] leading-relaxed">
-          Cada obra es el reflejo de una visión personalizada. Explora nuestras cocinas, clósets, puertas, muebles, escaleras, baños y recámaras fabricados con los más altos estándares de carpintería artesanal.
+        <p class="text-base sm:text-lg text-[#5c5f5e] leading-relaxed max-w-2xl mx-auto">
+          Cada obra refleja precisión artesanal y arquitectura personalizada. Filtra por espacio, estilo de diseño, tonalidad de madera y acabados clave.
         </p>
 
-        <!-- Filtros de Categorías -->
+        <!-- Filtro Primario: Categoría o Espacio (Pills Superiores) -->
         <div class="flex items-center justify-center gap-2 mt-8 flex-wrap" id="category-filters">
           <button 
             type="button" 
-            data-cat="Todos" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm"
+            data-cat="all" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm flex items-center gap-1.5"
           >
-            Todos los Proyectos
+            <span>✦</span> <span>Todos los Proyectos</span>
           </button>
           <button 
             type="button" 
-            data-cat="Cocinas" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+            data-cat="cocinas" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
           >
-            Cocinas
+            <span>🍳</span> <span>Cocinas</span>
           </button>
           <button 
             type="button" 
-            data-cat="Clósets" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+            data-cat="closets" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
           >
-            Clósets y Vestidores
+            <span>👔</span> <span>Closets y Vestidores</span>
           </button>
           <button 
             type="button" 
-            data-cat="Puertas" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+            data-cat="puertas" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
           >
-            Puertas
+            <span>🚪</span> <span>Puertas</span>
           </button>
           <button 
             type="button" 
-            data-cat="Muebles" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+            data-cat="recamaras" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
           >
-            Muebles
+            <span>🛏️</span> <span>Recámaras</span>
           </button>
           <button 
             type="button" 
-            data-cat="Recámaras" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+            data-cat="especiales" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
           >
-            Recámaras
+            <span>🪑</span> <span>Muebles Especiales</span>
           </button>
           <button 
             type="button" 
-            data-cat="Baños" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+            data-cat="proceso" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
           >
-            Baños
-          </button>
-          <button 
-            type="button" 
-            data-cat="Escaleras" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
-          >
-            Escaleras
-          </button>
-          <button 
-            type="button" 
-            data-cat="Materiales" 
-            class="cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
-          >
-            Materiales y Maderas
+            <span>🔨</span> <span>En Taller / Proceso</span>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- Galería de Proyectos -->
-    <section class="py-16 lg:py-20 bg-[#f9f9f8]">
+    <!-- Galería de Proyectos con Panel de Filtros Secundarios -->
+    <section class="py-12 lg:py-16 bg-[#f9f9f8]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Panel Flotante de Filtros Secundarios (Estilo, Tonalidad, Cubierta) -->
+        <div class="bg-white rounded-3xl p-5 sm:p-6 border border-[#e5dedb] shadow-sm mb-10">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
+            
+            <!-- 2. Estilo de Diseño -->
+            <div>
+              <label for="filter-style" class="block text-xs font-bold uppercase tracking-wider text-[#2c160e] mb-2">
+                2. Estilo de Diseño
+              </label>
+              <div class="relative">
+                <select 
+                  id="filter-style"
+                  class="w-full appearance-none bg-[#f9f9f8] border border-[#e5dedb] rounded-xl px-3.5 py-2.5 text-xs text-[#2c160e] font-medium focus:outline-none focus:border-[#8B5E3C] focus:bg-white cursor-pointer transition-colors"
+                >
+                  <option value="all">Todos los Estilos (Moderno, Clásico, Rústico...)</option>
+                  <option value="moderno">Moderno / Minimalista</option>
+                  <option value="clasico">Clásico / Tradicional</option>
+                  <option value="rustico">Rústico / Colonial</option>
+                  <option value="transicional">Transicional / Mid-Century</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-[#7d5260]">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Tonalidad y Acabado Dominante (Chips de Color) -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-[#2c160e] mb-2">
+                3. Tonalidad y Acabado Dominante
+              </label>
+              <div class="flex items-center gap-1.5 flex-wrap" id="tone-chips-container">
+                <button 
+                  type="button" 
+                  data-tone="all" 
+                  class="tone-chip px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border border-[#5d4037] bg-[#5d4037] text-white"
+                  title="Todas las tonalidades"
+                >
+                  Todas
+                </button>
+                <button 
+                  type="button" 
+                  data-tone="calidas" 
+                  class="tone-chip px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all border border-[#e5dedb] bg-white text-[#5c5f5e] hover:bg-[#eee8e5] flex items-center gap-1.5"
+                  title="Nogal claro, roble, castaño, miel"
+                >
+                  <span class="w-3 h-3 rounded-full bg-[#c49a6c] inline-block shadow-xs shrink-0"></span>
+                  <span>Cálidas</span>
+                </button>
+                <button 
+                  type="button" 
+                  data-tone="oscuras" 
+                  class="tone-chip px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all border border-[#e5dedb] bg-white text-[#5c5f5e] hover:bg-[#eee8e5] flex items-center gap-1.5"
+                  title="Nogal oscuro, caoba, wengué, chocolate"
+                >
+                  <span class="w-3 h-3 rounded-full bg-[#4a2e1b] inline-block shadow-xs shrink-0"></span>
+                  <span>Oscuras</span>
+                </button>
+                <button 
+                  type="button" 
+                  data-tone="claros" 
+                  class="tone-chip px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all border border-[#e5dedb] bg-white text-[#5c5f5e] hover:bg-[#eee8e5] flex items-center gap-1.5"
+                  title="Blanco mate, alto brillo, crema, beige"
+                >
+                  <span class="w-3 h-3 rounded-full bg-[#f8f7f5] border border-gray-300 inline-block shadow-xs shrink-0"></span>
+                  <span>Claros</span>
+                </button>
+                <button 
+                  type="button" 
+                  data-tone="grises" 
+                  class="tone-chip px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all border border-[#e5dedb] bg-white text-[#5c5f5e] hover:bg-[#eee8e5] flex items-center gap-1.5"
+                  title="Negro mate, grafito, carbón, gris topo"
+                >
+                  <span class="w-3 h-3 rounded-full bg-[#2b2d30] inline-block shadow-xs shrink-0"></span>
+                  <span>Grises</span>
+                </button>
+                <button 
+                  type="button" 
+                  data-tone="acentos" 
+                  class="tone-chip px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all border border-[#e5dedb] bg-white text-[#5c5f5e] hover:bg-[#eee8e5] flex items-center gap-1.5"
+                  title="Verde oliva, azul violáceo, epóxicos"
+                >
+                  <span class="w-3 h-3 rounded-full bg-[#3d5a45] inline-block shadow-xs shrink-0"></span>
+                  <span>Acentos</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Material de Cubierta / Elementos Clave -->
+            <div>
+              <label for="filter-element" class="block text-xs font-bold uppercase tracking-wider text-[#2c160e] mb-2">
+                4. Cubierta / Elementos Clave
+              </label>
+              <div class="relative">
+                <select 
+                  id="filter-element"
+                  class="w-full appearance-none bg-[#f9f9f8] border border-[#e5dedb] rounded-xl px-3.5 py-2.5 text-xs text-[#2c160e] font-medium focus:outline-none focus:border-[#8B5E3C] focus:bg-white cursor-pointer transition-colors"
+                >
+                  <option value="all">Todas las Cubiertas y Acabados</option>
+                  <option value="cuarzo">Cubierta de Cuarzo (Calacatta, veteado, blanco)</option>
+                  <option value="granito">Cubierta de Granito (Negro absoluto, jaspeado)</option>
+                  <option value="madera-solida">Madera Sólida / Natural</option>
+                  <option value="herreria-cristal">Detalles en Herrería / Metal Negro / Cristal</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-[#7d5260]">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Barra de Estado y Reset de Filtros -->
+          <div class="mt-5 pt-4 border-t border-[#f0eae6] flex items-center justify-between text-xs flex-wrap gap-2">
+            <div class="flex items-center gap-2">
+              <span id="results-count" class="font-bold text-[#5d4037]">Cargando proyectos...</span>
+              <span id="active-filter-tags" class="text-[#7d5260] hidden sm:inline"></span>
+            </div>
+            <button 
+              id="reset-filters-btn" 
+              type="button" 
+              class="hidden font-semibold text-[#8B5E3C] hover:text-[#5d4037] flex items-center gap-1 transition-colors"
+            >
+              <span>↺ Restablecer todos los filtros</span>
+            </button>
+          </div>
+        </div>
+
         <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Se inyecta dinámicamente desde PORTFOLIO_ITEMS en data.js -->
         </div>
 
         <!-- Estado vacío (por si un filtro no tiene items) -->
-        <div id="empty-state" class="hidden text-center py-20">
-          <p class="text-lg text-[#5c5f5e] font-serif">No se encontraron proyectos en esta categoría.</p>
+        <div id="empty-state" class="hidden text-center py-20 bg-white rounded-3xl border border-[#e5dedb] p-8 max-w-xl mx-auto my-8">
+          <span class="text-4xl mb-3 block">🔍</span>
+          <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">No encontramos obras con esta combinación</h3>
+          <p class="text-xs sm:text-sm text-[#5c5f5e] mb-6">Prueba seleccionando "Todos los Estilos" o restableciendo los filtros para ver más opciones.</p>
+          <button 
+            type="button" 
+            id="empty-reset-btn"
+            class="px-5 py-2.5 rounded-full text-xs font-semibold bg-[#5d4037] text-white hover:bg-[#8B5E3C] transition-colors"
+          >
+            Ver todos los proyectos
+          </button>
         </div>
       </div>
     </section>
@@ -231,20 +356,20 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados sin compilación previa con cache buster -->
-  <script src="/ejmonjo/js/data.js?v=2.2"></script>
+  <script src="/ejmonjo/js/data.js?v=2.3"></script>
   <script>
     if (typeof PORTFOLIO_ITEMS === 'undefined') {
-      document.write('<script src="js/data.js?v=2.2"><\/script>');
+      document.write('<script src="js/data.js?v=2.3"><\/script>');
     }
   </script>
-  <script src="/ejmonjo/js/layout.js?v=2.2"></script>
+  <script src="/ejmonjo/js/layout.js?v=2.3"></script>
   <script>
     if (typeof WHATSAPP_ICON_SVG === 'undefined') {
-      document.write('<script src="js/layout.js?v=2.2"><\/script>');
+      document.write('<script src="js/layout.js?v=2.3"><\/script>');
     }
   </script>
 
-  <!-- Lógica Interactiva del Portafolio y Modal -->
+  <!-- Lógica Interactiva del Portafolio y los 4 Filtros Clave -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       if (typeof PORTFOLIO_ITEMS === 'undefined') {
@@ -252,13 +377,25 @@
         return;
       }
 
-      let currentCategory = 'Todos';
+      // Estados de los 4 filtros clave
+      let currentCategory = 'all'; // 1. Espacio / Categoría
+      let currentStyle = 'all';    // 2. Estilo de Diseño
+      let currentTone = 'all';     // 3. Tonalidad / Acabado
+      let currentElement = 'all';  // 4. Cubierta / Elemento Clave
+
       let currentItemIndex = 0;
       let filteredItems = [...PORTFOLIO_ITEMS];
 
+      // Elementos del DOM
       const grid = document.getElementById('portfolio-grid');
       const emptyState = document.getElementById('empty-state');
-      const filterBtns = document.querySelectorAll('.cat-filter-btn');
+      const catBtns = document.querySelectorAll('.cat-filter-btn');
+      const styleSelect = document.getElementById('filter-style');
+      const toneBtns = document.querySelectorAll('.tone-chip');
+      const elementSelect = document.getElementById('filter-element');
+      const resultsCount = document.getElementById('results-count');
+      const resetBtn = document.getElementById('reset-filters-btn');
+      const emptyResetBtn = document.getElementById('empty-reset-btn');
 
       // Modal elements
       const modal = document.getElementById('project-modal');
@@ -276,17 +413,6 @@
       const modalLocation = document.getElementById('modal-location');
       const modalWaBtn = document.getElementById('modal-wa-btn');
 
-      // Utilidad de normalización (ignora acentos, mayúsculas y plurales: e.g. "closet" == "clósets")
-      function normCat(str) {
-        if (!str) return '';
-        return str
-          .normalize('NFD')
-          .replace(/[\u0300-\u036f]/g, '')
-          .toLowerCase()
-          .trim()
-          .replace(/(es|s)$/, '');
-      }
-
       // Resolver ruta de imagen compatible con entorno local y /ejmonjo/
       function resolveImg(src) {
         if (!src) return '';
@@ -297,15 +423,43 @@
         return src;
       }
 
-      // 1. Renderizar tarjetas del portafolio
-      function renderGrid() {
-        if (currentCategory === 'Todos') {
-          filteredItems = [...PORTFOLIO_ITEMS];
+      // 1. Filtrado Combinado de los 4 Filtros Clave
+      function applyFilters() {
+        filteredItems = PORTFOLIO_ITEMS.filter(item => {
+          // Filtro 1: Categoría / Espacio
+          if (currentCategory !== 'all' && item.categoryGroup !== currentCategory) {
+            return false;
+          }
+          // Filtro 2: Estilo de Diseño
+          if (currentStyle !== 'all' && item.styleId !== currentStyle) {
+            return false;
+          }
+          // Filtro 3: Tonalidad
+          if (currentTone !== 'all' && item.toneId !== currentTone) {
+            return false;
+          }
+          // Filtro 4: Cubierta / Elemento Clave
+          if (currentElement !== 'all' && item.elementId !== currentElement) {
+            return false;
+          }
+          return true;
+        });
+
+        // Actualizar UI del contador y botón de reset
+        resultsCount.textContent = `Mostrando ${filteredItems.length} de ${PORTFOLIO_ITEMS.length} proyectos`;
+        
+        const isFiltered = currentCategory !== 'all' || currentStyle !== 'all' || currentTone !== 'all' || currentElement !== 'all';
+        if (isFiltered) {
+          resetBtn.classList.remove('hidden');
         } else {
-          const targetNorm = normCat(currentCategory);
-          filteredItems = PORTFOLIO_ITEMS.filter(item => normCat(item.category) === targetNorm);
+          resetBtn.classList.add('hidden');
         }
 
+        renderGrid();
+      }
+
+      // Renderizar tarjetas del portafolio
+      function renderGrid() {
         if (filteredItems.length === 0) {
           grid.innerHTML = '';
           emptyState.classList.remove('hidden');
@@ -341,10 +495,15 @@
               <h3 class="font-serif font-bold text-xl text-[#2c160e] mb-2 leading-snug cursor-pointer hover:text-[#8B5E3C]" onclick="openModalById('${item.id}')">
                 ${item.title}
               </h3>
-              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-6 flex-grow">
+              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-4 flex-grow">
                 ${item.description}
               </p>
               
+              <div class="flex items-center gap-2 mb-4 flex-wrap text-[10px]">
+                <span class="bg-[#f5f0ed] text-[#5d4037] font-medium px-2 py-0.5 rounded">${item.styleFamily}</span>
+                <span class="bg-gray-100 text-gray-700 px-2 py-0.5 rounded">${item.tone}</span>
+              </div>
+
               <div class="pt-4 border-t border-[#f0eae6] flex items-center justify-between">
                 <button 
                   type="button" 
@@ -372,20 +531,88 @@
         `).join('');
       }
 
-      // 2. Control de categorías
-      filterBtns.forEach(btn => {
+      // Eventos: 1. Categoría / Espacio
+      catBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           currentCategory = btn.getAttribute('data-cat');
-          filterBtns.forEach(b => {
+          catBtns.forEach(b => {
             if (b.getAttribute('data-cat') === currentCategory) {
-              b.className = 'cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm';
+              b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm flex items-center gap-1.5';
             } else {
-              b.className = 'cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]';
+              b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5';
             }
           });
-          renderGrid();
+          applyFilters();
         });
       });
+
+      // Eventos: 2. Estilo de Diseño
+      if (styleSelect) {
+        styleSelect.addEventListener('change', () => {
+          currentStyle = styleSelect.value;
+          applyFilters();
+        });
+      }
+
+      // Eventos: 3. Tonalidad (Chips de Color)
+      toneBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          currentTone = btn.getAttribute('data-tone');
+          toneBtns.forEach(b => {
+            if (b.getAttribute('data-tone') === currentTone) {
+              b.className = 'tone-chip px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border border-[#5d4037] bg-[#5d4037] text-white flex items-center gap-1.5';
+            } else {
+              b.className = 'tone-chip px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all border border-[#e5dedb] bg-white text-[#5c5f5e] hover:bg-[#eee8e5] flex items-center gap-1.5';
+            }
+          });
+          applyFilters();
+        });
+      });
+
+      // Eventos: 4. Cubierta / Elemento Clave
+      if (elementSelect) {
+        elementSelect.addEventListener('change', () => {
+          currentElement = elementSelect.value;
+          applyFilters();
+        });
+      }
+
+      // Función de Restablecimiento Completo
+      window.resetAllFilters = function() {
+        currentCategory = 'all';
+        currentStyle = 'all';
+        currentTone = 'all';
+        currentElement = 'all';
+
+        // Reset pills
+        catBtns.forEach(b => {
+          if (b.getAttribute('data-cat') === 'all') {
+            b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm flex items-center gap-1.5';
+          } else {
+            b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5';
+          }
+        });
+
+        // Reset style
+        if (styleSelect) styleSelect.value = 'all';
+
+        // Reset tone chips
+        toneBtns.forEach(b => {
+          if (b.getAttribute('data-tone') === 'all') {
+            b.className = 'tone-chip px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border border-[#5d4037] bg-[#5d4037] text-white flex items-center gap-1.5';
+          } else {
+            b.className = 'tone-chip px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all border border-[#e5dedb] bg-white text-[#5c5f5e] hover:bg-[#eee8e5] flex items-center gap-1.5';
+          }
+        });
+
+        // Reset element
+        if (elementSelect) elementSelect.value = 'all';
+
+        applyFilters();
+      };
+
+      if (resetBtn) resetBtn.addEventListener('click', resetAllFilters);
+      if (emptyResetBtn) emptyResetBtn.addEventListener('click', resetAllFilters);
 
       // 3. Funciones del Modal
       function openModalByIndex(index) {
@@ -427,16 +654,8 @@
         if (idx !== -1) {
           openModalByIndex(idx);
         } else {
-          // Si no está en el filtro actual, cambiar a Todos y abrir
-          currentCategory = 'Todos';
-          filterBtns.forEach(b => {
-            if (b.getAttribute('data-cat') === 'Todos') {
-              b.className = 'cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm';
-            } else {
-              b.className = 'cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]';
-            }
-          });
-          renderGrid();
+          // Si no está en el filtro actual, restablecer filtros y abrir
+          window.resetAllFilters();
           const allIdx = filteredItems.findIndex(i => i.id === id);
           if (allIdx !== -1) openModalByIndex(allIdx);
         }
@@ -469,21 +688,24 @@
         openModalByIndex(nextIdx);
       });
 
-      // 4. Chequeo de parámetros URL (?cat=Cocinas o ?id=POR-003)
+      // 4. Chequeo de parámetros URL (?cat=cocinas o ?id=COCINA-01-D)
       const urlParams = new URLSearchParams(window.location.search);
       const catParam = urlParams.get('cat');
       const idParam = urlParams.get('id');
 
       if (catParam) {
-        const targetNorm = normCat(catParam);
-        const matchingBtn = Array.from(filterBtns).find(b => normCat(b.getAttribute('data-cat')) === targetNorm);
+        const normParam = catParam.toLowerCase().replace(/s$/, '');
+        const matchingBtn = Array.from(catBtns).find(b => {
+          const bCat = b.getAttribute('data-cat').toLowerCase();
+          return bCat === catParam.toLowerCase() || bCat.replace(/s$/, '') === normParam;
+        });
         if (matchingBtn) {
           matchingBtn.click();
         } else {
-          renderGrid();
+          applyFilters();
         }
       } else {
-        renderGrid();
+        applyFilters();
       }
 
       if (idParam) {
