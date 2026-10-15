@@ -319,31 +319,23 @@
             />
           </div>
 
-          <!-- Enlace sutil para abrir imagen completa en alta definición -->
-          <a 
+          <!-- Botón sutil para ver foto en pantalla completa sin salir de la página -->
+          <button 
             id="modal-img-link" 
-            href="#" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="absolute bottom-3.5 right-3.5 z-20 bg-black/60 hover:bg-black/85 text-white text-[11px] font-medium px-3 py-1.5 rounded-lg backdrop-blur-md border border-white/20 transition-all flex items-center gap-1.5 opacity-80 hover:opacity-100 shadow-md"
-            title="Abrir imagen en tamaño completo"
+            type="button" 
+            class="absolute bottom-3.5 right-3.5 z-20 bg-black/60 hover:bg-black/85 text-white text-[11px] font-medium px-3 py-1.5 rounded-lg backdrop-blur-md border border-white/20 transition-all flex items-center gap-1.5 opacity-85 hover:opacity-100 shadow-md cursor-pointer"
+            title="Ver foto en pantalla completa"
           >
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
             </svg>
             <span>Ver foto completa</span>
-          </a>
+          </button>
         </div>
 
         <!-- Columna de Información del Mueble -->
         <div class="w-full lg:w-[42%] xl:w-[40%] flex flex-col justify-between p-6 sm:p-8 lg:p-9 bg-white overflow-y-auto">
           <div class="space-y-5">
-            <!-- Fila superior: SKU destacado y Estilo -->
-            <div class="flex items-center justify-between gap-2 border-b border-[#f0eae6] pb-3">
-              <span id="modal-sku" class="text-xs font-mono font-bold tracking-wider text-[#5d4037] bg-[#f5f0ed] px-2.5 py-1 rounded-md border border-[#e5dedb]"></span>
-              <span id="modal-style-pill" class="text-xs font-medium text-[#7d5260] bg-[#f9f9f8] px-2.5 py-1 rounded-md"></span>
-            </div>
-
             <!-- Título: Nombre corto del mueble -->
             <div>
               <h2 id="modal-title" class="text-2xl sm:text-3xl font-serif font-bold text-[#2c160e] leading-snug"></h2>
@@ -355,10 +347,16 @@
               <p id="modal-story" class="text-sm sm:text-base text-[#5c5f5e] leading-relaxed"></p>
             </div>
 
-            <!-- Características destacadas del mueble (especificaciones reales) -->
+            <!-- Especificaciones (anteriormente "Especificaciones del Trabajo") -->
             <div id="modal-features-container" class="border-t border-[#f0eae6] pt-4">
-              <h3 class="text-xs font-bold uppercase tracking-wider text-[#2c160e] mb-2.5">Especificaciones del Trabajo</h3>
+              <h3 class="text-xs font-bold uppercase tracking-wider text-[#2c160e] mb-2.5">Especificaciones</h3>
               <ul id="modal-features" class="space-y-2 text-xs sm:text-sm text-[#5c5f5e]"></ul>
+            </div>
+
+            <!-- SKU y etiqueta de estilo / acabado ubicados DEBAJO de Especificaciones -->
+            <div class="flex items-center gap-2.5 pt-3 border-t border-[#f0eae6] flex-wrap">
+              <span id="modal-sku" class="text-xs font-mono font-bold tracking-wider text-[#5d4037] bg-[#f5f0ed] px-2.5 py-1 rounded-md border border-[#e5dedb]"></span>
+              <span id="modal-style-pill" class="text-xs font-medium text-[#7d5260] bg-[#f9f9f8] px-2.5 py-1 rounded-md border border-[#e5dedb]/60"></span>
             </div>
           </div>
 
@@ -376,7 +374,7 @@
               </svg>
               <span>Cotizar una Pieza Similar</span>
             </a>
-            <p class="text-[11px] text-[#7d5260] text-center">Atención directa de taller artesanal</p>
+            <p class="text-[11px] text-[#7d5260] text-center font-medium">Creamos muebles a la medida de tus espacios.</p>
           </div>
         </div>
       </div>
@@ -391,6 +389,35 @@
           <span>Siguiente Proyecto</span> <span>&rarr;</span>
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- Visor en Pantalla Completa (Lightbox integrado sin salir de la página) -->
+  <div id="lightbox-modal" class="fixed inset-0 z-[60] hidden bg-black/95 backdrop-blur-md flex flex-col items-center justify-center p-3 sm:p-6 transition-opacity duration-300">
+    <!-- Botón de Cerrar Lightbox -->
+    <button 
+      id="lightbox-close-btn" 
+      type="button" 
+      class="absolute top-4 right-4 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all cursor-pointer border border-white/20 shadow-lg focus:outline-none"
+      aria-label="Cerrar pantalla completa"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    <!-- Contenedor de la foto completa -->
+    <div class="relative w-full h-full flex items-center justify-center p-2 cursor-zoom-out" id="lightbox-backdrop">
+      <img 
+        id="lightbox-img" 
+        src="" 
+        alt="" 
+        class="max-w-[96vw] max-h-[92vh] w-auto h-auto object-contain rounded-lg shadow-2xl transition-transform duration-300 select-none cursor-default" 
+        onclick="event.stopPropagation()"
+      />
+    </div>
+    <!-- Pie informativo -->
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/75 text-xs tracking-wider bg-black/60 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10 pointer-events-none text-center">
+      <span id="lightbox-caption"></span> &bull; Clic afuera o presiona Esc para volver
     </div>
   </div>
 
@@ -457,6 +484,13 @@
       const modalFeaturesContainer = document.getElementById('modal-features-container');
       const modalCounter = document.getElementById('modal-counter');
       const modalWaBtn = document.getElementById('modal-wa-btn');
+
+      // Lightbox elements (Pantalla completa sin salir de la página)
+      const lightbox = document.getElementById('lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      const lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+      const lightboxBackdrop = document.getElementById('lightbox-backdrop');
 
       // Resolver ruta de imagen compatible con entorno local y /ejmonjo/
       function resolveImg(src) {
@@ -541,28 +575,27 @@
                 </span>
               </div>
             </div>
-            <div class="p-6 flex flex-col flex-grow">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C]">${item.category}</span>
-                <span class="text-xs font-mono text-[#7d5260] bg-[#f5f0ed] px-2 py-0.5 rounded">${item.id}</span>
-              </div>
-              <h3 class="font-serif font-bold text-xl text-[#2c160e] mb-2 leading-snug cursor-pointer hover:text-[#8B5E3C]" onclick="openModalById('${item.id}')">
-                ${item.title}
-              </h3>
-              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-4 flex-grow">
-                ${item.description}
-              </p>
-              
-              <div class="flex items-center gap-2 mb-4 flex-wrap text-[10px]">
-                <span class="bg-[#f5f0ed] text-[#5d4037] font-medium px-2 py-0.5 rounded">${item.styleFamily}</span>
-                <span class="bg-gray-100 text-gray-700 px-2 py-0.5 rounded">${item.tone}</span>
+            <div class="p-5 flex flex-col flex-grow justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C]">${item.category}</span>
+                  <span class="text-xs font-mono text-[#7d5260] bg-[#f5f0ed] px-2 py-0.5 rounded">${item.id}</span>
+                </div>
+                <h3 class="font-serif font-bold text-lg sm:text-xl text-[#2c160e] mb-3 leading-snug cursor-pointer hover:text-[#8B5E3C] transition-colors" onclick="openModalById('${item.id}')">
+                  ${item.title}
+                </h3>
+                
+                <div class="flex items-center gap-2 mb-4 flex-wrap text-[10px]">
+                  <span class="bg-[#f5f0ed] text-[#5d4037] font-medium px-2 py-0.5 rounded">${item.styleFamily}</span>
+                  <span class="bg-gray-100 text-gray-700 px-2 py-0.5 rounded">${item.tone}</span>
+                </div>
               </div>
 
-              <div class="pt-4 border-t border-[#f0eae6] flex items-center justify-between">
+              <div class="pt-4 border-t border-[#f0eae6] flex items-center justify-between mt-auto">
                 <button 
                   type="button" 
                   onclick="openModalById('${item.id}')"
-                  class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1"
+                  class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1 cursor-pointer"
                 >
                   <span>Explorar ficha</span>
                   <span>&rarr;</span>
@@ -571,7 +604,7 @@
                   href="${getWhatsAppPortfolioUrl(item)}"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-xs text-[#25D366] hover:text-[#1ea952] font-semibold flex items-center gap-1.5 transition-colors"
+                  class="text-xs text-[#25D366] hover:text-[#1ea952] font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
                   title="Cotizar directamente"
                 >
                   <svg class="w-3.5 h-3.5 fill-[#25D366] shrink-0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -738,6 +771,7 @@
       };
 
       function closeModal() {
+        if (lightbox) closeLightbox();
         modal.classList.add('hidden');
         document.body.classList.remove('overflow-hidden');
       }
@@ -748,8 +782,46 @@
         if (e.target === modal) closeModal();
       });
 
+      // Funciones de Pantalla Completa (Lightbox integrado sin salir de la página)
+      function openLightbox() {
+        if (!modalImg.src) return;
+        lightboxImg.src = modalImg.src;
+        lightboxImg.alt = modalTitle.textContent || 'Proyecto';
+        if (lightboxCaption) {
+          lightboxCaption.textContent = modalTitle.textContent || '';
+        }
+        lightbox.classList.remove('hidden');
+      }
+
+      function closeLightbox() {
+        if (lightbox) lightbox.classList.add('hidden');
+      }
+
+      if (modalImgLink) {
+        modalImgLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          openLightbox();
+        });
+      }
+
+      if (modalImg) {
+        modalImg.classList.add('cursor-zoom-in');
+        modalImg.addEventListener('click', openLightbox);
+      }
+
+      if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
+      if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+
       // Navegación con teclado (Escape, Flecha Izquierda y Derecha)
       document.addEventListener('keydown', (e) => {
+        // Si la pantalla completa está activa, Escape la cierra prioritariamente
+        if (lightbox && !lightbox.classList.contains('hidden')) {
+          if (e.key === 'Escape') {
+            closeLightbox();
+            return;
+          }
+        }
+
         if (modal.classList.contains('hidden')) return;
         if (e.key === 'Escape') {
           closeModal();
