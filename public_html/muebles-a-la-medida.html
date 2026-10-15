@@ -202,9 +202,19 @@
   <!-- Footer Component Container -->
   <div id="footer-container"></div>
 
-  <!-- Scripts desacoplados -->
-  <script src="/ejmonjo/js/data.js"></script>
-  <script src="/ejmonjo/js/layout.js"></script>
+  <!-- Scripts desacoplados con cache buster -->
+  <script src="/ejmonjo/js/data.js?v=2.2"></script>
+  <script>
+    if (typeof SOLID_WOODS === 'undefined') {
+      document.write('<script src="js/data.js?v=2.2"><\/script>');
+    }
+  </script>
+  <script src="/ejmonjo/js/layout.js?v=2.2"></script>
+  <script>
+    if (typeof WHATSAPP_ICON_SVG === 'undefined') {
+      document.write('<script src="js/layout.js?v=2.2"><\/script>');
+    }
+  </script>
 
   <!-- Inyección de Datos -->
   <script>

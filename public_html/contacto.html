@@ -167,8 +167,18 @@
   <!-- Footer Component Container -->
   <div id="footer-container"></div>
 
-  <!-- Scripts desacoplados sin compilación previa -->
-  <script src="/ejmonjo/js/data.js"></script>
-  <script src="/ejmonjo/js/layout.js"></script>
+  <!-- Scripts desacoplados sin compilación previa con cache buster -->
+  <script src="/ejmonjo/js/data.js?v=2.2"></script>
+  <script>
+    if (typeof CONTACT_INFO === 'undefined') {
+      document.write('<script src="js/data.js?v=2.2"><\/script>');
+    }
+  </script>
+  <script src="/ejmonjo/js/layout.js?v=2.2"></script>
+  <script>
+    if (typeof WHATSAPP_ICON_SVG === 'undefined') {
+      document.write('<script src="js/layout.js?v=2.2"><\/script>');
+    }
+  </script>
 </body>
 </html>

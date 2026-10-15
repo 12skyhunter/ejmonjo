@@ -237,10 +237,16 @@
               <p class="text-sm text-[#5c5f5e] mb-6 flex-grow">
                 Vestidores integrales, credenzas, libreros y mobiliario residencial fabricado al milímetro con optimización inteligente del espacio.
               </p>
-              <a href="/ejmonjo/muebles-a-la-medida" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5">
-                <span>Explorar materiales y tipos</span>
-                <span>&rarr;</span>
-              </a>
+              <div class="flex items-center gap-4 flex-wrap">
+                <a href="/ejmonjo/portafolio?cat=Closets" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5">
+                  <span>Ver clósets</span>
+                  <span>&rarr;</span>
+                </a>
+                <a href="/ejmonjo/muebles-a-la-medida" class="text-xs text-[#7d5260] hover:text-[#2c160e] inline-flex items-center gap-1">
+                  <span>Muestrario</span>
+                  <span>&rarr;</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -305,9 +311,19 @@
   <!-- Footer Component Container -->
   <div id="footer-container"></div>
 
-  <!-- Scripts desacoplados sin compilación previa -->
-  <script src="/ejmonjo/js/data.js"></script>
-  <script src="/ejmonjo/js/layout.js"></script>
+  <!-- Scripts desacoplados sin compilación previa con cache buster -->
+  <script src="/ejmonjo/js/data.js?v=2.2"></script>
+  <script>
+    if (typeof SOLID_WOODS === 'undefined') {
+      document.write('<script src="js/data.js?v=2.2"><\/script>');
+    }
+  </script>
+  <script src="/ejmonjo/js/layout.js?v=2.2"></script>
+  <script>
+    if (typeof WHATSAPP_ICON_SVG === 'undefined') {
+      document.write('<script src="js/layout.js?v=2.2"><\/script>');
+    }
+  </script>
 
   <!-- Lógica de carrusel e inyección de datos de inicio -->
   <script>

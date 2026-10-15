@@ -230,14 +230,27 @@
   <!-- Footer Component Container -->
   <div id="footer-container"></div>
 
-  <!-- Scripts desacoplados sin compilación previa -->
-  <script src="/ejmonjo/js/data.js"></script>
-  <script src="/ejmonjo/js/layout.js"></script>
+  <!-- Scripts desacoplados sin compilación previa con cache buster -->
+  <script src="/ejmonjo/js/data.js?v=2.2"></script>
+  <script>
+    if (typeof PORTFOLIO_ITEMS === 'undefined') {
+      document.write('<script src="js/data.js?v=2.2"><\/script>');
+    }
+  </script>
+  <script src="/ejmonjo/js/layout.js?v=2.2"></script>
+  <script>
+    if (typeof WHATSAPP_ICON_SVG === 'undefined') {
+      document.write('<script src="js/layout.js?v=2.2"><\/script>');
+    }
+  </script>
 
   <!-- Lógica Interactiva del Portafolio y Modal -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      if (typeof PORTFOLIO_ITEMS === 'undefined') return;
+      if (typeof PORTFOLIO_ITEMS === 'undefined') {
+        console.error('PORTFOLIO_ITEMS no se pudo cargar.');
+        return;
+      }
 
       let currentCategory = 'Todos';
       let currentItemIndex = 0;
@@ -263,11 +276,35 @@
       const modalLocation = document.getElementById('modal-location');
       const modalWaBtn = document.getElementById('modal-wa-btn');
 
+      // Utilidad de normalización (ignora acentos, mayúsculas y plurales: e.g. "closet" == "clósets")
+      function normCat(str) {
+        if (!str) return '';
+        return str
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+          .trim()
+          .replace(/(es|s)$/, '');
+      }
+
+      // Resolver ruta de imagen compatible con entorno local y /ejmonjo/
+      function resolveImg(src) {
+        if (!src) return '';
+        const isEjmonjo = window.location.pathname.toLowerCase().includes('/ejmonjo/');
+        if (!isEjmonjo && src.startsWith('/ejmonjo/')) {
+          return src.replace('/ejmonjo/', './');
+        }
+        return src;
+      }
+
       // 1. Renderizar tarjetas del portafolio
       function renderGrid() {
-        filteredItems = currentCategory === 'Todos' 
-          ? PORTFOLIO_ITEMS 
-          : PORTFOLIO_ITEMS.filter(item => item.category === currentCategory);
+        if (currentCategory === 'Todos') {
+          filteredItems = [...PORTFOLIO_ITEMS];
+        } else {
+          const targetNorm = normCat(currentCategory);
+          filteredItems = PORTFOLIO_ITEMS.filter(item => normCat(item.category) === targetNorm);
+        }
 
         if (filteredItems.length === 0) {
           grid.innerHTML = '';
@@ -280,7 +317,7 @@
           <article class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group">
             <div class="aspect-[4/3] overflow-hidden bg-[#eee] relative cursor-pointer" onclick="openModalById('${item.id}')">
               <img 
-                src="${item.image}" 
+                src="${resolveImg(item.image)}" 
                 alt="${item.title}" 
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
@@ -356,7 +393,7 @@
         currentItemIndex = index;
         const item = filteredItems[currentItemIndex];
 
-        modalImg.src = item.image;
+        modalImg.src = resolveImg(item.image);
         modalImg.alt = item.title;
         modalCategory.textContent = item.category + ' • ' + (item.woodType || 'Madera');
         modalSku.textContent = 'SKU: ' + item.id;
@@ -392,6 +429,13 @@
         } else {
           // Si no está en el filtro actual, cambiar a Todos y abrir
           currentCategory = 'Todos';
+          filterBtns.forEach(b => {
+            if (b.getAttribute('data-cat') === 'Todos') {
+              b.className = 'cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm';
+            } else {
+              b.className = 'cat-filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]';
+            }
+          });
           renderGrid();
           const allIdx = filteredItems.findIndex(i => i.id === id);
           if (allIdx !== -1) openModalByIndex(allIdx);
@@ -431,8 +475,13 @@
       const idParam = urlParams.get('id');
 
       if (catParam) {
-        const matchingBtn = Array.from(filterBtns).find(b => b.getAttribute('data-cat').toLowerCase() === catParam.toLowerCase());
-        if (matchingBtn) matchingBtn.click();
+        const targetNorm = normCat(catParam);
+        const matchingBtn = Array.from(filterBtns).find(b => normCat(b.getAttribute('data-cat')) === targetNorm);
+        if (matchingBtn) {
+          matchingBtn.click();
+        } else {
+          renderGrid();
+        }
       } else {
         renderGrid();
       }
