@@ -60,56 +60,63 @@
           Cada obra refleja precisión artesanal y arquitectura personalizada. Filtra por espacio, estilo de diseño, tonalidad de madera y acabados clave.
         </p>
 
-        <!-- Filtro Primario: Categoría o Espacio (Pills Superiores) -->
+        <!-- Filtro Primario: Categoría o Espacio (Pills Superiores sin emojis, ordenados de mayor a menor) -->
         <div class="flex items-center justify-center gap-2 mt-8 flex-wrap" id="category-filters">
           <button 
             type="button" 
             data-cat="all" 
-            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm flex items-center gap-1.5"
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm"
           >
-            <span>✦</span> <span>Todos los Proyectos</span>
+            Todos
+          </button>
+          <button 
+            type="button" 
+            data-cat="closet" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Closet
           </button>
           <button 
             type="button" 
             data-cat="cocinas" 
-            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
           >
-            <span>🍳</span> <span>Cocinas</span>
-          </button>
-          <button 
-            type="button" 
-            data-cat="closets" 
-            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
-          >
-            <span>👔</span> <span>Closets y Vestidores</span>
+            Cocinas
           </button>
           <button 
             type="button" 
             data-cat="puertas" 
-            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
           >
-            <span>🚪</span> <span>Puertas</span>
+            Puertas
+          </button>
+          <button 
+            type="button" 
+            data-cat="muebles" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
+          >
+            Muebles
           </button>
           <button 
             type="button" 
             data-cat="recamaras" 
-            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
           >
-            <span>🛏️</span> <span>Recámaras</span>
+            Recámaras
           </button>
           <button 
             type="button" 
-            data-cat="especiales" 
-            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
+            data-cat="escaleras" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
           >
-            <span>🪑</span> <span>Muebles Especiales</span>
+            Escaleras
           </button>
           <button 
             type="button" 
-            data-cat="proceso" 
-            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5"
+            data-cat="banos" 
+            class="cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]"
           >
-            <span>🔨</span> <span>En Taller / Proceso</span>
+            Baños
           </button>
         </div>
       </div>
@@ -297,7 +304,7 @@
           <div class="flex items-center gap-2 mb-2 flex-wrap">
             <span id="modal-category" class="text-xs font-bold uppercase tracking-wider text-[#8B5E3C] bg-[#f5f0ed] px-2.5 py-1 rounded-md"></span>
             <span id="modal-sku" class="text-xs font-mono text-[#7d5260] bg-gray-100 px-2 py-1 rounded-md"></span>
-            <span id="modal-featured" class="hidden text-[11px] font-bold uppercase tracking-wider text-white bg-[#5d4037] px-2.5 py-1 rounded-md">★ Obra Destacada</span>
+            <span id="modal-featured" class="hidden text-[11px] font-bold uppercase tracking-wider text-white bg-[#5d4037] px-2.5 py-1 rounded-md">Obra Destacada</span>
           </div>
 
           <h2 id="modal-title" class="text-2xl sm:text-3xl font-serif font-bold text-[#2c160e] mb-3"></h2>
@@ -356,16 +363,16 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados sin compilación previa con cache buster -->
-  <script src="/ejmonjo/js/data.js?v=2.3"></script>
+  <script src="/ejmonjo/js/data.js?v=2.4"></script>
   <script>
     if (typeof PORTFOLIO_ITEMS === 'undefined') {
-      document.write('<script src="js/data.js?v=2.3"><\/script>');
+      document.write('<script src="js/data.js?v=2.4"><\/script>');
     }
   </script>
-  <script src="/ejmonjo/js/layout.js?v=2.3"></script>
+  <script src="/ejmonjo/js/layout.js?v=2.4"></script>
   <script>
     if (typeof WHATSAPP_ICON_SVG === 'undefined') {
-      document.write('<script src="js/layout.js?v=2.3"><\/script>');
+      document.write('<script src="js/layout.js?v=2.4"><\/script>');
     }
   </script>
 
@@ -477,8 +484,8 @@
                 loading="lazy"
               />
               ${item.isFeatured ? `
-                <span class="absolute top-3 left-3 bg-[#5d4037]/90 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-md backdrop-blur-xs flex items-center gap-1 z-10">
-                  ★ Destacado
+                <span class="absolute top-3 left-3 bg-[#5d4037]/90 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-md backdrop-blur-xs z-10">
+                  Destacado
                 </span>
               ` : ''}
               <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -537,9 +544,9 @@
           currentCategory = btn.getAttribute('data-cat');
           catBtns.forEach(b => {
             if (b.getAttribute('data-cat') === currentCategory) {
-              b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm flex items-center gap-1.5';
+              b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm';
             } else {
-              b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5';
+              b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]';
             }
           });
           applyFilters();
@@ -587,9 +594,9 @@
         // Reset pills
         catBtns.forEach(b => {
           if (b.getAttribute('data-cat') === 'all') {
-            b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm flex items-center gap-1.5';
+            b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-[#5d4037] text-white shadow-sm';
           } else {
-            b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb] flex items-center gap-1.5';
+            b.className = 'cat-filter-btn px-4 sm:px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 bg-white text-[#5c5f5e] hover:bg-[#eee8e5] border border-[#e5dedb]';
           }
         });
 
