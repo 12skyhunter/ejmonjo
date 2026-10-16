@@ -94,7 +94,7 @@
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a 
-            href="/ejmonjo/portafolio" 
+            href="portafolio" 
             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#8B5E3C] hover:bg-[#724a2c] text-white font-medium px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-sm tracking-wide"
           >
             <span>Ver Portafolio de Obras</span>
@@ -104,7 +104,7 @@
           </a>
 
           <a 
-            href="/ejmonjo/contacto" 
+            href="contacto" 
             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white backdrop-blur-md border border-white/30 font-medium px-8 py-3.5 rounded-xl transition-all duration-200 text-sm tracking-wide"
           >
             <span>Solicitar Cotización</span>
@@ -128,7 +128,7 @@
           <div class="relative group">
             <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-[#eee8e5]">
               <img 
-                src="/ejmonjo/assets/ej-monjo-ahualulco.webp" 
+                src="assets/ej-monjo-ahualulco.webp" 
                 alt="Taller de Carpintería EJ Monjo en Ahualulco" 
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -148,9 +148,6 @@
 
           <!-- Contenido Narrativo -->
           <div class="space-y-6">
-            <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">
-              <span>El Taller y Nuestra Filosofía • Desde 1978</span>
-            </div>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#2c160e] leading-tight">
               Maderas seleccionadas con alma, fabricadas para trascender.
             </h2>
@@ -171,7 +168,7 @@
 
             <div class="pt-4">
               <a 
-                href="/ejmonjo/muebles-a-la-medida" 
+                href="muebles-a-la-medida" 
                 class="inline-flex items-center gap-2 text-[#5d4037] font-semibold hover:text-[#8B5E3C] transition-colors group"
               >
                 <span>Conoce nuestros materiales y proceso de fabricación</span>
@@ -188,9 +185,8 @@
     <!-- Sección 3: Servicios Bento Grid -->
     <section class="py-20 bg-[#f4eeeb] border-y border-[#e5dedb]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Especialidades</span>
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] mt-2 mb-4">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] mb-4">
             Soluciones en Madera a la Medida
           </h2>
           <p class="text-[#5c5f5e] text-base">
@@ -201,69 +197,30 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Card 1: Clósets y Vestidores -->
           <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
-            <a id="closets-main-link" href="portafolio?id=CLO-001" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
+            <a href="portafolio?cat=Closet" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
               <img 
-                id="closets-main-img"
                 src="assets/closet/closet-01_d.webp" 
                 alt="Clósets y Vestidores a Medida" 
-                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                class="cat-slide-closet absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-100 group-hover:scale-105"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                <span class="text-xs font-medium text-white bg-[#8B5E3C]/90 px-2.5 py-1 rounded-md backdrop-blur-sm">
-                  Ver detalles de este clóset →
-                </span>
-              </div>
+              <img 
+                src="assets/closet/closet-02_d.webp" 
+                alt="Clósets y Vestidores a Medida" 
+                class="cat-slide-closet absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-0 group-hover:scale-105"
+              />
+              <img 
+                src="assets/closet/closet-03_d.webp" 
+                alt="Clósets y Vestidores a Medida" 
+                class="cat-slide-closet absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-0 group-hover:scale-105"
+              />
             </a>
-            
-            <!-- Selector de fotos destacadas (primeras 3) -->
-            <div class="px-6 pt-4 pb-1">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-wider">3 Obras destacadas:</span>
-                <span class="text-[11px] text-[#7d5260] font-mono font-medium" id="closets-sku-label">CLO-001</span>
-              </div>
-              <div class="grid grid-cols-3 gap-2">
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('closets', this, 'assets/closet/closet-01_d.webp', 'CLO-001')"
-                  onmouseenter="switchSolucionImg('closets', this, 'assets/closet/closet-01_d.webp', 'CLO-001')"
-                  data-sol-cat="closets"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#8B5E3C] ring-2 ring-[#8B5E3C]/30 opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="CLO-001 - Closet modular"
-                >
-                  <img src="assets/closet/closet-01_d.webp" alt="CLO-001" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">1</span>
-                </button>
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('closets', this, 'assets/closet/closet-02_d.webp', 'CLO-002')"
-                  onmouseenter="switchSolucionImg('closets', this, 'assets/closet/closet-02_d.webp', 'CLO-002')"
-                  data-sol-cat="closets"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="CLO-002 - Amplio vestidor modular"
-                >
-                  <img src="assets/closet/closet-02_d.webp" alt="CLO-002" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">2</span>
-                </button>
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('closets', this, 'assets/closet/closet-03_d.webp', 'CLO-003')"
-                  onmouseenter="switchSolucionImg('closets', this, 'assets/closet/closet-03_d.webp', 'CLO-003')"
-                  data-sol-cat="closets"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="CLO-003 - Closet esquinero empotrado"
-                >
-                  <img src="assets/closet/closet-03_d.webp" alt="CLO-003" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">3</span>
-                </button>
-              </div>
-            </div>
 
-            <div class="p-6 pt-3 flex flex-col flex-grow">
+            <div class="p-6 flex flex-col flex-grow">
               <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Clósets y Vestidores</h3>
               <p class="text-sm text-[#5c5f5e] mb-5 flex-grow">
                 Vestidores integrales, clósets modulares y armarios a la medida con distribución ergonómica, cajoneras personalizadas y acabados finos.
               </p>
-              <div class="flex items-center gap-4 flex-wrap pt-2 border-t border-[#f0ece9]">
+              <div class="flex items-center gap-4 flex-wrap pt-3 border-t border-[#f0ece9]">
                 <a href="portafolio?cat=Closet" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5 group/link">
                   <span>Ver clósets en portafolio</span>
                   <span class="transition-transform group-hover/link:translate-x-0.5">→</span>
@@ -274,69 +231,30 @@
 
           <!-- Card 2: Cocinas Integrales -->
           <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
-            <a id="cocinas-main-link" href="portafolio?id=COC-001" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
+            <a href="portafolio?cat=Cocinas" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
               <img 
-                id="cocinas-main-img"
                 src="assets/cocinas/cocina-01_d.webp" 
                 alt="Cocinas Integrales a Medida" 
-                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                class="cat-slide-cocina absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-100 group-hover:scale-105"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                <span class="text-xs font-medium text-white bg-[#8B5E3C]/90 px-2.5 py-1 rounded-md backdrop-blur-sm">
-                  Ver detalles de esta cocina →
-                </span>
-              </div>
+              <img 
+                src="assets/cocinas/cocina-02_d.webp" 
+                alt="Cocinas Integrales a Medida" 
+                class="cat-slide-cocina absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-0 group-hover:scale-105"
+              />
+              <img 
+                src="assets/cocinas/cocina-03_d.webp" 
+                alt="Cocinas Integrales a Medida" 
+                class="cat-slide-cocina absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-0 group-hover:scale-105"
+              />
             </a>
-            
-            <!-- Selector de fotos destacadas (primeras 3) -->
-            <div class="px-6 pt-4 pb-1">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-wider">3 Obras destacadas:</span>
-                <span class="text-[11px] text-[#7d5260] font-mono font-medium" id="cocinas-sku-label">COC-001</span>
-              </div>
-              <div class="grid grid-cols-3 gap-2">
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-01_d.webp', 'COC-001')"
-                  onmouseenter="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-01_d.webp', 'COC-001')"
-                  data-sol-cat="cocinas"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#8B5E3C] ring-2 ring-[#8B5E3C]/30 opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="COC-001 - Cocina integral contemporánea"
-                >
-                  <img src="assets/cocinas/cocina-01_d.webp" alt="COC-001" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">1</span>
-                </button>
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-02_d.webp', 'COC-002')"
-                  onmouseenter="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-02_d.webp', 'COC-002')"
-                  data-sol-cat="cocinas"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="COC-002 - Cocina de diseño moderno"
-                >
-                  <img src="assets/cocinas/cocina-02_d.webp" alt="COC-002" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">2</span>
-                </button>
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-03_d.webp', 'COC-003')"
-                  onmouseenter="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-03_d.webp', 'COC-003')"
-                  data-sol-cat="cocinas"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="COC-003 - Cocina en proceso de acabado"
-                >
-                  <img src="assets/cocinas/cocina-03_d.webp" alt="COC-003" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">3</span>
-                </button>
-              </div>
-            </div>
 
-            <div class="p-6 pt-3 flex flex-col flex-grow">
+            <div class="p-6 flex flex-col flex-grow">
               <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Cocinas Integrales</h3>
               <p class="text-sm text-[#5c5f5e] mb-5 flex-grow">
                 Distribución ergonómica, cubiertas duraderas, alacenas superiores e islas centrales diseñadas para la vida cotidiana y familiar.
               </p>
-              <div class="flex items-center gap-4 flex-wrap pt-2 border-t border-[#f0ece9]">
+              <div class="flex items-center gap-4 flex-wrap pt-3 border-t border-[#f0ece9]">
                 <a href="portafolio?cat=Cocinas" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5 group/link">
                   <span>Ver cocinas en portafolio</span>
                   <span class="transition-transform group-hover/link:translate-x-0.5">→</span>
@@ -347,69 +265,30 @@
 
           <!-- Card 3: Puertas de Madera -->
           <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
-            <a id="puertas-main-link" href="portafolio?id=PUE-001" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
+            <a href="portafolio?cat=Puertas" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
               <img 
-                id="puertas-main-img"
                 src="assets/puertas/puerta-01_d.webp" 
                 alt="Puertas de Madera a Medida" 
-                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                class="cat-slide-puerta absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-100 group-hover:scale-105"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                <span class="text-xs font-medium text-white bg-[#8B5E3C]/90 px-2.5 py-1 rounded-md backdrop-blur-sm">
-                  Ver detalles de esta puerta →
-                </span>
-              </div>
+              <img 
+                src="assets/puertas/puerta-02_d.webp" 
+                alt="Puertas de Madera a Medida" 
+                class="cat-slide-puerta absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-0 group-hover:scale-105"
+              />
+              <img 
+                src="assets/puertas/puerta-03_d.webp" 
+                alt="Puertas de Madera a Medida" 
+                class="cat-slide-puerta absolute inset-0 w-full h-full object-cover transition-all duration-1000 opacity-0 group-hover:scale-105"
+              />
             </a>
-            
-            <!-- Selector de fotos destacadas (primeras 3) -->
-            <div class="px-6 pt-4 pb-1">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-wider">3 Obras destacadas:</span>
-                <span class="text-[11px] text-[#7d5260] font-mono font-medium" id="puertas-sku-label">PUE-001</span>
-              </div>
-              <div class="grid grid-cols-3 gap-2">
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('puertas', this, 'assets/puertas/puerta-01_d.webp', 'PUE-001')"
-                  onmouseenter="switchSolucionImg('puertas', this, 'assets/puertas/puerta-01_d.webp', 'PUE-001')"
-                  data-sol-cat="puertas"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#8B5E3C] ring-2 ring-[#8B5E3C]/30 opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="PUE-001 - Puerta interior"
-                >
-                  <img src="assets/puertas/puerta-01_d.webp" alt="PUE-001" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">1</span>
-                </button>
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('puertas', this, 'assets/puertas/puerta-02_d.webp', 'PUE-002')"
-                  onmouseenter="switchSolucionImg('puertas', this, 'assets/puertas/puerta-02_d.webp', 'PUE-002')"
-                  data-sol-cat="puertas"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="PUE-002 - Puerta principal"
-                >
-                  <img src="assets/puertas/puerta-02_d.webp" alt="PUE-002" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">2</span>
-                </button>
-                <button 
-                  type="button" 
-                  onclick="switchSolucionImg('puertas', this, 'assets/puertas/puerta-03_d.webp', 'PUE-003')"
-                  onmouseenter="switchSolucionImg('puertas', this, 'assets/puertas/puerta-03_d.webp', 'PUE-003')"
-                  data-sol-cat="puertas"
-                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
-                  title="PUE-003 - Puerta de entrada principal"
-                >
-                  <img src="assets/puertas/puerta-03_d.webp" alt="PUE-003" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
-                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">3</span>
-                </button>
-              </div>
-            </div>
 
-            <div class="p-6 pt-3 flex flex-col flex-grow">
+            <div class="p-6 flex flex-col flex-grow">
               <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Puertas de Madera</h3>
               <p class="text-sm text-[#5c5f5e] mb-5 flex-grow">
                 Puertas principales y de intercomunicación de alto impacto visual con cerraduras contemporáneas, listonados y sellado de alta resistencia.
               </p>
-              <div class="flex items-center gap-4 flex-wrap pt-2 border-t border-[#f0ece9]">
+              <div class="flex items-center gap-4 flex-wrap pt-3 border-t border-[#f0ece9]">
                 <a href="portafolio?cat=Puertas" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5 group/link">
                   <span>Ver puertas en portafolio</span>
                   <span class="transition-transform group-hover/link:translate-x-0.5">→</span>
@@ -421,30 +300,29 @@
       </div>
     </section>
 
-    <!-- Sección 4: Muestrario de Materiales y Maderas (Presentación Breve) -->
+    <!-- Sección 4: Materiales -->
     <section class="py-20 lg:py-28 bg-[#f9f9f8] border-b border-[#e5dedb]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-8">
-          <span class="text-xs uppercase tracking-widest font-semibold text-[#8B5E3C]">Muestrario de Materiales</span>
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] mt-2 mb-3">
-            Maderas Nobles y Tableros
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] mb-3">
+            Materiales
           </h2>
           <p class="text-sm sm:text-base text-[#5c5f5e] leading-relaxed">
-            La longevidad y estética de cada pieza dependen de la materia prima. Conoce las 8 opciones principales con las que trabajamos en taller.
+            Maderas seleccionadas y tableros de ingeniería con los que damos vida y resistencia a cada proyecto.
           </p>
         </div>
 
         <!-- Selector de Pestañas de Materiales -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div class="flex items-center gap-1.5 bg-[#eee8e5] p-1.5 rounded-full inline-flex flex-wrap self-start">
-            <button id="mat-tab-solid" type="button" class="mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all bg-[#5d4037] text-white shadow-sm">
-              Maderas Macizas (4)
+            <button id="mat-tab-all" type="button" class="mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all bg-[#5d4037] text-white shadow-sm">
+              Ver materiales
+            </button>
+            <button id="mat-tab-solid" type="button" class="mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all text-[#5c5f5e] hover:text-[#2c160e]">
+              Macizas
             </button>
             <button id="mat-tab-eng" type="button" class="mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all text-[#5c5f5e] hover:text-[#2c160e]">
-              Tableros de Ingeniería (4)
-            </button>
-            <button id="mat-tab-all" type="button" class="mat-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all text-[#5c5f5e] hover:text-[#2c160e]">
-              Ver los 8 Materiales
+              Tableros
             </button>
           </div>
           <a 
@@ -456,8 +334,89 @@
           </a>
         </div>
 
-        <div id="woods-preview-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Inyectado dinámicamente desde SOLID_WOODS y ENGINEERED_BOARDS en data.js -->
+        <div id="woods-preview-container" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Inyectado dinámicamente -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 5: Entregas e Instalación en Todo México -->
+    <section class="py-20 lg:py-24 bg-white border-b border-[#e5dedb]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          <!-- Columna Izquierda: Mapa de México -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md bg-[#fbf9f8] p-8 sm:p-10 rounded-3xl border border-[#e5dedb] shadow-sm flex flex-col items-center text-center">
+              <div class="w-full max-w-[280px] sm:max-w-[320px] mb-4">
+                <img 
+                  src="assets/logos/mapa_de_mexicp.webp" 
+                  alt="Mapa de la República Mexicana - Cobertura EJ Monjo" 
+                  class="w-full h-auto object-contain drop-shadow-sm"
+                  loading="lazy"
+                />
+              </div>
+              <div class="inline-flex items-center gap-2 bg-[#5d4037] text-white px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">
+                <span>Cobertura Nacional</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Información de Entregas e Instalación -->
+          <div class="lg:col-span-7 space-y-6">
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#2c160e] leading-tight">
+              Entregas e Instalación en Todo México
+            </h2>
+            <p class="text-base text-[#5c5f5e] leading-relaxed">
+              Desde nuestro taller en Ahualulco de Mercado, Jalisco, fabricamos y enviamos proyectos a cualquier estado de la República Mexicana. Cuidamos cada etapa del trayecto con protección especializada y coordinación técnica para que cada elemento llegue y quede instalado a la perfección.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-4 rounded-2xl bg-[#fbf9f8] border border-[#e5dedb]">
+                <div class="w-8 h-8 rounded-lg bg-[#f0eae6] text-[#8B5E3C] flex items-center justify-center font-bold text-sm mb-2.5">
+                  1
+                </div>
+                <h3 class="font-serif font-bold text-[#2c160e] text-base mb-1">Embalaje de Protección</h3>
+                <p class="text-xs text-[#5c5f5e] leading-relaxed">
+                  Esquineros rígidos, emplaye de alta densidad y embalaje para proteger finos acabados y molduras.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-[#fbf9f8] border border-[#e5dedb]">
+                <div class="w-8 h-8 rounded-lg bg-[#f0eae6] text-[#8B5E3C] flex items-center justify-center font-bold text-sm mb-2.5">
+                  2
+                </div>
+                <h3 class="font-serif font-bold text-[#2c160e] text-base mb-1">Fletes Consolidados</h3>
+                <p class="text-xs text-[#5c5f5e] leading-relaxed">
+                  Logística confiable tanto en entregas locales como envíos foráneos a cualquier ciudad del país.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-[#fbf9f8] border border-[#e5dedb]">
+                <div class="w-8 h-8 rounded-lg bg-[#f0eae6] text-[#8B5E3C] flex items-center justify-center font-bold text-sm mb-2.5">
+                  3
+                </div>
+                <h3 class="font-serif font-bold text-[#2c160e] text-base mb-1">Instalación en Sitio</h3>
+                <p class="text-xs text-[#5c5f5e] leading-relaxed">
+                  Alineación precisa, ajustes milimétricos y herrajes colocados por especialistas de carpintería.
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <a 
+                href="contacto" 
+                class="inline-flex items-center justify-center gap-2 bg-[#8B5E3C] hover:bg-[#724a2c] text-white font-medium px-6 py-3 rounded-xl shadow-md transition-colors text-sm"
+              >
+                <span>Cotizar con envío a mi ciudad</span>
+                <span>→</span>
+              </a>
+              <span class="text-xs text-[#7d5260]">
+                Taller matriz: Ahualulco de Mercado, Jalisco
+              </span>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
@@ -496,52 +455,39 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados sin compilación previa con cache buster -->
-  <script src="js/data.js?v=2.5"></script>
-  <script src="js/layout.js?v=2.5"></script>
+  <script src="js/data.js?v=2.6"></script>
+  <script src="js/layout.js?v=2.6"></script>
 
   <!-- Lógica de carrusel e inyección de datos de inicio -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // 1. Inyección de Materiales y Maderas con Pestañas
       const container = document.getElementById('woods-preview-container');
+      const tabAll = document.getElementById('mat-tab-all');
       const tabSolid = document.getElementById('mat-tab-solid');
       const tabEng = document.getElementById('mat-tab-eng');
-      const tabAll = document.getElementById('mat-tab-all');
-      const matTabs = [tabSolid, tabEng, tabAll];
+      const matTabs = [tabAll, tabSolid, tabEng];
 
       function renderMaterials(items) {
         if (!container || !items) return;
-        container.innerHTML = items.map(wood => `
-          <div class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+        container.innerHTML = items.map(wood => {
+          const imgSrc = (wood.image || '').replace(/^\/ejmonjo\//, '');
+          return `
+          <div class="bg-white rounded-2xl overflow-hidden border border-[#e5dedb] shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
             <div class="aspect-square overflow-hidden bg-[#eee]">
               <img 
-                src="${wood.image}" 
+                src="${imgSrc}" 
                 alt="${wood.name}" 
-                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
             </div>
-            <div class="p-5 flex flex-col flex-grow">
-              <div class="flex items-center justify-between mb-1">
-                <span class="text-xs font-semibold text-[#8B5E3C] uppercase tracking-wider">${wood.type}</span>
-                <span class="text-[11px] font-mono text-[#7d5260] bg-[#f5f0ed] px-2 py-0.5 rounded">${wood.costNum}</span>
-              </div>
-              <h3 class="font-serif font-bold text-lg text-[#2c160e] mb-2">${wood.name}</h3>
-              <p class="text-xs text-[#5c5f5e] leading-relaxed mb-4 flex-grow">${wood.whatIs}</p>
-              <div class="pt-3 border-t border-[#f0eae6] text-[11px] text-[#7d5260] mb-4">
-                <strong>Ideal para:</strong> ${wood.idealFor}
-              </div>
-              <a 
-                href="${getWhatsAppUrl('Hola EJ Monjo, me interesa cotizar una pieza en ' + wood.name)}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-auto w-full text-center text-xs font-semibold py-2 px-3 rounded-xl bg-[#f5f0ed] hover:bg-[#8B5E3C] text-[#5d4037] hover:text-white transition-colors"
-              >
-                Cotizar en esta madera
-              </a>
+            <div class="p-3.5 sm:p-4 text-center">
+              <h3 class="font-serif font-bold text-base sm:text-lg text-[#2c160e]">${wood.name}</h3>
             </div>
           </div>
-        `).join('');
+        `;
+        }).join('');
       }
 
       function setActiveMatTab(activeBtn, items) {
@@ -556,11 +502,13 @@
       }
 
       if (typeof SOLID_WOODS !== 'undefined' && typeof ENGINEERED_BOARDS !== 'undefined') {
-        renderMaterials(SOLID_WOODS);
+        const allMaterials = [...SOLID_WOODS, ...ENGINEERED_BOARDS];
+        // Renderiza primero los 8 materiales ("Ver materiales")
+        renderMaterials(allMaterials);
 
+        tabAll.addEventListener('click', () => setActiveMatTab(tabAll, allMaterials));
         tabSolid.addEventListener('click', () => setActiveMatTab(tabSolid, SOLID_WOODS));
         tabEng.addEventListener('click', () => setActiveMatTab(tabEng, ENGINEERED_BOARDS));
-        tabAll.addEventListener('click', () => setActiveMatTab(tabAll, [...SOLID_WOODS, ...ENGINEERED_BOARDS]));
       }
 
       // 2. Control del Carrusel del Hero (cada 5 segundos)
@@ -598,37 +546,26 @@
         const next = (currentSlide + 1) % slides.length;
         goToSlide(next);
       }, 5000);
-    });
 
-    // Función interactiva para conmutar las fotos destacadas en la sección Soluciones a la Medida
-    function switchSolucionImg(catId, btn, imgUrl, sku) {
-      const mainImg = document.getElementById(catId + '-main-img');
-      const mainLink = document.getElementById(catId + '-main-link');
-      const skuLabel = document.getElementById(catId + '-sku-label');
-      
-      if (mainImg && mainImg.getAttribute('data-active-src') !== imgUrl) {
-        mainImg.setAttribute('data-active-src', imgUrl);
-        mainImg.classList.add('opacity-40');
-        setTimeout(() => {
-          mainImg.src = imgUrl;
-          mainImg.classList.remove('opacity-40');
-        }, 120);
-      }
-      if (mainLink && sku) {
-        mainLink.href = 'portafolio?id=' + sku;
-      }
-      if (skuLabel && sku) {
-        skuLabel.textContent = sku;
-      }
-      
-      const group = document.querySelectorAll(`[data-sol-cat="${catId}"]`);
-      group.forEach(el => {
-        el.classList.remove('border-[#8B5E3C]', 'ring-2', 'ring-[#8B5E3C]/30', 'opacity-100');
-        el.classList.add('border-transparent', 'opacity-70');
-      });
-      btn.classList.remove('border-transparent', 'opacity-70');
-      btn.classList.add('border-[#8B5E3C]', 'ring-2', 'ring-[#8B5E3C]/30', 'opacity-100');
-    }
+      // 3. Rotación automática de imágenes en Soluciones en Madera a la Medida (cada 3.5 segundos)
+      const categoryRotators = [
+        { selector: '.cat-slide-closet', index: 0 },
+        { selector: '.cat-slide-cocina', index: 0 },
+        { selector: '.cat-slide-puerta', index: 0 }
+      ];
+
+      setInterval(() => {
+        categoryRotators.forEach(rotator => {
+          const catSlides = document.querySelectorAll(rotator.selector);
+          if (catSlides.length <= 1) return;
+          catSlides[rotator.index].classList.remove('opacity-100');
+          catSlides[rotator.index].classList.add('opacity-0');
+          rotator.index = (rotator.index + 1) % catSlides.length;
+          catSlides[rotator.index].classList.remove('opacity-0');
+          catSlides[rotator.index].classList.add('opacity-100');
+        });
+      }, 3500);
+    });
   </script>
 </body>
 </html>
