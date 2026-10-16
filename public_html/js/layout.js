@@ -74,7 +74,7 @@
             <!-- Logo: ej_monjo_logo_v1.webp con distinción Desde 1978 -->
             <a href="${isEjmonjoPath ? '/ejmonjo/' : 'index.html'}" class="flex items-center gap-3 group">
               <img 
-                src="/ejmonjo/assets/logos/ej_monjo_logo_v1.webp" 
+                src="${basePath}assets/logos/ej_monjo_logo_v1.webp" 
                 alt="EJ Monjo Carpintería" 
                 class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
@@ -191,7 +191,7 @@
             <div class="space-y-4">
               <div class="flex items-center gap-3">
                 <img 
-                  src="/ejmonjo/assets/logos/ej_monjo_logo_v1.webp" 
+                  src="${basePath}assets/logos/ej_monjo_logo_v1.webp" 
                   alt="${contact.brandName}" 
                   class="h-10 sm:h-12 w-auto brightness-0 invert opacity-95"
                 />
@@ -256,7 +256,7 @@
                 class="inline-flex items-center hover:opacity-80 transition-opacity"
                 title="Desarrollado por Sistella"
               >
-                <img src="/ejmonjo/assets/logos/sistella_hor_full.svg" alt="Sistella" class="h-5 w-auto object-contain" />
+                <img src="${basePath}assets/logos/sistella_hor_full.svg" alt="Sistella" class="h-5 w-auto object-contain" />
               </a>
             </div>
           </div>

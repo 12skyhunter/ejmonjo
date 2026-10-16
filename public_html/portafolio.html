@@ -437,11 +437,11 @@
       <!-- Barra de navegación del modal (Prev / Next / Contador) -->
       <div class="bg-[#f5f0ed] px-6 py-3 border-t border-[#e5dedb] flex items-center justify-between text-xs text-[#5d4037]">
         <button id="modal-prev-btn" type="button" class="flex items-center gap-1.5 font-semibold hover:text-[#8B5E3C] transition-colors py-1 px-2.5 rounded-lg hover:bg-white/70">
-          <span>&larr;</span> <span>Proyecto Anterior</span>
+          <span>←</span> <span>Proyecto Anterior</span>
         </button>
         <span id="modal-counter" class="text-[11px] text-[#7d5260] font-mono"></span>
         <button id="modal-next-btn" type="button" class="flex items-center gap-1.5 font-semibold hover:text-[#8B5E3C] transition-colors py-1 px-2.5 rounded-lg hover:bg-white/70">
-          <span>Siguiente Proyecto</span> <span>&rarr;</span>
+          <span>Siguiente Proyecto</span> <span>→</span>
         </button>
       </div>
     </div>
@@ -472,7 +472,7 @@
     </div>
     <!-- Pie informativo -->
     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/75 text-xs tracking-wider bg-black/60 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10 pointer-events-none text-center">
-      <span id="lightbox-caption"></span> &bull; Clic afuera o presiona Esc para volver
+      <span id="lightbox-caption"></span> • Clic afuera o presiona Esc para volver
     </div>
   </div>
 
@@ -480,18 +480,8 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados sin compilación previa con cache buster -->
-  <script src="/ejmonjo/js/data.js?v=2.5"></script>
-  <script>
-    if (typeof PORTFOLIO_ITEMS === 'undefined') {
-      document.write('<script src="js/data.js?v=2.5"><\/script>');
-    }
-  </script>
-  <script src="/ejmonjo/js/layout.js?v=2.5"></script>
-  <script>
-    if (typeof WHATSAPP_ICON_SVG === 'undefined') {
-      document.write('<script src="js/layout.js?v=2.5"><\/script>');
-    }
-  </script>
+  <script src="js/data.js?v=2.6"></script>
+  <script src="js/layout.js?v=2.6"></script>
 
   <!-- Lógica Interactiva del Portafolio y los 4 Filtros Clave -->
   <script>
