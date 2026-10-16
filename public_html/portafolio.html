@@ -336,9 +336,21 @@
         <!-- Columna de Información del Mueble -->
         <div class="w-full lg:w-[42%] xl:w-[40%] flex flex-col justify-between p-6 sm:p-8 lg:p-9 bg-white overflow-y-auto">
           <div class="space-y-5">
-            <!-- Título: Nombre corto del mueble -->
-            <div>
+            <!-- Título: Nombre corto del mueble con botón de Compartir -->
+            <div class="flex items-start justify-between gap-3">
               <h2 id="modal-title" class="text-2xl sm:text-3xl font-serif font-bold text-[#2c160e] leading-snug"></h2>
+              <button 
+                id="modal-share-btn" 
+                type="button" 
+                class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-[#e5dedb] hover:border-[#8B5E3C] bg-[#f9f9f8] hover:bg-[#f4eeeb] text-[#5d4037] text-xs font-semibold transition-all cursor-pointer shadow-xs active:scale-95"
+                title="Compartir o copiar enlace de este proyecto"
+                aria-label="Compartir enlace de este proyecto"
+              >
+                <svg class="w-4 h-4 stroke-current fill-none shrink-0" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                </svg>
+                <span id="modal-share-text">Compartir</span>
+              </button>
             </div>
             
             <!-- Descripción completa -->
@@ -701,8 +713,8 @@
       if (resetBtn) resetBtn.addEventListener('click', resetAllFilters);
       if (emptyResetBtn) emptyResetBtn.addEventListener('click', resetAllFilters);
 
-      // 3. Funciones del Modal
-      function openModalByIndex(index) {
+      // 3. Funciones del Modal con Sincronización de URL (?id=SKU) y Compartir
+      function openModalByIndex(index, updateHistory = true) {
         if (index < 0 || index >= filteredItems.length) return;
         currentItemIndex = index;
         const item = filteredItems[currentItemIndex];
@@ -756,27 +768,117 @@
 
         modal.classList.remove('hidden');
         document.body.classList.add('overflow-hidden');
+
+        // Actualizar URL con el parámetro ?id=SKU sin recargar la página
+        if (updateHistory) {
+          try {
+            const url = new URL(window.location.href);
+            url.searchParams.set('id', item.id);
+            window.history.pushState({ modalItemId: item.id }, '', url.toString());
+          } catch (e) {
+            console.error('Error actualizando URL:', e);
+          }
+        }
       }
 
-      window.openModalById = function(id) {
-        const idx = filteredItems.findIndex(i => i.id === id);
+      window.openModalById = function(id, updateHistory = true) {
+        if (!id) return;
+        const normId = id.trim().toUpperCase();
+        const idx = filteredItems.findIndex(i => i.id.toUpperCase() === normId);
         if (idx !== -1) {
-          openModalByIndex(idx);
+          openModalByIndex(idx, updateHistory);
         } else {
-          // Si no está en el filtro actual, restablecer filtros y abrir
+          // Si no está en el filtro actual, restablecer filtros y buscar
           window.resetAllFilters();
-          const allIdx = filteredItems.findIndex(i => i.id === id);
-          if (allIdx !== -1) openModalByIndex(allIdx);
+          const allIdx = filteredItems.findIndex(i => i.id.toUpperCase() === normId);
+          if (allIdx !== -1) openModalByIndex(allIdx, updateHistory);
         }
       };
 
-      function closeModal() {
+      function closeModal(updateHistory = true) {
         if (lightbox) closeLightbox();
         modal.classList.add('hidden');
         document.body.classList.remove('overflow-hidden');
+
+        // Limpiar el parámetro ?id de la URL al cerrar el modal
+        if (updateHistory) {
+          try {
+            const url = new URL(window.location.href);
+            if (url.searchParams.has('id')) {
+              url.searchParams.delete('id');
+              window.history.pushState({}, '', url.toString());
+            }
+          } catch (e) {
+            console.error('Error limpiando URL:', e);
+          }
+        }
       }
 
-      modalCloseBtn.addEventListener('click', closeModal);
+      // Lógica de Compartir Enlace del Proyecto
+      const modalShareBtn = document.getElementById('modal-share-btn');
+      const modalShareText = document.getElementById('modal-share-text');
+
+      function copyShareLinkToClipboard(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(showCopiedFeedback).catch(() => fallbackShareCopy(text));
+        } else {
+          fallbackShareCopy(text);
+        }
+      }
+
+      function fallbackShareCopy(text) {
+        try {
+          const tempEl = document.createElement('textarea');
+          tempEl.value = text;
+          tempEl.style.position = 'fixed';
+          tempEl.style.left = '-9999px';
+          document.body.appendChild(tempEl);
+          tempEl.focus();
+          tempEl.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempEl);
+          showCopiedFeedback();
+        } catch (err) {
+          console.error('Error copiando al portapapeles:', err);
+        }
+      }
+
+      function showCopiedFeedback() {
+        if (!modalShareBtn || !modalShareText) return;
+        const origText = modalShareText.textContent;
+        modalShareText.textContent = '¡Enlace copiado!';
+        modalShareBtn.classList.remove('bg-[#f9f9f8]', 'text-[#5d4037]', 'border-[#e5dedb]');
+        modalShareBtn.classList.add('bg-[#e8f5e9]', 'text-[#2e7d32]', 'border-[#a5d6a7]');
+        setTimeout(() => {
+          modalShareText.textContent = origText;
+          modalShareBtn.classList.add('bg-[#f9f9f8]', 'text-[#5d4037]', 'border-[#e5dedb]');
+          modalShareBtn.classList.remove('bg-[#e8f5e9]', 'text-[#2e7d32]', 'border-[#a5d6a7]');
+        }, 2200);
+      }
+
+      if (modalShareBtn) {
+        modalShareBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (currentItemIndex < 0 || currentItemIndex >= filteredItems.length) return;
+          const item = filteredItems[currentItemIndex];
+          const isLab = window.location.hostname.includes('sistella.com.mx');
+          const shareUrl = isLab 
+            ? `https://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}`
+            : `${window.location.origin}${window.location.pathname}?id=${item.id}`;
+
+          if (navigator.share && /mobile|android|iphone|ipad/i.test(navigator.userAgent)) {
+            navigator.share({
+              title: `${item.title} (SKU: ${item.id}) | EJ Monjo Carpintería`,
+              text: `Conoce la pieza: ${item.title} (SKU: ${item.id})`,
+              url: shareUrl
+            }).catch(() => copyShareLinkToClipboard(shareUrl));
+          } else {
+            copyShareLinkToClipboard(shareUrl);
+          }
+        });
+      }
+
+      modalCloseBtn.addEventListener('click', () => closeModal());
 
       modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
@@ -865,8 +967,21 @@
       }
 
       if (idParam) {
-        window.openModalById(idParam);
+        window.openModalById(idParam, false);
       }
+
+      // 5. Soporte para navegación con botones de adelante/atrás del navegador
+      window.addEventListener('popstate', () => {
+        const currentParams = new URLSearchParams(window.location.search);
+        const currentId = currentParams.get('id');
+        if (currentId) {
+          window.openModalById(currentId, false);
+        } else {
+          if (modal && !modal.classList.contains('hidden')) {
+            closeModal(false);
+          }
+        }
+      });
     });
   </script>
 </body>
