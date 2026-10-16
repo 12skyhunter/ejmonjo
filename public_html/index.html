@@ -29,10 +29,10 @@
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
   <meta name="theme-color" content="#2c160e" />
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Lato (principal) y Playfair Display (editorial artesanal) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Work+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -41,8 +41,8 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Work Sans"', 'sans-serif'],
-            serif: ['"DM Sans"', 'serif'],
+            sans: ['"Lato"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
           },
           colors: {
             brand: {
@@ -199,73 +199,220 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1: Cocinas -->
+          <!-- Card 1: Clósets y Vestidores -->
           <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
-            <div class="aspect-[16/10] overflow-hidden bg-[#eee]">
+            <a id="closets-main-link" href="portafolio?id=CLO-001" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
               <img 
-                src="/ejmonjo/assets/cocinas_ahualulco_15.webp" 
-                alt="Cocinas Integrales a Medida" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                id="closets-main-img"
+                src="assets/closet/closet-01_d.webp" 
+                alt="Clósets y Vestidores a Medida" 
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
               />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                <span class="text-xs font-medium text-white bg-[#8B5E3C]/90 px-2.5 py-1 rounded-md backdrop-blur-sm">
+                  Ver detalles de este clóset →
+                </span>
+              </div>
+            </a>
+            
+            <!-- Selector de fotos destacadas (primeras 3) -->
+            <div class="px-6 pt-4 pb-1">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-wider">3 Obras destacadas:</span>
+                <span class="text-[11px] text-[#7d5260] font-mono font-medium" id="closets-sku-label">CLO-001</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2">
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('closets', this, 'assets/closet/closet-01_d.webp', 'CLO-001')"
+                  onmouseenter="switchSolucionImg('closets', this, 'assets/closet/closet-01_d.webp', 'CLO-001')"
+                  data-sol-cat="closets"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#8B5E3C] ring-2 ring-[#8B5E3C]/30 opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="CLO-001 - Closet modular"
+                >
+                  <img src="assets/closet/closet-01_d.webp" alt="CLO-001" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">1</span>
+                </button>
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('closets', this, 'assets/closet/closet-02_d.webp', 'CLO-002')"
+                  onmouseenter="switchSolucionImg('closets', this, 'assets/closet/closet-02_d.webp', 'CLO-002')"
+                  data-sol-cat="closets"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="CLO-002 - Amplio vestidor modular"
+                >
+                  <img src="assets/closet/closet-02_d.webp" alt="CLO-002" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">2</span>
+                </button>
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('closets', this, 'assets/closet/closet-03_d.webp', 'CLO-003')"
+                  onmouseenter="switchSolucionImg('closets', this, 'assets/closet/closet-03_d.webp', 'CLO-003')"
+                  data-sol-cat="closets"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="CLO-003 - Closet esquinero empotrado"
+                >
+                  <img src="assets/closet/closet-03_d.webp" alt="CLO-003" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">3</span>
+                </button>
+              </div>
             </div>
-            <div class="p-6 flex flex-col flex-grow">
-              <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C] mb-1">Residencial</span>
-              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Cocinas Integrales</h3>
-              <p class="text-sm text-[#5c5f5e] mb-6 flex-grow">
-                Distribución ergonómica, cubiertas duraderas, alacenas superiores e islas centrales diseñadas para la vida cotidiana familiar.
-              </p>
-              <a href="/ejmonjo/portafolio?cat=Cocinas" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5">
-                <span>Ver cocinas en portafolio</span>
-                <span>&rarr;</span>
-              </a>
-            </div>
-          </div>
 
-          <!-- Card 2: Puertas -->
-          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
-            <div class="aspect-[16/10] overflow-hidden bg-[#eee]">
-              <img 
-                src="/ejmonjo/assets/puertas_ahualulco_1.webp" 
-                alt="Puertas Principales y de Interior" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-              <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C] mb-1">Arquitectura</span>
-              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Puertas de Madera</h3>
-              <p class="text-sm text-[#5c5f5e] mb-6 flex-grow">
-                Puertas principales de alto impacto visual con cerraduras contemporáneas, listonados y acabados sellados contra intemperie.
+            <div class="p-6 pt-3 flex flex-col flex-grow">
+              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Clósets y Vestidores</h3>
+              <p class="text-sm text-[#5c5f5e] mb-5 flex-grow">
+                Vestidores integrales, clósets modulares y armarios a la medida con distribución ergonómica, cajoneras personalizadas y acabados finos.
               </p>
-              <a href="/ejmonjo/portafolio?cat=Puertas" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5">
-                <span>Ver puertas en portafolio</span>
-                <span>&rarr;</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 3: Muebles y Clósets -->
-          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
-            <div class="aspect-[16/10] overflow-hidden bg-[#eee]">
-              <img 
-                src="/ejmonjo/assets/cocinas_ahualulco_18.webp" 
-                alt="Muebles y Clósets a Medida" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-              <span class="text-[11px] font-bold uppercase tracking-wider text-[#8B5E3C] mb-1">Interiores</span>
-              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Muebles y Clósets</h3>
-              <p class="text-sm text-[#5c5f5e] mb-6 flex-grow">
-                Vestidores integrales, credenzas, libreros y mobiliario residencial fabricado al milímetro con optimización inteligente del espacio.
-              </p>
-              <div class="flex items-center gap-4 flex-wrap">
-                <a href="/ejmonjo/portafolio?cat=Closets" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5">
-                  <span>Ver clósets</span>
-                  <span>&rarr;</span>
+              <div class="flex items-center gap-4 flex-wrap pt-2 border-t border-[#f0ece9]">
+                <a href="portafolio?cat=Closet" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5 group/link">
+                  <span>Ver clósets en portafolio</span>
+                  <span class="transition-transform group-hover/link:translate-x-0.5">→</span>
                 </a>
-                <a href="/ejmonjo/muebles-a-la-medida" class="text-xs text-[#7d5260] hover:text-[#2c160e] inline-flex items-center gap-1">
-                  <span>Muestrario</span>
-                  <span>&rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Cocinas Integrales -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
+            <a id="cocinas-main-link" href="portafolio?id=COC-001" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
+              <img 
+                id="cocinas-main-img"
+                src="assets/cocinas/cocina-01_d.webp" 
+                alt="Cocinas Integrales a Medida" 
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                <span class="text-xs font-medium text-white bg-[#8B5E3C]/90 px-2.5 py-1 rounded-md backdrop-blur-sm">
+                  Ver detalles de esta cocina →
+                </span>
+              </div>
+            </a>
+            
+            <!-- Selector de fotos destacadas (primeras 3) -->
+            <div class="px-6 pt-4 pb-1">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-wider">3 Obras destacadas:</span>
+                <span class="text-[11px] text-[#7d5260] font-mono font-medium" id="cocinas-sku-label">COC-001</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2">
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-01_d.webp', 'COC-001')"
+                  onmouseenter="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-01_d.webp', 'COC-001')"
+                  data-sol-cat="cocinas"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#8B5E3C] ring-2 ring-[#8B5E3C]/30 opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="COC-001 - Cocina integral contemporánea"
+                >
+                  <img src="assets/cocinas/cocina-01_d.webp" alt="COC-001" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">1</span>
+                </button>
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-02_d.webp', 'COC-002')"
+                  onmouseenter="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-02_d.webp', 'COC-002')"
+                  data-sol-cat="cocinas"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="COC-002 - Cocina de diseño moderno"
+                >
+                  <img src="assets/cocinas/cocina-02_d.webp" alt="COC-002" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">2</span>
+                </button>
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-03_d.webp', 'COC-003')"
+                  onmouseenter="switchSolucionImg('cocinas', this, 'assets/cocinas/cocina-03_d.webp', 'COC-003')"
+                  data-sol-cat="cocinas"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="COC-003 - Cocina en proceso de acabado"
+                >
+                  <img src="assets/cocinas/cocina-03_d.webp" alt="COC-003" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">3</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="p-6 pt-3 flex flex-col flex-grow">
+              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Cocinas Integrales</h3>
+              <p class="text-sm text-[#5c5f5e] mb-5 flex-grow">
+                Distribución ergonómica, cubiertas duraderas, alacenas superiores e islas centrales diseñadas para la vida cotidiana y familiar.
+              </p>
+              <div class="flex items-center gap-4 flex-wrap pt-2 border-t border-[#f0ece9]">
+                <a href="portafolio?cat=Cocinas" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5 group/link">
+                  <span>Ver cocinas en portafolio</span>
+                  <span class="transition-transform group-hover/link:translate-x-0.5">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Puertas de Madera -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5dedb] group flex flex-col">
+            <a id="puertas-main-link" href="portafolio?id=PUE-001" class="block relative aspect-[4/3] overflow-hidden bg-[#eee]">
+              <img 
+                id="puertas-main-img"
+                src="assets/puertas/puerta-01_d.webp" 
+                alt="Puertas de Madera a Medida" 
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                <span class="text-xs font-medium text-white bg-[#8B5E3C]/90 px-2.5 py-1 rounded-md backdrop-blur-sm">
+                  Ver detalles de esta puerta →
+                </span>
+              </div>
+            </a>
+            
+            <!-- Selector de fotos destacadas (primeras 3) -->
+            <div class="px-6 pt-4 pb-1">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-wider">3 Obras destacadas:</span>
+                <span class="text-[11px] text-[#7d5260] font-mono font-medium" id="puertas-sku-label">PUE-001</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2">
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('puertas', this, 'assets/puertas/puerta-01_d.webp', 'PUE-001')"
+                  onmouseenter="switchSolucionImg('puertas', this, 'assets/puertas/puerta-01_d.webp', 'PUE-001')"
+                  data-sol-cat="puertas"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#8B5E3C] ring-2 ring-[#8B5E3C]/30 opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="PUE-001 - Puerta interior"
+                >
+                  <img src="assets/puertas/puerta-01_d.webp" alt="PUE-001" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">1</span>
+                </button>
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('puertas', this, 'assets/puertas/puerta-02_d.webp', 'PUE-002')"
+                  onmouseenter="switchSolucionImg('puertas', this, 'assets/puertas/puerta-02_d.webp', 'PUE-002')"
+                  data-sol-cat="puertas"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="PUE-002 - Puerta principal"
+                >
+                  <img src="assets/puertas/puerta-02_d.webp" alt="PUE-002" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">2</span>
+                </button>
+                <button 
+                  type="button" 
+                  onclick="switchSolucionImg('puertas', this, 'assets/puertas/puerta-03_d.webp', 'PUE-003')"
+                  onmouseenter="switchSolucionImg('puertas', this, 'assets/puertas/puerta-03_d.webp', 'PUE-003')"
+                  data-sol-cat="puertas"
+                  class="aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent opacity-70 hover:opacity-100 transition-all focus:outline-none relative group/btn"
+                  title="PUE-003 - Puerta de entrada principal"
+                >
+                  <img src="assets/puertas/puerta-03_d.webp" alt="PUE-003" class="w-full h-full object-cover group-hover/btn:scale-105 transition-transform" />
+                  <span class="absolute bottom-0.5 right-1 text-[9px] font-bold text-white bg-black/60 px-1 rounded">3</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="p-6 pt-3 flex flex-col flex-grow">
+              <h3 class="text-xl font-serif font-bold text-[#2c160e] mb-2">Puertas de Madera</h3>
+              <p class="text-sm text-[#5c5f5e] mb-5 flex-grow">
+                Puertas principales y de intercomunicación de alto impacto visual con cerraduras contemporáneas, listonados y sellado de alta resistencia.
+              </p>
+              <div class="flex items-center gap-4 flex-wrap pt-2 border-t border-[#f0ece9]">
+                <a href="portafolio?cat=Puertas" class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5 group/link">
+                  <span>Ver puertas en portafolio</span>
+                  <span class="transition-transform group-hover/link:translate-x-0.5">→</span>
                 </a>
               </div>
             </div>
@@ -301,11 +448,11 @@
             </button>
           </div>
           <a 
-            href="/ejmonjo/muebles-a-la-medida" 
+            href="muebles-a-la-medida" 
             class="text-xs font-semibold uppercase tracking-wider text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1.5"
           >
             <span>Guía detallada de carpintería</span>
-            <span>&rarr;</span>
+            <span>→</span>
           </a>
         </div>
 
@@ -324,7 +471,7 @@
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a 
-            href="/ejmonjo/contacto" 
+            href="contacto" 
             class="w-full sm:w-auto bg-[#8B5E3C] hover:bg-[#724a2c] text-white font-medium px-8 py-3.5 rounded-xl shadow-lg transition-colors text-sm"
           >
             Contactar al Taller
@@ -349,18 +496,8 @@
   <div id="footer-container"></div>
 
   <!-- Scripts desacoplados sin compilación previa con cache buster -->
-  <script src="/ejmonjo/js/data.js?v=2.5"></script>
-  <script>
-    if (typeof SOLID_WOODS === 'undefined') {
-      document.write('<script src="js/data.js?v=2.5"><\/script>');
-    }
-  </script>
-  <script src="/ejmonjo/js/layout.js?v=2.5"></script>
-  <script>
-    if (typeof WHATSAPP_ICON_SVG === 'undefined') {
-      document.write('<script src="js/layout.js?v=2.5"><\/script>');
-    }
-  </script>
+  <script src="js/data.js?v=2.5"></script>
+  <script src="js/layout.js?v=2.5"></script>
 
   <!-- Lógica de carrusel e inyección de datos de inicio -->
   <script>
@@ -462,6 +599,36 @@
         goToSlide(next);
       }, 5000);
     });
+
+    // Función interactiva para conmutar las fotos destacadas en la sección Soluciones a la Medida
+    function switchSolucionImg(catId, btn, imgUrl, sku) {
+      const mainImg = document.getElementById(catId + '-main-img');
+      const mainLink = document.getElementById(catId + '-main-link');
+      const skuLabel = document.getElementById(catId + '-sku-label');
+      
+      if (mainImg && mainImg.getAttribute('data-active-src') !== imgUrl) {
+        mainImg.setAttribute('data-active-src', imgUrl);
+        mainImg.classList.add('opacity-40');
+        setTimeout(() => {
+          mainImg.src = imgUrl;
+          mainImg.classList.remove('opacity-40');
+        }, 120);
+      }
+      if (mainLink && sku) {
+        mainLink.href = 'portafolio?id=' + sku;
+      }
+      if (skuLabel && sku) {
+        skuLabel.textContent = sku;
+      }
+      
+      const group = document.querySelectorAll(`[data-sol-cat="${catId}"]`);
+      group.forEach(el => {
+        el.classList.remove('border-[#8B5E3C]', 'ring-2', 'ring-[#8B5E3C]/30', 'opacity-100');
+        el.classList.add('border-transparent', 'opacity-70');
+      });
+      btn.classList.remove('border-transparent', 'opacity-70');
+      btn.classList.add('border-[#8B5E3C]', 'ring-2', 'ring-[#8B5E3C]/30', 'opacity-100');
+    }
   </script>
 </body>
 </html>
