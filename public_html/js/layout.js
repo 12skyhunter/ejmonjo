@@ -71,13 +71,16 @@
       <header class="sticky top-0 z-50 bg-[#f9f9f8]/90 backdrop-blur-md border-b border-[#e5dedb] transition-all duration-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-20">
-            <!-- Logo: ej_monjo_logo_v1.webp sin textos redundantes -->
+            <!-- Logo: ej_monjo_logo_v1.webp con distinción Desde 1978 -->
             <a href="${isEjmonjoPath ? '/ejmonjo/' : 'index.html'}" class="flex items-center gap-3 group">
               <img 
                 src="/ejmonjo/assets/logos/ej_monjo_logo_v1.webp" 
                 alt="EJ Monjo Carpintería" 
                 class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
+              <span class="hidden sm:inline-block text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-widest border-l border-[#d4c3be] pl-3 py-0.5">
+                Desde 1978
+              </span>
             </a>
 
             <!-- Desktop Nav -->
@@ -194,7 +197,7 @@
                 />
               </div>
               <p class="text-sm text-[#baa9a3] leading-relaxed">
-                Taller de carpintería fina con más de 20 años de tradición artesanal. Especialistas en maderas nobles, muebles a la medida y proyectos residenciales en Jalisco.
+                Taller de carpintería fina en Ahualulco de Mercado, Jalisco. Tradición artesanal, maderas nobles y muebles a la medida desde 1978.
               </p>
             </div>
 
