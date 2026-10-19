@@ -64,10 +64,6 @@
       `;
     }).join('');
 
-    const waHeaderUrl = typeof getWhatsAppUrl === 'function' 
-      ? getWhatsAppUrl('Hola EJ Monjo, me gustaría cotizar un proyecto de carpintería.')
-      : 'https://wa.me/523311757837';
-
     headerContainer.innerHTML = `
       <header class="sticky top-0 z-50 bg-[#f9f9f8]/90 backdrop-blur-md border-b border-[#e5dedb] transition-all duration-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,12 +88,9 @@
             <!-- Header Action CTA -->
             <div class="hidden md:flex items-center">
               <a 
-                href="${waHeaderUrl}" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-semibold uppercase tracking-wider px-4 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all duration-200"
+                href="${links[3].url}" 
+                class="inline-flex items-center gap-2 bg-[#5d4037] hover:bg-[#8B5E3C] text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all duration-200"
               >
-                ${WHATSAPP_ICON_SVG("w-4 h-4 fill-white")}
                 <span>Cotizar Proyecto</span>
               </a>
             </div>
@@ -128,13 +121,10 @@
           </div>
           <div class="mt-4 pt-4 border-t border-[#e5dedb]">
             <a 
-              href="${waHeaderUrl}" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="w-full flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-medium py-3 px-4 rounded-xl shadow-sm text-sm"
+              href="${links[3].url}" 
+              class="w-full flex items-center justify-center gap-2 bg-[#5d4037] hover:bg-[#8B5E3C] text-white font-medium py-3 px-4 rounded-xl shadow-sm text-sm"
             >
-              ${WHATSAPP_ICON_SVG("w-5 h-5 fill-white")}
-              <span>Escribir por WhatsApp</span>
+              <span>Cotizar Proyecto</span>
             </a>
           </div>
         </div>
@@ -180,10 +170,6 @@
 
     const currentYear = new Date().getFullYear();
 
-    const waFooterUrl = typeof getWhatsAppUrl === 'function' 
-      ? getWhatsAppUrl('Hola EJ Monjo, me gustaría pedir una cotización.')
-      : 'https://wa.me/523311757837';
-
     footerContainer.innerHTML = `
       <footer class="bg-[#1f1614] text-[#d4c3be] pt-16 pb-12 border-t border-[#3a2822]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -226,22 +212,22 @@
               </p>
             </div>
 
-            <!-- Columna 4: Cotizaciones -->
+            <!-- Columna 4: Cotizaciones y Teléfonos -->
             <div>
               <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Solicitar Cotización</h4>
-              <div class="space-y-1 mb-4 text-sm font-mono text-[#f4eeeb]">
-                <p>${contact.phonePrimary}</p>
-                <p>${contact.phoneSecondary}</p>
+              <p class="text-xs text-[#baa9a3] mb-3 leading-relaxed">
+                Llámanos directamente para cotizaciones y asesoría en taller:
+              </p>
+              <div class="space-y-2 text-sm font-mono text-[#f4eeeb]">
+                <div>
+                  <span class="block text-xs font-sans text-[#baa9a3]">Ernesto M.</span>
+                  <a href="tel:3311757837" class="hover:text-white transition-colors">${contact.phonePrimary}</a>
+                </div>
+                <div>
+                  <span class="block text-xs font-sans text-[#baa9a3]">Jorge M.</span>
+                  <a href="tel:3861056316" class="hover:text-white transition-colors">${contact.phoneSecondary}</a>
+                </div>
               </div>
-              <a 
-                href="${waFooterUrl}" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-semibold uppercase tracking-wider px-4 py-2.5 rounded-lg shadow-sm transition-colors"
-              >
-                ${WHATSAPP_ICON_SVG("w-4 h-4 fill-white")}
-                <span>Pedir cotización</span>
-              </a>
             </div>
           </div>
 
@@ -266,26 +252,24 @@
     `;
   }
 
-  function renderFloatingWhatsApp() {
-    const waUrl = typeof getWhatsAppUrl === 'function' 
-      ? getWhatsAppUrl('Hola EJ Monjo, me gustaría cotizar una pieza de carpintería.')
-      : 'https://wa.me/523311757837';
+  function renderFloatingContact() {
+    const contactUrl = links[3].url;
 
     const div = document.createElement('div');
-    div.id = 'floating-wa-container';
+    div.id = 'floating-contact-container';
     div.className = 'fixed bottom-6 right-6 z-50';
     div.innerHTML = `
       <a 
-        href="${waUrl}" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        aria-label="Contactar por WhatsApp"
-        class="group relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all duration-300"
+        href="${contactUrl}" 
+        aria-label="Ir a Contacto y Cotizaciones"
+        class="group relative flex items-center justify-center w-14 h-14 bg-[#5d4037] hover:bg-[#8B5E3C] text-white rounded-full shadow-[0_10px_25px_rgba(93,64,55,0.45)] hover:scale-110 active:scale-95 transition-all duration-300"
       >
         <span class="absolute -top-10 right-0 hidden group-hover:block bg-[#1a1c1c] text-white text-xs py-1.5 px-3 rounded-lg shadow-lg whitespace-nowrap pointer-events-none transition-opacity duration-200">
-          ¿En qué podemos ayudarte?
+          Contactar al Taller
         </span>
-        ${WHATSAPP_ICON_SVG("w-7 h-7 fill-white")}
+        <svg class="w-6 h-6 fill-none stroke-white" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
       </a>
     `;
     document.body.appendChild(div);
@@ -295,6 +279,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     renderHeader();
     renderFooter();
-    renderFloatingWhatsApp();
+    renderFloatingContact();
   });
 })();
