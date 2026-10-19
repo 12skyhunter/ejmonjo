@@ -72,14 +72,14 @@
       <header class="sticky top-0 z-50 bg-[#f9f9f8]/90 backdrop-blur-md border-b border-[#e5dedb] transition-all duration-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-20">
-            <!-- Logo principal: ejmonjo-carpinteria-logo.webp -->
-            <a href="${links[0].url}" class="flex items-center gap-3 group">
+            <!-- Logo principal: ejmonjo-carpinteria-logo.webp ampliado -->
+            <a href="${links[0].url}" class="flex items-center gap-3.5 group">
               <img 
                 src="${basePath}assets/logos/ejmonjo-carpinteria-logo.webp" 
                 alt="EJ Monjo Carpintería" 
-                class="h-11 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                class="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
-              <span class="hidden sm:inline-block text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-widest border-l border-[#d4c3be] pl-3 py-0.5">
+              <span class="hidden sm:inline-block text-xs font-semibold text-[#8B5E3C] uppercase tracking-widest border-l-2 border-[#d4c3be] pl-3.5 py-1">
                 Desde 1978
               </span>
             </a>
@@ -188,13 +188,13 @@
       <footer class="bg-[#1f1614] text-[#d4c3be] pt-16 pb-12 border-t border-[#3a2822]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-[#3a2822]/70">
-            <!-- Columna 1: Identidad con ejmonjo-carpinteria-logo.webp -->
+            <!-- Columna 1: Identidad con ejmonjo-carpinteria-logo-blanco.webp ampliado -->
             <div class="space-y-4">
               <div class="flex items-center gap-3">
                 <img 
-                  src="${basePath}assets/logos/ejmonjo-carpinteria-logo.webp" 
+                  src="${basePath}assets/logos/ejmonjo-carpinteria-logo-blanco.webp" 
                   alt="${contact.brandName}" 
-                  class="h-11 sm:h-12 w-auto brightness-0 invert opacity-95 object-contain"
+                  class="h-14 sm:h-16 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
                 />
               </div>
               <p class="text-sm text-[#baa9a3] leading-relaxed">

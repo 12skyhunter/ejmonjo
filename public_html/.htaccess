@@ -21,24 +21,29 @@ DirectoryIndex index.html
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]+)\.html[\s?] [NC]
   RewriteRule ^ %1 [R=301,L]
 
-  # 3. Si el archivo o directorio existe físicamente, servirlo directamente
+  # 3. Servir explícitamente favicons y manifiesto sin reescritura
+  RewriteRule ^(favicon\.ico|favicon-.*\.png|apple-touch-icon\.png|site\.webmanifest)$ - [L]
+
+  # 4. Si el archivo o directorio existe físicamente, servirlo directamente
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # 4. Mapeo limpio de URLs sin extensión (ej: /portafolio -> portafolio.html)
+  # 5. Mapeo limpio de URLs sin extensión (ej: /portafolio -> portafolio.html)
   RewriteCond %{DOCUMENT_ROOT}/$1.html -f [OR]
   RewriteCond %{REQUEST_FILENAME}.html -f
   RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L,QSA]
 
-  # 5. Manejador de error 404 personalizado
+  # 6. Manejador de error 404 personalizado
   ErrorDocument 404 /404.html
 </IfModule>
 
 # ==============================================================================
-# TIPOS MIME (WebP, SVG, WOFF2, WebManifest)
+# TIPOS MIME (Favicon, WebP, SVG, WOFF2, WebManifest)
 # ==============================================================================
 <IfModule mod_mime.c>
+  AddType image/x-icon .ico
+  AddType image/png .png
   AddType image/webp .webp
   AddType image/svg+xml .svg .svgz
   AddType font/woff2 .woff2
@@ -65,6 +70,8 @@ DirectoryIndex index.html
   ExpiresDefault "access plus 1 month"
   ExpiresByType text/html "access plus 0 seconds"
   ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
