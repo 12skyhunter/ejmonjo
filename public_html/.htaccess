@@ -5,7 +5,6 @@
 # ==============================================================================
 
 # Opciones de servidor y charset
-Options -Indexes +FollowSymLinks
 AddDefaultCharset UTF-8
 DirectoryIndex index.html
 
