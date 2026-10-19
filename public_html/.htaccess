@@ -1,26 +1,85 @@
+# ==============================================================================
+# EJ MONJO CARPINTERÍA - VIRTUALMIN / APACHE 2.4 CONFIGURATION
+# Ubicación en servidor: /home/ejmonjocarpinteria/public_html/.htaccess
+# Dominio: ejmonjocarpinteria.com
+# ==============================================================================
+
+# Opciones de servidor y charset
+Options -Indexes +FollowSymLinks
+AddDefaultCharset UTF-8
+DirectoryIndex index.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /ejmonjo/
+  RewriteBase /
 
-  # Si el archivo o directorio existe físicamente, servirlo directamente
+  # 1. Eliminar barra diagonal final de peticiones que no sean directorios físicos
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [R=301,L]
+
+  # 2. Redirigir peticiones directas de archivos .html a la URL limpia sin extensión
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]+)\.html[\s?] [NC]
+  RewriteRule ^ %1 [R=301,L]
+
+  # 3. Si el archivo o directorio existe físicamente, servirlo directamente
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Mapeo limpio de URLs sin extensión (ej: /ejmonjo/contacto -> contacto.html)
-  RewriteCond %{DOCUMENT_ROOT}/ejmonjo/$1.html -f [OR]
+  # 4. Mapeo limpio de URLs sin extensión (ej: /portafolio -> portafolio.html)
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f [OR]
   RewriteCond %{REQUEST_FILENAME}.html -f
   RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L,QSA]
 
-  # Fallback 404
-  ErrorDocument 404 /ejmonjo/404.html
+  # 5. Manejador de error 404 personalizado
+  ErrorDocument 404 /404.html
 </IfModule>
 
-# Deshabilitar caché agresiva para scripts y HTML en desarrollo
+# ==============================================================================
+# TIPOS MIME (WebP, SVG, WOFF2, WebManifest)
+# ==============================================================================
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType image/svg+xml .svg .svgz
+  AddType font/woff2 .woff2
+  AddType font/woff .woff
+  AddType application/manifest+json .webmanifest
+  AddType application/json .json
+</IfModule>
+
+# ==============================================================================
+# COMPRESIÓN GZIP / DEFLATE
+# ==============================================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+  AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/rss+xml
+  AddOutputFilterByType DEFLATE image/svg+xml font/woff font/woff2
+</IfModule>
+
+# ==============================================================================
+# CABECERAS DE CACHÉ Y RENDIMIENTO
+# ==============================================================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# ==============================================================================
+# CABECERAS DE SEGURIDAD
+# ==============================================================================
 <IfModule mod_headers.c>
-  <FilesMatch "\.(html|js|json)$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
-    Header set Pragma "no-cache"
-    Header set Expires "0"
-  </FilesMatch>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>

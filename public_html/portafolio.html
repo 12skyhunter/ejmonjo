@@ -6,17 +6,34 @@
   <title>EJ Monjo Carpintería | Portafolio de Obras y Proyectos</title>
   <meta name="description" content="Galería de proyectos residenciales: cocinas integrales, puertas artesanales y carpintería arquitectónica en Ahualulco de Mercado, Jalisco." />
 
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Portafolio de Obras y Proyectos | EJ Monjo Carpintería" />
-  <meta property="og:description" content="Explora nuestras piezas de carpintería fina y residencial con maderas nobles y acabados duraderos." />
-  <meta property="og:image" content="https://lab.sistella.com.mx/ejmonjo/assets/logos/demo_sitio_sistella.png" />
-  <meta property="og:url" content="https://lab.sistella.com.mx/ejmonjo/portafolio" />
+  <link rel="canonical" href="https://ejmonjocarpinteria.com/portafolio" />
+
+  <!-- Open Graph / Meta Etiquetas Sociales -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="EJ Monjo Carpintería" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:title" content="Portafolio de Obras y Proyectos | EJ Monjo Carpintería" />
+  <meta property="og:description" content="Explora nuestras piezas de carpintería fina y residencial con maderas nobles: cocinas integrales, vestidores, puertas y mobiliario exclusivo en Jalisco." />
+  <meta property="og:url" content="https://ejmonjocarpinteria.com/portafolio" />
+  <meta property="og:image" content="https://ejmonjocarpinteria.com/assets/logos/ejmonjo-carpinteria-logo.png" />
+  <meta property="og:image:secure_url" content="https://ejmonjocarpinteria.com/assets/logos/ejmonjo-carpinteria-logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1030" />
+  <meta property="og:image:height" content="970" />
+  <meta property="og:image:alt" content="Portafolio EJ Monjo Carpintería" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Portafolio de Obras y Proyectos | EJ Monjo Carpintería" />
+  <meta name="twitter:description" content="Explora nuestras piezas de carpintería fina y residencial con maderas nobles y acabados duraderos." />
+  <meta name="twitter:image" content="https://ejmonjocarpinteria.com/assets/logos/ejmonjo-carpinteria-logo.png" />
 
   <!-- Base tag dinámico para compatibilidad tanto en subcarpeta /ejmonjo/ como en raíz de dominio -->
   <script>
     if (window.location.pathname.toLowerCase().includes('/ejmonjo/')) {
       document.write('<base href="/ejmonjo/">');
+    } else if (window.location.protocol !== 'file:') {
+      document.write('<base href="/">');
     }
   </script>
 
@@ -552,7 +569,8 @@
       function getWhatsAppPortfolioUrl(item, phoneRaw) {
         if (!item) return '#';
         const nameOrCat = item.title || item.category;
-        const text = `Hola, EJ Monjo Carpintería, me gustaría cotizar la pieza: ${nameOrCat} (SKU: ${item.id})\nhttps://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}`;
+        const shareLink = typeof getPortfolioShareUrl === 'function' ? getPortfolioShareUrl(item.id) : `https://ejmonjocarpinteria.com/portafolio?id=${item.id}`;
+        const text = `Hola, EJ Monjo Carpintería, me gustaría cotizar la pieza: ${nameOrCat} (SKU: ${item.id})\n${shareLink}`;
         const phone = phoneRaw || ((typeof CONTACT_INFO !== 'undefined' && CONTACT_INFO.phoneRaw) ? CONTACT_INFO.phoneRaw : '523311757837');
         return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
       }
@@ -644,7 +662,7 @@
                   class="text-xs font-semibold text-[#5d4037] hover:text-[#8B5E3C] inline-flex items-center gap-1 cursor-pointer shrink-0"
                 >
                   <span>Explorar ficha</span>
-                  <span>&rarr;</span>
+                  <span>→</span>
                 </button>
                 <div class="flex items-center gap-2">
                   <a 
@@ -798,7 +816,7 @@
           if (modalFeaturesContainer) modalFeaturesContainer.classList.remove('hidden');
           modalFeatures.innerHTML = cleanFeatures.map(f => `
             <li class="flex items-center gap-2">
-              <span class="text-[#8B5E3C] font-bold text-sm">&bull;</span>
+              <span class="text-[#8B5E3C] font-bold text-sm">•</span>
               <span>${f}</span>
             </li>
           `).join('');
@@ -914,10 +932,10 @@
           e.stopPropagation();
           if (currentItemIndex < 0 || currentItemIndex >= filteredItems.length) return;
           const item = filteredItems[currentItemIndex];
-          const isLab = window.location.hostname.includes('sistella.com.mx');
-          const shareUrl = isLab 
-            ? `https://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}`
-            : `${window.location.origin}${window.location.pathname}?id=${item.id}`;
+          const isLab = window.location.hostname.includes('sistella.com.mx') && window.location.pathname.includes('/ejmonjo/');
+          const shareUrl = typeof getPortfolioShareUrl === 'function'
+            ? getPortfolioShareUrl(item.id)
+            : (isLab ? `https://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}` : `https://ejmonjocarpinteria.com/portafolio?id=${item.id}`);
 
           if (navigator.share && /mobile|android|iphone|ipad/i.test(navigator.userAgent)) {
             navigator.share({

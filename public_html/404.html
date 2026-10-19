@@ -4,11 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página no encontrada | EJ Monjo Carpintería</title>
+  <meta name="description" content="La página que buscas no existe o fue reubicada. Regresa al inicio o conoce nuestro portafolio de carpintería fina." />
   
+  <!-- Open Graph / Meta Etiquetas Sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="EJ Monjo Carpintería" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:title" content="Página no encontrada | EJ Monjo Carpintería" />
+  <meta property="og:description" content="Taller de carpintería artesanal desde 1978 en Ahualulco de Mercado, Jalisco. Muebles a la medida, cocinas y puertas residenciales." />
+  <meta property="og:url" content="https://ejmonjocarpinteria.com/404" />
+  <meta property="og:image" content="https://ejmonjocarpinteria.com/assets/logos/ejmonjo-carpinteria-logo.png" />
+  <meta property="og:image:secure_url" content="https://ejmonjocarpinteria.com/assets/logos/ejmonjo-carpinteria-logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1030" />
+  <meta property="og:image:height" content="970" />
+  <meta property="og:image:alt" content="EJ Monjo Carpintería" />
+
   <!-- Base tag dinámico para compatibilidad tanto en subcarpeta /ejmonjo/ como en raíz de dominio -->
   <script>
     if (window.location.pathname.toLowerCase().includes('/ejmonjo/')) {
       document.write('<base href="/ejmonjo/">');
+    } else if (window.location.protocol !== 'file:') {
+      document.write('<base href="/">');
     }
   </script>
 
@@ -63,13 +80,13 @@
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
         <a 
-          href="/ejmonjo/" 
+          href="/" 
           class="w-full sm:w-auto bg-[#5d4037] hover:bg-[#8B5E3C] text-white text-xs font-semibold uppercase tracking-wider py-3 px-6 rounded-xl transition-colors"
         >
           Volver al Inicio
         </a>
         <a 
-          href="/ejmonjo/portafolio" 
+          href="portafolio" 
           class="w-full sm:w-auto bg-white border border-[#e5dedb] hover:bg-[#eee8e5] text-[#2c160e] text-xs font-semibold uppercase tracking-wider py-3 px-6 rounded-xl transition-colors"
         >
           Ver Portafolio
@@ -80,7 +97,7 @@
 
   <div id="footer-container"></div>
 
-  <script src="/ejmonjo/js/data.js"></script>
-  <script src="/ejmonjo/js/layout.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
 </body>
 </html>

@@ -15,13 +15,14 @@
 
   // Base path para enlaces y assets
   const isEjmonjoPath = path.includes('/ejmonjo/');
-  const basePath = isEjmonjoPath ? '/ejmonjo/' : './';
+  const isFileProto = window.location.protocol === 'file:';
+  const basePath = isEjmonjoPath ? '/ejmonjo/' : (isFileProto ? './' : '/');
 
   const links = [
-    { id: 'inicio', label: 'Inicio', url: isEjmonjoPath ? '/ejmonjo/' : 'index.html' },
-    { id: 'muebles', label: 'Muebles a la Medida', url: isEjmonjoPath ? '/ejmonjo/muebles-a-la-medida' : 'muebles-a-la-medida.html' },
-    { id: 'portafolio', label: 'Portafolio', url: isEjmonjoPath ? '/ejmonjo/portafolio' : 'portafolio.html' },
-    { id: 'contacto', label: 'Contacto', url: isEjmonjoPath ? '/ejmonjo/contacto' : 'contacto.html' }
+    { id: 'inicio', label: 'Inicio', url: isEjmonjoPath ? '/ejmonjo/' : (isFileProto ? 'index.html' : '/') },
+    { id: 'muebles', label: 'Muebles a la Medida', url: isEjmonjoPath ? '/ejmonjo/muebles-a-la-medida' : (isFileProto ? 'muebles-a-la-medida.html' : '/muebles-a-la-medida') },
+    { id: 'portafolio', label: 'Portafolio', url: isEjmonjoPath ? '/ejmonjo/portafolio' : (isFileProto ? 'portafolio.html' : '/portafolio') },
+    { id: 'contacto', label: 'Contacto', url: isEjmonjoPath ? '/ejmonjo/contacto' : (isFileProto ? 'contacto.html' : '/contacto') }
   ];
 
   const WHATSAPP_ICON_SVG = (classes = "w-4 h-4 fill-white") => `
@@ -71,12 +72,12 @@
       <header class="sticky top-0 z-50 bg-[#f9f9f8]/90 backdrop-blur-md border-b border-[#e5dedb] transition-all duration-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-20">
-            <!-- Logo: ej_monjo_logo_v1.webp con distinción Desde 1978 -->
-            <a href="${isEjmonjoPath ? '/ejmonjo/' : 'index.html'}" class="flex items-center gap-3 group">
+            <!-- Logo principal: ejmonjo-carpinteria-logo.webp -->
+            <a href="${links[0].url}" class="flex items-center gap-3 group">
               <img 
-                src="${basePath}assets/logos/ej_monjo_logo_v1.webp" 
+                src="${basePath}assets/logos/ejmonjo-carpinteria-logo.webp" 
                 alt="EJ Monjo Carpintería" 
-                class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                class="h-11 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <span class="hidden sm:inline-block text-[11px] font-semibold text-[#8B5E3C] uppercase tracking-widest border-l border-[#d4c3be] pl-3 py-0.5">
                 Desde 1978
@@ -187,13 +188,13 @@
       <footer class="bg-[#1f1614] text-[#d4c3be] pt-16 pb-12 border-t border-[#3a2822]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-[#3a2822]/70">
-            <!-- Columna 1: Identidad con ej_monjo_logo_v1.webp -->
+            <!-- Columna 1: Identidad con ejmonjo-carpinteria-logo.webp -->
             <div class="space-y-4">
               <div class="flex items-center gap-3">
                 <img 
-                  src="${basePath}assets/logos/ej_monjo_logo_v1.webp" 
+                  src="${basePath}assets/logos/ejmonjo-carpinteria-logo.webp" 
                   alt="${contact.brandName}" 
-                  class="h-10 sm:h-12 w-auto brightness-0 invert opacity-95"
+                  class="h-11 sm:h-12 w-auto brightness-0 invert opacity-95 object-contain"
                 />
               </div>
               <p class="text-sm text-[#baa9a3] leading-relaxed">
@@ -205,10 +206,10 @@
             <div>
               <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Navegación</h4>
               <ul class="space-y-2.5 text-sm">
-                <li><a href="${isEjmonjoPath ? '/ejmonjo/' : 'index.html'}" class="hover:text-white transition-colors">Inicio</a></li>
-                <li><a href="${isEjmonjoPath ? '/ejmonjo/muebles-a-la-medida' : 'muebles-a-la-medida.html'}" class="hover:text-white transition-colors">Muebles a la Medida</a></li>
-                <li><a href="${isEjmonjoPath ? '/ejmonjo/portafolio' : 'portafolio.html'}" class="hover:text-white transition-colors">Portafolio</a></li>
-                <li><a href="${isEjmonjoPath ? '/ejmonjo/contacto' : 'contacto.html'}" class="hover:text-white transition-colors">Contacto</a></li>
+                <li><a href="${links[0].url}" class="hover:text-white transition-colors">Inicio</a></li>
+                <li><a href="${links[1].url}" class="hover:text-white transition-colors">Muebles a la Medida</a></li>
+                <li><a href="${links[2].url}" class="hover:text-white transition-colors">Portafolio</a></li>
+                <li><a href="${links[3].url}" class="hover:text-white transition-colors">Contacto</a></li>
               </ul>
             </div>
 

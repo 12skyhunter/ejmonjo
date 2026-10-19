@@ -23,13 +23,23 @@ const CONTACT_INFO = {
   sistellaUrl: "https://sistella.com.mx/sitio-web"
 };
 
+// Función auxiliar para URL base del portafolio (dominio de producción: ejmonjocarpinteria.com)
+function getPortfolioShareUrl(sku) {
+  if (typeof window !== 'undefined' && window.location) {
+    if (window.location.hostname.includes('sistella.com.mx') && window.location.pathname.includes('/ejmonjo/')) {
+      return `https://lab.sistella.com.mx/ejmonjo/portafolio?id=${sku}`;
+    }
+  }
+  return `https://ejmonjocarpinteria.com/portafolio?id=${sku}`;
+}
+
 // Generador de enlaces inteligentes de WhatsApp
 function getWhatsAppUrl(message = "", sku = "") {
   let text = message;
   if (!text) {
     text = "Hola EJ Monjo, me gustaría pedir información y cotizar una pieza de carpintería.";
   } else if (sku) {
-    text = `${message} - ${sku}\nhttps://lab.sistella.com.mx/ejmonjo/portafolio?id=${sku}`;
+    text = `${message} - ${sku}\n${getPortfolioShareUrl(sku)}`;
   }
   return `https://wa.me/${CONTACT_INFO.phoneRaw}?text=${encodeURIComponent(text)}`;
 }
@@ -47,7 +57,7 @@ function getWhatsAppPortfolioUrl(item) {
     'banos': 'el Baño'
   };
   const catPhrase = catPhrases[item.categoryGroup] || ('el ' + item.category);
-  const text = `Hola, EJ Monjo Carpintería, me gustaría cotizar una pieza inspirada en ${catPhrase} - ${item.id}\nhttps://lab.sistella.com.mx/ejmonjo/portafolio?id=${item.id}`;
+  const text = `Hola, EJ Monjo Carpintería, me gustaría cotizar una pieza inspirada en ${catPhrase} - ${item.id}\n${getPortfolioShareUrl(item.id)}`;
   return `https://wa.me/${CONTACT_INFO.phoneRaw}?text=${encodeURIComponent(text)}`;
 }
 

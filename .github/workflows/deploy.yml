@@ -23,7 +23,7 @@ jobs:
         echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
         chmod 600 ~/.ssh/deploy_key
         
-        # Sincronizar el contenido de public_html local al servidor
-        rsync -avz --exclude='.git' --exclude='.github' --exclude='cgi-bin' --exclude='.DS_Store' --delete \
+        # Sincronizar el contenido de public_html al servidor en ejmonjocarpinteria.com
+        rsync -avz --exclude='.git' --exclude='.github' --exclude='cgi-bin' --exclude='.DS_Store' --exclude='awstats*' --exclude='icon' --delete \
           -e "ssh -i ~/.ssh/deploy_key -p 9338 -o StrictHostKeyChecking=no" \
-          public_html/ sistella@$SERVER_IP:/home/sistella/domains/lab.sistella.com.mx/public_html/ejmonjo/
+          public_html/ ejmonjocarpinteria@$SERVER_IP:/home/ejmonjocarpinteria/public_html/
